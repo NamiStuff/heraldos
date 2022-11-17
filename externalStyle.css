@@ -2,10 +2,78 @@
 
 /*** INDEX
 
+- Awards
 - Color Picker
 - Blog Styles
 
 ***/
+
+/*AWARDS*/
+.perfil-awards {
+width: 100%;
+padding: 20px;
+background: var(--fondo-claro);
+}
+.caja-awards {
+display: flex;
+flex-wrap: wrap;
+}
+
+.award {
+width: 70px;
+height: 70px;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+border: 2px solid var(--color-acento);
+background-image: var(--award-image);
+border-radius: 100%;
+background-position: center;
+background-size: cover;
+margin: 3px;
+}
+.award[class*=" gi"] {background: var(--fondo-base);}
+.award[class*=" gi"]:before {
+font-size: 35px;
+color: var(--color-acento);
+}
+
+.award_tooltiptext {
+pointer-events: none;
+position: absolute;
+margin-bottom: 85px;
+transform: translateY(-50%);
+transition: opacity .4s;
+visibility: collapse;
+z-index: 6;
+width: 150px;
+text-align: justify;
+font-size: 13px;
+line-height: 15px;
+background: var(--fondo-base);
+opacity: 0;
+padding: 8px;
+}
+.award_tooltiptext_title {
+font-size: 14px;
+text-transform: uppercase;
+color: var(--color-acento);
+font-family: var(--fuente-titulo);
+letter-spacing: 1px;
+font-weight: 900;
+font-style: normal;
+padding-bottom: 3px;
+}
+.award_tooltiptext::after {
+content: "";
+position: absolute;
+bottom: -14px;
+right: 45%;
+border-width: 7px;
+border-style: solid;
+border-color: var(--fondo-base) transparent transparent transparent;
+}
 
 /*** ------------------------------- ***/
 /* COLOR PICKER------ -------------- ***/
