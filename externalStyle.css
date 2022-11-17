@@ -44,7 +44,7 @@ visibility: collapse;
 z-index: 6;
 width: 150px;
 text-align: justify;
-font-size: var(--litle-size);
+font-size: var(--little-size);
 line-height: 1em;
 background: var(--opacity);
 opacity: 0;
