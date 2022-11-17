@@ -9,10 +9,6 @@
 ***/
 
 /*AWARDS*/
-.profile-awards {
-width: 100%;
-padding: 20px;
-}
 .profile-awards-content {
 display: flex;
 flex-wrap: wrap;
