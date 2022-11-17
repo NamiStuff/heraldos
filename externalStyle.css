@@ -12,7 +12,6 @@
 .profile-awards {
 width: 100%;
 padding: 20px;
-background: var(--fondo-claro);
 }
 .profile-awards-content {
 display: flex;
@@ -26,14 +25,14 @@ display: flex;
 justify-content: center;
 align-items: center;
 position: relative;
-border: 2px solid var(--color-acento);
+border: 2px solid var(--accentClr);
 background-image: var(--award-image);
 border-radius: 100%;
 background-position: center;
 background-size: cover;
 margin: 3px;
 }
-.award[class*=" gi"] {background: var(--fondo-base);}
+.award[class*=" gi"] {background: var(--neutralDarker);}
 .award[class*=" gi"]:before {
 font-size: 35px;
 color: var(--color-acento);
@@ -51,15 +50,15 @@ width: 150px;
 text-align: justify;
 font-size: 13px;
 line-height: 15px;
-background: var(--fondo-base);
+background: var(--neutralDarker);
 opacity: 0;
 padding: 8px;
 }
 .award_tooltiptext_title {
 font-size: 14px;
 text-transform: uppercase;
-color: var(--color-acento);
-font-family: var(--fuente-titulo);
+color: var(--accentClr);
+font-family: var(--fontSubTitle);
 letter-spacing: 1px;
 font-weight: 900;
 font-style: normal;
@@ -72,7 +71,7 @@ bottom: -14px;
 right: 45%;
 border-width: 7px;
 border-style: solid;
-border-color: var(--fondo-base) transparent transparent transparent;
+border-color: var(--opacity) transparent transparent transparent;
 }
 
 /*** ------------------------------- ***/
