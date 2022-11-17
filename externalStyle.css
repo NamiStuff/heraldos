@@ -9,12 +9,12 @@
 ***/
 
 /*AWARDS*/
-.perfil-awards {
+.profile-awards {
 width: 100%;
 padding: 20px;
 background: var(--fondo-claro);
 }
-.caja-awards {
+.profile-awards-content {
 display: flex;
 flex-wrap: wrap;
 }
