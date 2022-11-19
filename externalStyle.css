@@ -2,11 +2,34 @@
 
 /*** INDEX
 
+- Carousel
 - Awards
 - Color Picker
 - Blog Styles
 
 ***/
+
+/*CAROUSEL*/
+.slick-slider {
+    -webkit-user-select: auto;
+    user-select: auto;
+    -moz-user-select: initial;
+    -ms-user-select: initial;
+}
+
+.slick-list, .slick-track, .slick-slide > div {
+    height: 100%;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+}
+
+.slick-next {
+    right: 0;
+}
 
 /*AWARDS*/
 .profile-awards-content {
