@@ -72,7 +72,7 @@ width: 150px;
 text-align: justify;
 font-size: var(--little-size);
 line-height: 1em;
-background: var(--opacity);
+background: var(--neutralDarker);
 opacity: 0;
 padding: 8px;
 }
@@ -92,7 +92,7 @@ bottom: -14px;
 right: 45%;
 border-width: 7px;
 border-style: solid;
-border-color: var(--opacity) transparent transparent transparent;
+border-color: var(--neutralDarker) transparent transparent transparent;
 }
 
 /*** ------------------------------- ***/
