@@ -40,16 +40,23 @@
 
 .profile-rpg {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   position: relative;
-  flex-direction: column;
   background: var(--neutralDarker);
-  width: 280px;
+  flex: 1 275px;
   gap: 10px;
   padding: 5px 0;
+  height: 300px;
+}
+
+.profile-rpg > div {
+  flex: 1;
+  min-width: 270px;
 }
 
 .profile-rpg > div:first-child {
-  flex: 1;
+  min-height: 180px;
   position: relative;
 }
 
