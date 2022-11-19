@@ -57,7 +57,7 @@ margin: 3px;
 .award[class*=" gi"] {background: var(--neutralDarker);}
 .award[class*=" gi"]:before {
 font-size: 35px;
-color: var(--color-acento);
+color: var(--accentClr);
 }
 
 .award_tooltiptext {
@@ -86,7 +86,7 @@ font-style: normal;
 padding-bottom: 3px;
 }
 .award_tooltiptext::after {
-content: "";
+content: '';
 position: absolute;
 bottom: -14px;
 right: 45%;
