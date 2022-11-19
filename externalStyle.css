@@ -23,8 +23,11 @@
 
 .slick-arrow {
     position: absolute;
-    top: 50%;
+    top: 49%;
     z-index: 1;
+    background: none;
+    color: var(--accentClr);
+    font-size: 2em;
 }
 
 .slick-next {
