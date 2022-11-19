@@ -50,8 +50,7 @@
 
 .profile-rpg > div:first-child {
   flex: 1;
-  position: absolute;
-  min-width: unset;
+  position: relative;
 }
 
 .profile-rpg > div:last-child {
@@ -67,12 +66,18 @@
   min-width: unset;
 }
 
+.profile-rpg > div:first-child .profile-field {
+    position: absolute;
+    min-width: unset;
+}
+
 .profile-rpg .profile-field-content {
   font-size: var(--large-size);
   line-height: 1em;
 }
 
 .profile-rpg > div:first-child .profile-field-content {color: var(--textColorAccent);}
+
 
 .profile-field.nivel {
   top: 50%;
