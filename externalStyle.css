@@ -58,6 +58,7 @@ margin: 3px;
 .award[class*=" gi"]:before {
 font-size: 35px;
 color: var(--accentClr);
+font-family: 'game-icons';
 }
 
 .award_tooltiptext {
