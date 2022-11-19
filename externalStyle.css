@@ -3,6 +3,7 @@
 /*** INDEX
 
 - Carousel
+- Profile Stats
 - Awards
 - Color Picker
 - Blog Styles
@@ -34,6 +35,85 @@
 .slick-next {
     right: 0;
 }
+
+/*PROFILE STATS*/
+
+.profile-rpg {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background: var(--neutralDarker);
+  width: 280px;
+  gap: 10px;
+  padding: 5px 0;
+}
+
+.profile-rpg > div:first-child {
+  flex: 1;
+  position: absolute;
+  min-width: unset;
+}
+
+.profile-rpg > div:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100px;
+  gap: 5px;
+}
+
+.profile-rpg .profile-field {
+  gap: 0;
+  min-width: unset;
+}
+
+.profile-rpg .profile-field-content {
+  font-size: var(--large-size);
+  line-height: 1em;
+}
+
+.profile-rpg > div:first-child .profile-field-content {color: var(--textColorAccent);}
+
+.profile-field.nivel {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--neutralDarker);
+  outline: var(--borderAccent);
+  outline-offset: 4px;
+  border-radius: 100%;
+  width: 55px;
+  height: 55px;
+}
+
+.profile-rpg > div:first-child .profile-field-label { display: none;}
+
+.profile-field.nivel:after {content: 'Nivel';}
+.profile-field.destreza:after {content: 'DES';}
+.profile-field.reflejos:after {content: 'REF';}
+.profile-field.fortaleza:after {content: 'FOR';}
+.profile-field.voluntad:after {content: 'VOL';}
+.profile-field.percepcion:after {content: 'PER';}
+.profile-field.inteligencia:after {content: 'INT';}
+
+.profile-rpg > div:first-child .profile-field:not(.nivel):before {
+  position: absolute;
+  content: '\e6a7';
+  font-family: 'game-icons';
+  opacity: .2;
+  font-size: 2.8em;
+  top: -2px;
+}
+
+
+.profile-field.destreza, .profile-field.voluntad {top: 4%;}
+.profile-field.destreza, .profile-field.fortaleza { left: 27%;}
+.profile-field.reflejos, .profile-field.percepcion {top: 50%;transform: translate(0, -50%);}
+.profile-field.reflejos {left: 14%;}
+.profile-field.fortaleza, .profile-field.inteligencia {bottom: 0%;}
+.profile-field.voluntad, .profile-field.inteligencia {right: 27%;}
+.profile-field.percepcion {right: 14%;}
+.profile-rpg > div:first-child .profile-field:not(.nivel) {height: 53px;}
 
 /*AWARDS*/
 .profile-awards-content {
