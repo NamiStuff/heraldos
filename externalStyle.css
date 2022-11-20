@@ -92,6 +92,7 @@
   transform: translate(-50%, -50%);
   background: var(--neutralDarker);
   outline: var(--borderAccent);
+  outline-color: var(--accentGroup);
   outline-offset: 4px;
   border-radius: 100%;
   width: 55px;
