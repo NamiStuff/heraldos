@@ -118,7 +118,12 @@
   font-size: 2.8em;
   top: -2px;
 }
-
+.profile-rpg > div:first-child .profile-field.destreza:before {content: '\e6a7';}
+.profile-rpg > div:first-child .profile-field.reflejos:before {content: '\efe2';}
+.profile-rpg > div:first-child .profile-field.fortaleza:before {content: '\e9aa';}
+.profile-rpg > div:first-child .profile-field.voluntad:before {content: '\e6a7';}
+.profile-rpg > div:first-child .profile-field.percepcion:before {content: '\e429';}
+.profile-rpg > div:first-child .profile-field.inteligencia:before {content: '\e22c';}
 
 .profile-field.destreza, .profile-field.voluntad {top: 4%;}
 .profile-field.destreza, .profile-field.fortaleza { left: 27%;}
