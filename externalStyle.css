@@ -4,6 +4,7 @@
 
 - Carousel
 - Profile Stats
+- Profile Inventory
 - Awards
 - Color Picker
 - Blog Styles
@@ -127,6 +128,67 @@
 .profile-field.voluntad, .profile-field.inteligencia {right: 27%;}
 .profile-field.percepcion {right: 14%;}
 .profile-rpg > div:first-child .profile-field:not(.nivel) {height: 53px;}
+
+/* PROFILE INVENTORY */
+.profile-inventory-content {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.item-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: var(--opacity);
+  border-radius: 100%;
+  border: var(--borderAccent);
+  border-color: var(--accentGroup);
+  position: relative;
+}
+
+.item-info {
+  position: absolute;
+  width: max-content;
+  background: var(--opacity);
+  padding: 10px;
+  font-size: var(--little-size);
+  line-height: 1em;
+  top: -5px;
+  left: 0;
+  display: none;
+}
+
+.item-number {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  font-weight: 900;
+  font-family: var(--fontSubTitle);
+  font-size: .7em;
+  color: var(--contrast);
+  background: var(--accentClr);
+  border-radius: 100%;
+  width: 14px;
+  height: 14px;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-name {
+  font-weight: 900;
+  font-family: var(--fontSubTitle);
+  text-transform: uppercase;
+  color: var(--accentClr);
+  letter-spacing: .5px;
+}
+
+.item-box:before {
+  font-size: 1.9em;
+  color: var(--textColorAccent);
+}
 
 /*AWARDS*/
 .profile-awards-content {
