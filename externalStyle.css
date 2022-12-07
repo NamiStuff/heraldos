@@ -162,7 +162,7 @@
   color: var(--textColorAccent);
 }
 
-.item-number, .item-info:before {
+.item-number, .item-close:before {
   position: absolute;
   top: 0;
   right: 0;
@@ -193,7 +193,7 @@
     width: 100%;
 }
 
-.item-info:before {
+.item-close:before {
     content: 'x';
     top: 5px;
     right: 5px;
