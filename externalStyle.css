@@ -160,6 +160,7 @@
 .item-icon {
   font-size: 1.9em;
   color: var(--textColorAccent);
+  text-align: center;
 }
 
 .item-number, .item-close:before {
@@ -202,6 +203,9 @@
     font-size: 1em;
 }
 
+
+.item-info .item-icon {font-size: 4.5em}
+
 .item-name {
   font-weight: 900;
   font-family: var(--fontTitle);
@@ -209,13 +213,13 @@
   text-transform: uppercase;
   color: var(--accentClr);
   letter-spacing: .5px;
-  margin: 20px auto 10px;
+  margin: 15px auto 10px;
   text-align: center;
 }
 
 .item-sub {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-family: var(--fontSubTitle);
     text-transform: uppercase;
     color: var(--textColorAccent);
