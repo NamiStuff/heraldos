@@ -155,6 +155,7 @@
   border: var(--borderAccent);
   border-color: var(--accentGroup);
   position: relative;
+  cursor: pointer;
 }
 
 .item-icon {
@@ -201,6 +202,7 @@
     width: 18px;
     height: 18px;
     font-size: 1em;
+    cursor: pointer;
 }
 
 
