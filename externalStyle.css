@@ -46,8 +46,8 @@
   background: var(--neutralDarker);
   flex: 1 275px;
   gap: 10px;
-  padding: 5px 0;
-  height: 300px;
+  padding: 20px 0;
+  height: 330px;
 }
 
 .profile-rpg > div {
