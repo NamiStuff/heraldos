@@ -57,9 +57,32 @@
 
 /*Imagenes*/
 :is(.profile-history, .profile-extra) img {
-  max-width: -webkit-fill-available;
+  max-width: 100%;
   object-fit: cover;
 }
+
+:is(.profile-history, .profile-extra) img {
+  border-radius: 100%;
+  outline: var(--borderAccent);
+  outline-offset: 4px;
+  max-width: calc(100% - 12px);
+}
+
+:is(.profile-history, .profile-extra) :is(div[align="left"], div[align="right"]) {
+  max-width: calc(50% - 10px);
+  min-width: fit-content;
+}
+
+:is(.profile-history, .profile-extra) div[align="left"] img {
+  margin-rifht: 10px;
+  float: left;
+}
+
+:is(.profile-history, .profile-extra) div[align="right"] img {
+  margin-left: 10px;
+  float: right;
+}
+
 
 /*PROFILE STATS*/
 
@@ -99,8 +122,8 @@
 }
 
 .profile-rpg > div:first-child .profile-field {
-    position: absolute;
-    min-width: unset;
+  position: absolute;
+  min-width: unset;
 }
 
 .profile-rpg .profile-field-content {
