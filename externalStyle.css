@@ -42,20 +42,21 @@
 /* Diseño para personalizar la Historia y Datos extra */
 
 /*Texto*/
-.profile-history strong {
+:is(.profile-history, .profile-extra) strong {
   text-transform: uppercase;
   font-size: var(--little-size);
   color: var(--accentClr);
 }
 
-.profile-history i {color: var(--textColorAccent);}
-.profile-history u, .profile-history strike {
+:is(.profile-history, .profile-extra) i {color: var(--textColorAccent);}
+
+:is(.profile-history, .profile-extra) :is(u, strike) {
   text-decoration-color: var(--accentClr);
   text-decoration-thickness: 2px;
 }
 
 /*Imagenes*/
-.profile-history img {
+:is(.profile-history, .profile-extra) img {
   max-width: -webkit-fill-available;
   object-fit: cover;
 }
