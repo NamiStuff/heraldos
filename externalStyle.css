@@ -104,6 +104,7 @@
   gap: 10px;
   padding: 20px 0;
   height: 330px;
+  z-index: 1;
 }
 
 .profile-rpg > div {
@@ -172,6 +173,7 @@
   opacity: .2;
   font-size: 2.8em;
   top: -2px;
+  z-index: -1;
 }
 .profile-rpg > div:first-child .profile-field.destreza:before {content: '\e3a7';}
 .profile-rpg > div:first-child .profile-field.reflejos:before {content: '\efe2';}
