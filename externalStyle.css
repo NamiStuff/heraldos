@@ -68,17 +68,17 @@
   max-width: calc(100% - 12px);
 }
 
-:is(.profile-history, .profile-extra) :is(div[align="left"], div[align="right"]) img {
+:is(.profile-history, .profile-extra) :is(div[align="left"], div[align="right"]):has(img) {
   max-width: calc(50% - 10px);
   margin-left: 10px;
 }
 
-:is(.profile-history, .profile-extra) div[align="left"]:has(img) {
+:is(.profile-history, .profile-extra) div[align="left"] img {
   float: left;
   min-width: -webkit-fill-available;
 }
 
-:is(.profile-history, .profile-extra) div[align="right"]:has(img) {
+:is(.profile-history, .profile-extra) div[align="right"] img {
   float: right;
   min-width: -webkit-fill-availablet;
 }
