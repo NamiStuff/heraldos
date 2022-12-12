@@ -61,26 +61,26 @@
   object-fit: cover;
 }
 
-:is(.profile-history, .profile-extra) img {
+:is(.profile-history, .profile-extra) div[align="center"] img {
   border-radius: 100%;
   outline: var(--borderAccent);
   outline-offset: 4px;
   max-width: calc(100% - 12px);
 }
 
-:is(.profile-history, .profile-extra) :is(div[align="left"], div[align="right"]) {
+:is(.profile-history, .profile-extra) :is(div[align="left"], div[align="right"]) img {
   max-width: calc(50% - 10px);
-  min-width: fit-content;
-}
-
-:is(.profile-history, .profile-extra) div[align="left"] img {
-  margin-rifht: 10px;
-  float: left;
-}
-
-:is(.profile-history, .profile-extra) div[align="right"] img {
   margin-left: 10px;
+}
+
+:is(.profile-history, .profile-extra) div[align="left"]:has(img) {
+  float: left;
+  min-width: -webkit-fill-available;
+}
+
+:is(.profile-history, .profile-extra) div[align="right"]:has(img) {
   float: right;
+  min-width: -webkit-fill-availablet;
 }
 
 
