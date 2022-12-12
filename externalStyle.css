@@ -3,6 +3,7 @@
 /*** INDEX
 
 - Carousel
+- Profile Descriptions Style
 - Profile Stats
 - Profile Inventory
 - Awards
@@ -35,6 +36,22 @@
 
 .slick-next {
     right: 0;
+}
+
+/* PROFILE DESCRIPTIONS STYLE */
+/* Diseño para personalizar la Historia y Datos extra */
+
+.profile-history strong, .profile-history i {
+  text-transform: uppercase;
+  font-size: var(--little-size);
+}
+
+.profile-history strong {color: var(--accentClr);}
+
+.profile-history i {color: var(--textColorAccent);}
+.profile-history u, .profile-history strike {
+  text-decoration-color: var(--accentClr);
+  text-decoration-thickness: 2px;
 }
 
 /*PROFILE STATS*/
