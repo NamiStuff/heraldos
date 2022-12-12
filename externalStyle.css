@@ -42,12 +42,11 @@
 /* Diseño para personalizar la Historia y Datos extra */
 
 /*Texto*/
-.profile-history strong, .profile-history i {
+.profile-history strong {
   text-transform: uppercase;
   font-size: var(--little-size);
+  color: var(--accentClr);
 }
-
-.profile-history strong {color: var(--accentClr);}
 
 .profile-history i {color: var(--textColorAccent);}
 .profile-history u, .profile-history strike {
