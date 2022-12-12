@@ -45,7 +45,7 @@
 /* PROFILE DESCRIPTIONS STYLE */
 /* Diseño para personalizar la Historia y Datos extra */
 
-/*Texto*/
+/* Texts */
 :is(.profile-history, .profile-extra) strong {
   text-transform: uppercase;
   font-size: var(--little-size);
@@ -59,7 +59,7 @@
   text-decoration-thickness: 2px;
 }
 
-/*Imagenes*/
+/* Images */
 :is(.profile-history, .profile-extra) img {
   max-width: 100%;
   object-fit: cover;
@@ -74,6 +74,7 @@
 
 :is(.profile-history, .profile-extra) :is(div[align="left"], div[align="right"]):has(img) {
   max-width: calc(50% - 10px);
+  margin-bottom: 10px;
 }
 
 :is(.profile-history, .profile-extra) div[align="left"]:has(img) {    
@@ -85,6 +86,7 @@
   float: right;
   margin-left: 10px;
 }
+
 :is(.profile-history, .profile-extra) :is(div[align="left"], div[align="right"]) img {
   min-width: -webkit-fill-available;
 }
