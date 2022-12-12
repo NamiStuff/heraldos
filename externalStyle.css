@@ -38,6 +38,10 @@
     right: 0;
 }
 
+.slick-slide > div { /* evita que el scroll se asome */
+    padding: 0 1px;
+}
+
 /* PROFILE DESCRIPTIONS STYLE */
 /* Diseño para personalizar la Historia y Datos extra */
 
