@@ -20,7 +20,7 @@
     width: 25px;
 }
 
-.flickity-button:hover, .flickity-button:active {
+.flickity-button:hover, .flickity-button:focus {
     background: none;
     border: none;
 }
