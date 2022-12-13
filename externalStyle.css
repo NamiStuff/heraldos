@@ -13,16 +13,16 @@
 ***/
 
 /*CAROUSEL*/
-.flickity-button {
+.flickity-button, .flickity-button:hover, .flickity-button:focus {
     background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.flickity-button {
     color: var(--accentClr);
     padding: 0;
     width: 25px;
-}
-
-.flickity-button:hover, .flickity-button:focus {
-    background: none;
-    border: none;
 }
 
 .flickity-prev-next-button .flickity-button-icon {
@@ -36,6 +36,7 @@
 .flickity-prev-next-button.next {right: 7px;}
 
 .flickity-viewport img {display: block;}
+
 
 /* PROFILE DESCRIPTIONS STYLE */
 /* Diseño para personalizar la Historia y Datos extra */
