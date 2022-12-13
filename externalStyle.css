@@ -56,6 +56,13 @@
   font-style: italic;
 }
 
+
+:is(.profile-history, .profile-extra) sub {
+  max-width: 250px;
+  display: block;
+  margin: auto;
+}
+
 :is(.profile-history, .profile-extra) :is(u, strike) {
   text-decoration-color: var(--accentClr);
   text-decoration-thickness: 2px;
