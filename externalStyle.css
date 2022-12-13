@@ -76,7 +76,7 @@
 
 :is(.profile-history, .profile-extra) :is(div[align="left"], div[align="right"]):has(img) {
   max-width: calc(50% - 10px);
-  margin-bottom: 10px;
+  margin: 8px 5px 0;
 }
 
 :is(.profile-history, .profile-extra) div[align="left"]:has(img) {    
