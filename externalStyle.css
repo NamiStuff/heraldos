@@ -68,6 +68,14 @@
   text-decoration-thickness: 2px;
 }
 
+:is(.profile-history, .profile-extra) blockquote {
+  margin: 0;
+  column-count: 2;
+  column-rule: var(--border);
+  column-gap: 25px;
+  column-width: 200px;
+}
+
 /* Images */
 :is(.profile-history, .profile-extra) img {
   max-width: 100%;
