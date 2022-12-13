@@ -52,7 +52,7 @@
   color: var(--accentClr);
 }
 
-:is(.profile-history, .profile-extra) i {color: var(--textColorAccent);}
+:is(.profile-history, .profile-extra) :is(i, sub) {color: var(--textColorAccent); font-style: italic;}
 
 :is(.profile-history, .profile-extra) :is(u, strike) {
   text-decoration-color: var(--accentClr);
