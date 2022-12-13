@@ -13,27 +13,27 @@
 ***/
 
 /*CAROUSEL*/
-.flickity-viewport :is(.flickity-button, .flickity-button:hover, .flickity-button:focus) {
+.flickity-viewport + :is(.flickity-button, .flickity-button:hover, .flickity-button:focus) {
     background: none;
     border: none;
     box-shadow: none;
 }
 
-.flickity-viewport .flickity-button {
+.flickity-viewport + .flickity-button {
     color: var(--accentClr);
     padding: 0;
     width: 25px;
 }
 
-.flickity-viewport .flickity-prev-next-button .flickity-button-icon {
+.flickity-viewport + .flickity-prev-next-button .flickity-button-icon {
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
 }
 
-.flickity-viewport .flickity-prev-next-button.previous {left: 7px;}
-.flickity-viewport .flickity-prev-next-button.next {right: 7px;}
+.flickity-viewport + .flickity-prev-next-button.previous {left: 7px;}
+.flickity-viewport + .flickity-prev-next-button.next {right: 7px;}
 
 .flickity-viewport img {display: block;}
 
