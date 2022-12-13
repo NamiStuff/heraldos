@@ -67,7 +67,7 @@
   margin: auto;
 }
 
-:is(.profile-history, .profile-extra) blockquote  /*texto en dos columnas*/
+:is(.profile-history, .profile-extra) blockquote { /*texto en dos columnas*/
   margin: 0;
   column-count: 2;
   column-rule: var(--border);
