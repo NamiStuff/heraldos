@@ -13,34 +13,29 @@
 ***/
 
 /*CAROUSEL*/
-.slick-slider {
-    -webkit-user-select: auto;
-    user-select: auto;
-    -moz-user-select: initial;
-    -ms-user-select: initial;
-}
-
-.slick-list, .slick-track, .slick-slide > div {
-    height: 100%;
-}
-
-.slick-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    z-index: 1;
+.flickity-button {
     background: none;
     color: var(--accentClr);
-    font-size: 2em;
+    padding: 0;
+    width: 25px;
 }
 
-.slick-next {
-    right: 0;
+.flickity-button:hover, .flickity-button:active {
+    background: none;
+    border: none;
 }
 
-.slick-slide > div { /* evita que el scroll se asome */
-    padding: 0 1px;
+.flickity-prev-next-button .flickity-button-icon {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
+
+.flickity-prev-next-button.previous {left: 7px;}
+.flickity-prev-next-button.next {right: 7px;}
+
+.flickity-viewport img {display: block;}
 
 /* PROFILE DESCRIPTIONS STYLE */
 /* Diseño para personalizar la Historia y Datos extra */
