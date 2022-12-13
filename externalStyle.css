@@ -75,6 +75,11 @@
   column-width: 200px;
 }
 
+:is(.profile-history, .profile-extra) sup:is(.fa-solid, .fas, .fa, .gi, .cp) { /*font icons*/
+  font-size: inherit;
+  vertical-align: inherit;
+}
+
 /* Images */
 :is(.profile-history, .profile-extra) img { /*general*/
   max-width: 100%;
