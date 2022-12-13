@@ -79,6 +79,7 @@
   font-size: inherit;
   vertical-align: unset;
 }
+sup.gi:before {vertical-align: middle;}
 
 /* Images */
 :is(.profile-history, .profile-extra) img { /*general*/
