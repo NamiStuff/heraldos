@@ -56,19 +56,18 @@
   font-style: italic;
 }
 
-
-:is(.profile-history, .profile-extra) sub {
-  max-width: 250px;
-  display: block;
-  margin: auto;
-}
-
 :is(.profile-history, .profile-extra) :is(u, strike) {
   text-decoration-color: var(--accentClr);
   text-decoration-thickness: 2px;
 }
 
-:is(.profile-history, .profile-extra) blockquote {
+:is(.profile-history, .profile-extra) sub { /*texto en subtitulo decoratibo*/
+  max-width: 250px;
+  display: block;
+  margin: auto;
+}
+
+:is(.profile-history, .profile-extra) blockquote  /*texto en dos columnas*/
   margin: 0;
   column-count: 2;
   column-rule: var(--border);
@@ -77,19 +76,20 @@
 }
 
 /* Images */
-:is(.profile-history, .profile-extra) img {
+:is(.profile-history, .profile-extra) img { /*general*/
   max-width: 100%;
   object-fit: cover;
 }
 
-:is(.profile-history, .profile-extra) div[align="center"] img {
+:is(.profile-history, .profile-extra) div[align="center"] img { /*imagen centrada*/
   border-radius: 100%;
   outline: var(--borderAccent);
   outline-offset: 4px;
   max-width: calc(100% - 12px);
+  margin: 6px;
 }
 
-:is(.profile-history, .profile-extra) :is(div[align="left"], div[align="right"]):has(img) {
+:is(.profile-history, .profile-extra) :is(div[align="left"], div[align="right"]):has(img) { /*imagen flotante*/
   max-width: calc(50% - 10px);
   margin: 8px 5px 0;
 }
