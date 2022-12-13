@@ -77,7 +77,7 @@
 
 :is(.profile-history, .profile-extra) sup:is(.fa-solid, .fas, .fa, .gi, .cp) { /*font icons*/
   font-size: inherit;
-  vertical-align: inherit;
+  vertical-align: unset;
 }
 
 /* Images */
