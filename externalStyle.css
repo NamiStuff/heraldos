@@ -217,7 +217,7 @@ sup.gi:before {vertical-align: middle;}
   gap: 5px;
   flex-wrap: wrap;
   position: relative;
-  height: calc(100% - 40px);
+  height: calc(100% - 45px);
   overflow: auto;
 }
 
