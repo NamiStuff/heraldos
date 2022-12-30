@@ -211,7 +211,9 @@ sup.gi:before {vertical-align: middle;}
 .profile-field.percepcion {right: 14%;}
 .profile-rpg > div:first-child .profile-field:not(.nivel) {height: 53px;}
 
+
 /* PROFILE INVENTORY */
+
 .profile-inventory-content {
   display: flex;
   gap: 5px;
