@@ -188,19 +188,19 @@ sup.gi:before {vertical-align: middle;}
 
 .profile-rpg > div:first-child .profile-field:not(.nivel):before {
   position: absolute;
-  content: '\e6a7';
+  /*content: '\e6a7';*/
   font-family: 'game-icons';
   opacity: .2;
   font-size: 2.8em;
   top: -2px;
   z-index: -1;
 }
-.profile-rpg > div:first-child .profile-field.destreza:before {content: '\e3a7';}
+/*.profile-rpg > div:first-child .profile-field.destreza:before {content: '\e3a7';}
 .profile-rpg > div:first-child .profile-field.reflejos:before {content: '\efe2';}
 .profile-rpg > div:first-child .profile-field.fortaleza:before {content: '\e9aa';}
 .profile-rpg > div:first-child .profile-field.voluntad:before {content: '\e115';}
 .profile-rpg > div:first-child .profile-field.percepcion:before {content: '\e429';}
-.profile-rpg > div:first-child .profile-field.inteligencia:before {content: '\e22c';}
+.profile-rpg > div:first-child .profile-field.inteligencia:before {content: '\e22c';} */
 
 .profile-field.destreza, .profile-field.voluntad {top: 4%;}
 .profile-field.destreza, .profile-field.fortaleza { left: 27%;}
