@@ -100,6 +100,10 @@ letter-spacing: .5px;
 .tab-datos i {color: var(--accent);}
 .tab-datos + br {display: none;}
 
+/*Color personal*/
+.cp {color: var(--personalClr);--accent: var(--personalClr);}
+
+
 /* PROFILE DESCRIPTIONS STYLE */
 /* Diseño para personalizar la Historia y Datos extra */
 
