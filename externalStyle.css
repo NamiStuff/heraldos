@@ -95,7 +95,7 @@ letter-spacing: .5px;
     background: var(--opacity);
     padding: 10px;
 }
-.tab-datos:last-of-type {margin: 0 -30px -30px;}
+.tab-datos:last-child {margin: 0 -30px -30px;}
 .tab-datos i {color: var(--accent);}
 .tab-datos + br {display: none;}
 
