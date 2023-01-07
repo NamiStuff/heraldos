@@ -56,6 +56,24 @@ letter-spacing: .5px;
 #cp-main #checkboxes th {width: 20%;}
 #cp-main #checkboxes th:first-child {width: 60%;}
 
+#cp-main #checkboxes th:last-child {
+  visibility: hidden;
+  position: relative;
+}
+#cp-main #checkboxes th:last-child:after {
+    content: 'En el Foro';
+    visibility: visible;
+    position: absolute;
+    border-bottom: var(--border);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
 /* PROFILE DESCRIPTIONS STYLE */
 /* Diseño para personalizar la Historia y Datos extra */
 
