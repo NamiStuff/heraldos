@@ -534,6 +534,7 @@ div.sceditor-dropdown.colorpicker input {
    margin: 0 0 0 4px;
    padding: 2px;
    font-family: var(--font);
+   border: var(--border);
 }
 .colorpicker_field, .colorpicker_hex {
    height: 22px;
@@ -559,7 +560,7 @@ div.sceditor-dropdown.colorpicker input {
 }
 .colorpicker_rgb_g {
    top: 82px;
-   left: 212px;
+   left: 211px;
 }
 .colorpicker_rgb_b {
    top: 112px;
@@ -581,18 +582,18 @@ div.sceditor-dropdown.colorpicker input {
 div.sceditor-dropdown div.colorpicker_submit {
  position: absolute;
  cursor: pointer;
- right: 0;
- top: 142px;
+ right: 10px;
+ top: 140px;
  text-transform: uppercase;
- font-family: var(--font);
- font-size: 10px;
+ font-family: var(--fontSubTitle);
+ font-size: 11px;
  font-weight: 900;
- letter-spacing: 1px;
- background: var(--fondo-oscuro);
- border: var(--border: 1px solid #E5E5E5);
- padding: 4px 10px;
+ letter-spacing: .51px;
+ background: var(--neutralDarker);
+ border: var(--border);
+ padding: 4px 8px;
  height: auto;
- line-height: 14px;
+ line-height: 15px;
 }
 .colorpicker_submit:before {
   content: 'Usar';
