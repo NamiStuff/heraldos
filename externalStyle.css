@@ -74,6 +74,9 @@ letter-spacing: .5px;
     width: 100%;
 }
 
+.ucp-main #memberlist :is(th, td):first-of-type{display: none;}
+.ucp-main #memberlist :is(td.posts, td:has(.postdetails)) {text-align: center;}
+
 /* PROFILE DESCRIPTIONS STYLE */
 /* Diseño para personalizar la Historia y Datos extra */
 
