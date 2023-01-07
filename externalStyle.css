@@ -4,6 +4,7 @@
 
 - Carousel
 - Profile Options tables
+- Tablillas de rol
 - Profile Descriptions Style
 - Profile Stats
 - Profile Inventory
@@ -76,6 +77,27 @@ letter-spacing: .5px;
 
 .ucp-main #memberlist :is(th, td):first-of-type{display: none;}
 .ucp-main #memberlist :is(td.posts, td:has(.postdetails)) {text-align: center;}
+
+/* TABLILLAS DE ROL */
+
+/*datos del rol*/
+.tab-datos {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--fontSubTitle);
+    font-weight: 900;
+    letter-spacing: .5px;
+    color: var(--textColorAccent);
+    font-size: var(--little-size);
+}
+.tab-datos:first-of-type, .tab-datos:last-of-type {
+    margin: -30px -30px 0;
+    background: var(--opacity);
+    padding: 10px;
+}
+.tab-datos:last-of-type {margin: 0 -30px -30px;}
+.tab-datos i {color: var(--accent);}
+.tab-datos + br {display: none;}
 
 /* PROFILE DESCRIPTIONS STYLE */
 /* Diseño para personalizar la Historia y Datos extra */
