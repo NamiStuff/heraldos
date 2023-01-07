@@ -442,6 +442,80 @@ border-style: solid;
 border-color: var(--neutralDarker) transparent transparent transparent;
 }
 
+
+
+
+/*** ------------------------------- ***/
+/*** SCEDITOR TOOLBAR ------------- ***/
+
+
+/* Toolbar box */
+div.sceditor-toolbar {
+  background: var(--neutralDark)!important;
+  border-bottom: var(--border)!important;
+  border-radius: 0!important;
+}
+
+/* Text box container */
+.sceditor-container iframe,
+.sceditor-container textarea {
+  background-color: var(--neutral)!important;
+  /*do not remove*/
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 5px !important;
+  /*do not remove*/
+  min-height: 250px !important;
+}
+
+/* Tool group containers */
+div.sceditor-group {
+  background: var(--neutralDark)!important;
+  border: 0!important;
+}
+
+/* Tool buttons */
+a.sceditor-button {
+  height: 26px !important;
+  /*do not remove*/
+  width: 26px !important;
+  /*do not remove*/
+  text-indent: 0;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a.sceditor-button.hover { background: inherit; box-shadow: none;}
+
+/* Tool buttons hover */
+.sceditor-container .sceditor-button:is(.active, :active, :hover) {
+    background:  var(--opacity);
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Tool dropdowns */
+.sceditor-container div.sceditor-dropdown {
+    background:  var(--neutralDark);
+    border: var(--border);
+    border-radius: 0;
+    color: var(--textColor);
+}
+
+div.sceditor-dropdown a.sceditor-font-option, div .sceditor-header-option {
+    color: var(--textColorAccent) !important;
+    background: unset !important;
+}
+
+/* Tool inputs */
+.sceditor-container div.sceditor-dropdown :is(input, textarea, .button):is(:focus, :hover) {
+    border: var(--border);
+    box-shadow: inherit;
+}
+.sceditor-container div.sceditor-dropdown .button:hover {background:  var(--neutralDarker);}
+
+
 /*** ------------------------------- ***/
 /* COLOR PICKER------ -------------- ***/
 
@@ -609,78 +683,6 @@ div.sceditor-dropdown div.colorpicker_submit {
 }
 .colorpicker { z-index: 3; }
 
-
-
-
-/*** ------------------------------- ***/
-/*** SCEDITOR TOOLBAR ------------- ***/
-
-
-/* Toolbar box */
-div.sceditor-toolbar {
-  background: var(--neutralDark)!important;
-  border-bottom: var(--border)!important;
-  border-radius: 0!important;
-}
-
-/* Text box container */
-.sceditor-container iframe,
-.sceditor-container textarea {
-  background-color: var(--neutral)!important;
-  /*do not remove*/
-  width: 100% !important;
-  margin: 0 !important;
-  padding: 5px !important;
-  /*do not remove*/
-  min-height: 250px !important;
-}
-
-/* Tool group containers */
-div.sceditor-group {
-  background: var(--neutralDark)!important;
-  border: 0!important;
-}
-
-/* Tool buttons */
-a.sceditor-button {
-  height: 26px !important;
-  /*do not remove*/
-  width: 26px !important;
-  /*do not remove*/
-  text-indent: 0;
-  color: var(--accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-a.sceditor-button.hover { background: inherit; box-shadow: none;}
-
-/* Tool buttons hover */
-.sceditor-container .sceditor-button:is(.active, :active, :hover) {
-    background:  var(--opacity);
-    border-radius: 0;
-    box-shadow: none;
-}
-
-/* Tool dropdowns */
-.sceditor-container div.sceditor-dropdown {
-    background:  var(--neutralDark);
-    border: var(--border);
-    border-radius: 0;
-    color: var(--textColor);
-}
-
-div.sceditor-dropdown a, div.sceditor-dropdown a:link, div .sceditor-header-option {
-    color: var(--textColorAccent) !important;
-    background: unset !important;
-}
-
-/* Tool inputs */
-.sceditor-container div.sceditor-dropdown :is(input, textarea, .button):is(:focus, :hover) {
-    border: var(--border);
-    box-shadow: inherit;
-}
-.sceditor-container div.sceditor-dropdown .button:hover {background:  var(--neutralDarker);}
 
 
 /****** ---------------------------
