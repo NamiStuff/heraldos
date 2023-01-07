@@ -648,8 +648,14 @@ a.sceditor-button {
   align-items: center;
   justify-content: center;
 }
-
 a.sceditor-button.hover { background: inherit; box-shadow: none;}
+
+/* Tool buttons hover */
+.sceditor-button.active, .sceditor-button:active, .sceditor-button:hover {
+    background:  var(--opacity);
+    border-radius: 0;
+    box-shadow: none;
+}
 
 /* Tool dropdowns */
 div.sceditor-dropdown {
@@ -658,6 +664,7 @@ div.sceditor-dropdown {
     border-radius: 0;
     color: var(--textColor);
 }
+
 
 /* Tool inputs */
 div.sceditor-dropdown input:focus, div.sceditor-dropdown textarea:focus {
