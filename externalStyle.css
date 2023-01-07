@@ -503,9 +503,10 @@ a.sceditor-button.hover { background: inherit; box-shadow: none;}
     color: var(--textColor);
 }
 
-div.sceditor-dropdown a.sceditor-font-option, div .sceditor-header-option {
+div.sceditor-dropdown a.sceditor-font-option, div .sceditor-header-option, p.sceditor-mention-user {
     color: var(--textColorAccent) !important;
     background: unset !important;
+    border: 0;
 }
 
 /* Tool inputs */
@@ -515,6 +516,18 @@ div.sceditor-dropdown a.sceditor-font-option, div .sceditor-header-option {
 }
 .sceditor-container div.sceditor-dropdown .button:hover {background:  var(--neutralDarker);}
 
+/* Mentions user list */
+p.sceditor-mention-user {
+    text-align: left;
+    text-transform: uppercase;
+    font-family: var(--fontSubTitle);
+    letter-spacing: .5px;
+}
+p.sceditor-mention-user img {
+    border-radius: 0;
+    border: var(--border);
+    margin: 0 10px 0 0;
+}
 
 /*** ------------------------------- ***/
 /* COLOR PICKER------ -------------- ***/
