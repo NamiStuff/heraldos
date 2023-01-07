@@ -669,9 +669,8 @@ a.sceditor-button.hover { background: inherit; box-shadow: none;}
     color: var(--textColor);
 }
 
-
 /* Tool inputs */
-.sceditor-container div.sceditor-dropdown :is(input, textarea):focus {
+.sceditor-container div.sceditor-dropdown :is(input, textarea, .button):is(:focus, :hover) {
     border: var(--border);
     box-shadow: inherit;
 }
