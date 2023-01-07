@@ -3,6 +3,7 @@
 /*** INDEX
 
 - Carousel
+- Profile Options tables
 - Profile Descriptions Style
 - Profile Stats
 - Profile Inventory
@@ -37,6 +38,23 @@ button.flickity-prev-next-button.next {right: 7px;}
 
 .flickity-viewport img {display: block;}
 
+/* PROFILE OPTIONS TABLES */
+
+.table1 {width: 100%;border-spacing: 0;}
+.table1 .name, .table1 td {padding: 5px;}
+#cp-main table.table1 thead th {
+border-bottom: var(--border);
+padding: 5px;
+}
+.table1 th {
+font-family: var(--fontSubTitle);
+text-transform: uppercase;
+font-size: var(--little-size);
+color: var(--textColorAccent);
+letter-spacing: .5px;
+}
+#cp-main #checkboxes th {width: 20%;}
+#cp-main #checkboxes th:first-child {width: 60%;}
 
 /* PROFILE DESCRIPTIONS STYLE */
 /* Diseño para personalizar la Historia y Datos extra */
