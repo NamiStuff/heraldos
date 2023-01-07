@@ -451,7 +451,7 @@ border-color: var(--neutralDarker) transparent transparent transparent;
 
 /* Toolbar box */
 div.sceditor-toolbar {
-  background: var(--neutralDark)!important;
+  background: var(--neutralDarker)!important;
   border-bottom: var(--border)!important;
   border-radius: 0!important;
 }
@@ -470,7 +470,7 @@ div.sceditor-toolbar {
 
 /* Tool group containers */
 div.sceditor-group {
-  background: var(--neutralDark)!important;
+  background: var(--neutralDarker)!important;
   border: 0!important;
 }
 
