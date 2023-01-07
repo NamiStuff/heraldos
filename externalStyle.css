@@ -651,14 +651,14 @@ a.sceditor-button {
 a.sceditor-button.hover { background: inherit; box-shadow: none;}
 
 /* Tool buttons hover */
-.sceditor-button.active, .sceditor-button:active, .sceditor-button:hover {
+.sceditor-container .sceditor-button:is(.active, :active, :hover) {
     background:  var(--opacity);
     border-radius: 0;
     box-shadow: none;
 }
 
 /* Tool dropdowns */
-div.sceditor-dropdown {
+.sceditor-container div.sceditor-dropdown {
     background:  var(--neutralDark);
     border: var(--border);
     border-radius: 0;
@@ -667,7 +667,7 @@ div.sceditor-dropdown {
 
 
 /* Tool inputs */
-div.sceditor-dropdown input:focus, div.sceditor-dropdown textarea:focus {
+.sceditor-container div.sceditor-dropdown :is(input, textarea):focus {
     border: var(--border);
     box-shadow: inherit;
 }
