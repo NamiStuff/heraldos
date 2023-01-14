@@ -76,7 +76,7 @@ letter-spacing: .5px;
     width: 100%;
 }
 
-.ucp-main :is(th, td):first-of-type{display: none;}
+.ucp-main #memberlist :is(th, td):first-of-type {display: none;}
 :is(.ucp-main, .mcp-main) :is(td.posts, td:has(.postdetails)) {text-align: center;}
 
 /* TABLILLAS DE ROL */
