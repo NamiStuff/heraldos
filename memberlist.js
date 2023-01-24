@@ -15,7 +15,7 @@ $(function() {
                 inscripcion: function(itemElem) {
                     var date = $(itemElem).find('.userlist_joined .userlist_content').text();
                     dateSplit = date.split("/");
-                    var parseIso = new Date(parseInt(darr[2]),parseInt(darr[1])-1,parseInt(darr[0])).toISOString();
+                    var parseIso = new Date(parseInt(dateSplit[2]),parseInt(dateSplit[1])-1,parseInt(dateSplit[0])).toISOString();
                     console.log(parseIso);
                     var parseDate = Date.parse(parseIso);
                     console.log(parseDate);
