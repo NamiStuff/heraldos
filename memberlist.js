@@ -14,7 +14,7 @@ $(function() {
                 edad: '.sort-edad parseInt',
                 inscripcion: function(itemElem) {
                     var date = $(itemElem).find('.userlist_joined .userlist_content').text();
-                    var parseIso = Date.prototype.toISOString(date);
+                    var parseIso = new Date.prototype.toISOString(date);
                     console.log(parseIso);
                     var parseDate = Date.parse(parseIso);
                     console.log(parseDate);
