@@ -39,6 +39,7 @@ $(function() {
 
         var comboFilter = getComboFilter();
         $container.isotope({ filter: comboFilter });
+        updateFilterCount();
     });
     
     // bind sort label click
