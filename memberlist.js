@@ -19,7 +19,7 @@ $(function() {
                     console.log(parseIso);
                     var parseDate = Date.parse(parseIso);
                     console.log(parseDate);
-                    return parseDate;
+                    return parseDate
                 },
             },
         });
