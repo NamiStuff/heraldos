@@ -1,6 +1,9 @@
 $(function() {
     var $container = $('.userlist');
     var filters = {};
+    
+    var iso = $container.data('isotope');
+    var $filterCount = $('.filter-count');
   
     // init Isotope
     $container.isotope({
@@ -52,6 +55,13 @@ $(function() {
              $(this).addClass('is-checked');
         });
     });
+    
+    // add filter count 
+    function updateFilterCount() {
+        $filterCount.text( iso.filteredItems.length + ' personajes' );
+    }
+
+    updateFilterCount();
 
     // create combo filter fuction
     function getComboFilter() {
