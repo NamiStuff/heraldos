@@ -60,7 +60,7 @@ $(function() {
     // add filter count 
 function updateFilterCounts()  {
   // get filtered item elements
-  var itemElems = $container.isotope('getFilteredItemElements');
+  var itemElems = $container.isotope().isotope('getFilteredItemElements');
   var $itemElems = $(itemElems);
   $filterButtons.each( function( i, label ) {
     var $label = $(label);
