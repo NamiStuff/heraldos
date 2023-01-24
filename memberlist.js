@@ -1,7 +1,6 @@
 $(function() {
     var $container = $('.userlist');
-    var filters = {};
-    
+    var filters = {};    
     var $filterButtons = $('.filter-group label');
   
     // init Isotope
@@ -72,7 +71,6 @@ $(function() {
             $label.find('.filter-count').text(count);
         });
     }
-
 
     // create combo filter fuction
     function getComboFilter() {
