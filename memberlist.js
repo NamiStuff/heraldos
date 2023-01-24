@@ -3,7 +3,6 @@ $(function() {
     var filters = {};
     
     var $filterButtons = $('.filter-count label');
-    updateFilterCounts();
   
     // init Isotope
     $container.isotope({
