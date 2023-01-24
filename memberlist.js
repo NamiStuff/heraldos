@@ -14,7 +14,9 @@ $(function() {
                 edad: '.sort-edad parseInt',
                 inscripcion: function(itemElem) {
                     var date = $(itemElem).find('.userlist_joined .userlist_content').text();
-                    return Date.parse(date);
+                    var parseDate = Date.parse(date);
+                    console.log(parseDate);
+                    return parseDate;
                 },
             },
         });
