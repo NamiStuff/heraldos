@@ -16,7 +16,7 @@ $(function() {
                     var date = $(itemElem).find('.userlist_joined .userlist_content').text();
                     var parseIso = new Date(date).toISOString();
                     console.log(parseIso);
-                    var parseDate = Date.parse(parseIso);
+                    var parseDate = Date.parse(date);
                     console.log(parseDate);
                     return parseDate;
                 },
