@@ -2,7 +2,7 @@ $(function() {
     var $container = $('.userlist');
     var filters = {};
     
-    var $filterButtons = $('.filter-count label');
+    var $filterButtons = $('.filter-group label');
   
     // init Isotope
     $container.isotope({
