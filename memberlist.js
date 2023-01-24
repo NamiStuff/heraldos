@@ -57,21 +57,21 @@ $(function() {
     });
     
     // add filter count 
-function updateFilterCounts()  {
-  // get filtered item elements
-  var itemElems = $container.isotope('getFilteredItemElements');
-  var $itemElems = $(itemElems);
-  $filterButtons.each( function( i, label ) {
-    var $label = $(label);
-    var filterValue = $label.children('input').attr('value');
-    if ( !filterValue ) {
-      // do not update 'any' buttons
-      return;
+    function updateFilterCounts()  {
+        // get filtered item elements
+        var itemElems = $container.isotope('getFilteredItemElements');
+        var $itemElems = $(itemElems);
+        $filterButtons.each( function(i, label) {
+            var $label = $(label);
+            var filterValue = $label.children('input').attr('value');
+            if (!filterValue) {
+                // do not update 'any' buttons
+                return;
+            }
+            var count = $itemElems.filter(filterValue).length;
+            $label.find('.filter-count').text(count);
+        });
     }
-    var count = $itemElems.filter( filterValue ).length;
-    $label.find('.filter-count').text( '(' + count +')' );
-  });
-}
 
 
     // create combo filter fuction
