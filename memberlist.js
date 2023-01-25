@@ -1,5 +1,5 @@
 $(function() {
-    var $container = $('.userlist');
+    var $container = $('.memberlist:not(.maxposters) .userlist');
     var filters = {};    
     var $filterButtons = $('.filter-group label');
   
