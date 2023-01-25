@@ -21,7 +21,7 @@ $(function() {
         });
 
     // bind filter checkbox click
-    $('#form-ui').on('change', function(event) {
+    $('.memberlist:not(.maxposters) #form-ui').on('change', function(event) {
         var checkbox = event.target;
         var $checkbox = $(checkbox);
         var group = $checkbox.parents('.filter-group').attr('data-group');
@@ -42,13 +42,13 @@ $(function() {
     });
     
     // bind sort label click
-    $('.sort-group').on('click', 'label', function() {
+    $('.memberlist:not(.maxposters) .sort-group').on('click', 'label', function() {
         var sortValue = $(this).attr('data-sort-value');
         $container.isotope('updateSortData').isotope({ sortBy: sortValue });
     });
   
     // change is-checked class on checkbox
-    $('.sort-group').each(function(i, buttonGroup) {
+    $('.memberlist:not(.maxposters) .sort-group').each(function(i, buttonGroup) {
         var $buttonGroup = $(buttonGroup);
         $buttonGroup.on('click', 'label', function() {
              $buttonGroup.find('.is-checked').removeClass('is-checked');
