@@ -35,8 +35,9 @@ button.flickity-prev-next-button .flickity-button-icon {
     left: 0;
 }
 
-button.flickity-prev-next-button.previous {left: 7px;}
-button.flickity-prev-next-button.next {right: 7px;}
+.profile-info-tab::-webkit-scrollbar {width: 4px;}
+button.flickity-prev-next-button.previous {left: 5px;}
+button.flickity-prev-next-button.next {right: 5px;}
 
 .flickity-viewport img {display: block;}
 
