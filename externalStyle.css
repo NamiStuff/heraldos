@@ -497,7 +497,7 @@ a.sceditor-button.hover { background: inherit; box-shadow: none;}
 }
 
 /* Tool dropdowns */
-.sceditor-container div.sceditor-dropdown {
+.sceditor-container div.sceditor-dropdown, div.sceditor-dropdown:is(.sceditor-scSmileys, .colorpicker) {
     background:  var(--neutralDark);
     border: var(--border);
     border-radius: 0;
@@ -671,7 +671,7 @@ div.sceditor-dropdown div.colorpicker_submit {
  position: absolute;
  cursor: pointer;
  right: 10px;
- top: 140px;
+ top: 141px;
  text-transform: uppercase;
  font-family: var(--fontSubTitle);
  font-size: 11px;
