@@ -15,6 +15,16 @@
 
 ***/
 
+/* TABLILLA DE BATALLA */
+.tab-batalla {
+    width: 100%;
+    background: var(--neutralDarker);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
 /* CAROUSEL */
 button:is(.flickity-button, .flickity-button:hover, .flickity-button:focus) {
     background: none;
