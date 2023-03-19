@@ -56,13 +56,21 @@
     flex-direction: column;
     gap: 5px;
 }
-.tab-batalla-barras > div {
+.tab-batalla-barras > div span {
+    width: 50px;
+    font-weight: 900;
+    line-height: 1em;
+    color: var(--textColorAccent);
+    font-family: var(--fontSubTitle);
+    text-transform: uppercase;
+}
+.tab-batalla-barras div div {
     background: var(--neutralDarker);
     color: var(--textColorAccent);
     position: relative;
     height: 15px;
 }
-.tab-batalla-barras div:before {
+.tab-batalla-barras div div:before {
     content: '0 / 0';
     position: absolute;
     line-height: 1em;
@@ -78,7 +86,7 @@
 .tab-batalla-mag:before {
     content: attr(magia-actual) ' / ' attr(magia-total);
 }
-.tab-batalla-barras div:after {
+.tab-batalla-barras div div:after {
     content: '';
     background: var(--accent);
     display: block;
