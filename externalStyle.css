@@ -43,7 +43,7 @@
 }
 .tab-batalla > div > div > div {
     background: var(--neutralDark);
-    padding: 15px;
+    padding: 10px;
 }
 
 .tab-batalla-stats {
@@ -96,6 +96,14 @@
     background: var(--accent);
     display: block;
     height: 100%;
+}
+
+.tab-batalla-boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--accent);
+    font-size: var(--title-size);
 }
 
 .tab-batalla-def, .tab-batalla-acc {
