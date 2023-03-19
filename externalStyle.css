@@ -22,8 +22,19 @@
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     gap: 10px;
 }
+
+.tab-batalla > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.tab-batalla-pj2 {
+    flex-direction: row-reverse;
+}
+
 :is(.tab-batalla, .tab-batalla div) > br {display: none;}
 /* CAROUSEL */
 button:is(.flickity-button, .flickity-button:hover, .flickity-button:focus) {
