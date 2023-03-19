@@ -74,6 +74,7 @@
     color: var(--textColorAccent);
     position: relative;
     height: 15px;
+    flex: 1;
 }
 .tab-batalla-barras div div:before {
     content: '0 / 0';
