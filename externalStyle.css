@@ -41,7 +41,7 @@
     gap: 7px;
     flex-wrap: wrap;
 }
-.tab-batalla > div > div > div {
+.tab-batalla > div > div > div, .tab-batalla-habs > div {
     background: var(--neutralDark);
     padding: 10px;
 }
