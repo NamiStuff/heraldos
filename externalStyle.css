@@ -161,7 +161,10 @@ div.tab-batalla-dma:before {content: attr(defensa-magica);}
 div.tab-batalla-dfi:after {content: 'Def Física';}
 div.tab-batalla-dma:after {content: 'Def magica';}
 
+.tab-batalla-acc {min-width: 200px;}
 .tab-batalla .tab-batalla-tit {flex: 0;}
+
+.tab-batalla-habs > div {min-width: 300px;}
 
 .tab-batalla br {display: none;}
 :is(.tab-batalla-acc, .tab-batalla-habs) > div br {display: block;}
