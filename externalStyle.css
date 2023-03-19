@@ -1,4 +1,4 @@
-@charset "UTF-8";
+.tab-batalla-barras > div@charset "UTF-8";
 
 /*** INDEX
 
@@ -94,7 +94,7 @@ div.stat-int:after {content: 'INT';}
     display: flex;
     flex: 1;
     flex-wrap: wrap;
-    align-content: center;
+    align-items: center;
     min-width: 118px;
 }
 .tab-batalla-barras > div span {
