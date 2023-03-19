@@ -138,7 +138,7 @@ div.tab-batalla-tit {
     flex: 0;
 }
 
-:is(.tab-batalla, .tab-batalla > div, .tab-batalla > div > div,.tab-batalla-barras) > br {display: none;}
+:is(.tab-batalla, .tab-batalla > div, .tab-batalla > div > div,.tab-batalla-barras, .tab-batalla-barras > div) > br {display: none;}
 /* CAROUSEL */
 button:is(.flickity-button, .flickity-button:hover, .flickity-button:focus) {
     background: none;
