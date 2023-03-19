@@ -94,6 +94,7 @@ div.stat-int:after {content: 'INT';}
     display: flex;
     flex: 1;
     flex-wrap: wrap;
+    align-content: center;
 }
 .tab-batalla-barras > div span {
     width: 50px;
