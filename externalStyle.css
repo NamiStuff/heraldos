@@ -95,7 +95,7 @@ div.stat-int:after {content: 'INT';}
     flex: 1;
     flex-wrap: wrap;
     align-content: center;
-    min-width: 120px;
+    min-width: 118px;
 }
 .tab-batalla-barras > div span {
     width: 50px;
