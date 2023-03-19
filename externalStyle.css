@@ -95,19 +95,21 @@
     text-align: center;
 }
 .tab-batalla-def {
-    max-width: 120px;
+    max-width: 112px;
+    font-weight: 900;
+    color: var(--textColorAccent);
+    text-transform: uppercase;
+    font-family: var(--fontSubTitle);
 }
 .tab-batalla-def div:before {
     content: '0';
-    color: var(--accent);
     display: block;
+    color: var(--accent);
+    font-size: var(--title-size);
+    font-family: var(--fontTitle);
 }
 div.tab-batalla-dfi:before {content: attr(defensa-fisica);}
 div.tab-batalla-dma:before {content: attr(defensa-magica);}
-
-.tab-batalla-def div:after {
-    text-transform: uppercase;
-}
 div.tab-batalla-dfi:after {content: 'Def Física';}
 div.tab-batalla-dma:after {content: 'Def magica';}
 
