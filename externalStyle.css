@@ -19,7 +19,7 @@
 .tab-batalla {
     width: 100%;
     background: var(--neutralDarker);
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -29,7 +29,7 @@
 .tab-batalla > div {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 7px;
 }
 .tab-batalla-pj2 {
     flex-direction: row-reverse;
