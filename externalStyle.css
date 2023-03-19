@@ -24,7 +24,7 @@
     flex-wrap: wrap;
     gap: 10px;
 }
-
+:is(.tab-batalla, .tab-batalla div) > br {display: none;}
 /* CAROUSEL */
 button:is(.flickity-button, .flickity-button:hover, .flickity-button:focus) {
     background: none;
