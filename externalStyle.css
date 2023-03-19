@@ -97,6 +97,9 @@
     display: block;
     height: 100%;
 }
+.tab-batalla-barras div:has(.tab-batalla-sal) {
+    flex: 100%;
+}
 
 .tab-batalla-boton {
     display: flex;
@@ -139,6 +142,7 @@ div.tab-batalla-tit {
 }
 
 :is(.tab-batalla, .tab-batalla > div, .tab-batalla > div > div,.tab-batalla-barras, .tab-batalla-barras > div) > br {display: none;}
+
 /* CAROUSEL */
 button:is(.flickity-button, .flickity-button:hover, .flickity-button:focus) {
     background: none;
