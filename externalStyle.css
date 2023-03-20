@@ -114,15 +114,16 @@ div.stat-int:after {content: 'INT';}
 }
 .tab-batalla-barras div:has(.tab-batalla-sal) {flex: 100%;}
 .tab-batalla-barras div div:before {
-    content: '0 / 0';
+    content: '0/0';
     position: absolute;
-    line-height: 1em;
+     font-size: .8em;
+    line-height: 1.3em;
     left: 50%;
     transform: translate(-50%);
 }
-.tab-batalla-sal:before {content: attr(salud-actual) ' / ' attr(salud-total);}
-.tab-batalla-vig:before {content: attr(vigor-actual) ' / ' attr(vigor-total);}
-.tab-batalla-mag:before {content: attr(magia-actual) ' / ' attr(magia-total);}
+.tab-batalla .tab-batalla-sal:before {content: attr(salud-actual) '/' attr(salud-total);}
+.tab-batalla .tab-batalla-vig:before {content: attr(vigor-actual) '/' attr(vigor-total);}
+.tab-batalla .tab-batalla-mag:before {content: attr(magia-actual) '/' attr(magia-total);}
 .tab-batalla-barras div div:after {
     content: '';
     background: var(--accent);
