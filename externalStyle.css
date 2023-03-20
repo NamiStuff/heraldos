@@ -156,11 +156,24 @@ div.stat-int:after {content: 'INT';}
     color: var(--accent);
     font-size: var(--title-size);
     font-family: var(--fontTitle);
+    position: relative;
+    z-index: 1;
 }
 div.tab-batalla-dfi:before {content: attr(defensa-fisica);}
 div.tab-batalla-dma:before {content: attr(defensa-magica);}
+.tab-batalla-def div:after {
+    position: relative;
+    z-index: 1;
+}
 div.tab-batalla-dfi:after {content: 'Def Física';}
 div.tab-batalla-dma:after {content: 'Def magica';}
+.tab-batalla-def > div i {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    color: var(--neutral);
+}
 
 .tab-batalla-acc {min-width: 200px;}
 .tab-batalla .tab-batalla-tit {flex: 0;}
