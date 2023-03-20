@@ -136,6 +136,7 @@ div.stat-int:after {content: 'INT';}
     align-items: center;
     color: var(--accent);
     font-size: var(--title-size);
+    cursor: pointer;
 }
 
 .tab-batalla-def, .tab-batalla-acc {flex-direction: column;}
