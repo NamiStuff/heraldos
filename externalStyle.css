@@ -179,8 +179,13 @@ div.tab-batalla-dma:after {content: 'Def magica';}
 }
 
 .tab-batalla-acc {min-width: 200px;}
-.tab-batalla .tab-batalla-tit {flex: 0;}
-
+.tab-batalla .tab-batalla-tit {
+    flex: 0;
+    text-transform: uppercase;
+    font-family: var(--fontSubTitle);
+    color: var(--textColorAccent);
+    font-weight: 900;
+}
 :is(.tab-batalla-oper, .tab-batalla-habs > div) strong {
     color: var(--accent);
     text-transform: uppercase;
