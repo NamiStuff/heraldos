@@ -89,6 +89,7 @@ div.stat-int:after {content: 'INT';}
     gap: 10px;
     flex-wrap: wrap;
     flex: 1 calc(100% - 165px);
+    min-height: 60px;
 }
 .tab-batalla-barras > div {
     display: flex;
