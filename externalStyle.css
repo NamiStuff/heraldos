@@ -192,7 +192,12 @@ div.tab-batalla-dma:after {content: 'Def magica';}
     font-size: var(--little-size);
 }
 
-.tab-batalla-habs > div {min-width: 300px;}
+.tab-batalla .tab-batalla-habs div {
+    min-width: 300px;
+    display: block;
+    max-height: 150px;
+    overflow: auto;
+}
 
 .tab-batalla br {display: none;}
 :is(.tab-batalla-acc, .tab-batalla-habs) > div br {display: block;}
