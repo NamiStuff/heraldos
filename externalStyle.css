@@ -142,6 +142,7 @@ div.stat-int:after {content: 'INT';}
 
 .tab-batalla-def, .tab-batalla-acc {flex-direction: column;}
 :is(.tab-batalla-def, .tab-batalla-acc) > div {text-align: center;}
+
 .tab-batalla .tab-batalla-def {
     gap: 0;
     max-width: 112px;
@@ -151,6 +152,7 @@ div.stat-int:after {content: 'INT';}
     font-family: var(--fontSubTitle);
     background: var(--neutralDark);
 }
+.tab-batalla-def > div {position: relative;}
 .tab-batalla-def div:before {
     content: '0';
     display: block;
