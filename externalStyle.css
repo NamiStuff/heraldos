@@ -24,6 +24,8 @@
     flex-wrap: wrap;
     flex-direction: column;
     gap: 10px;
+    font-size: 13px;
+    line-height: 1em;
 }
 
 .tab-batalla > div {
@@ -186,6 +188,10 @@ div.tab-batalla-dma:after {content: 'Def magica';}
     font-family: var(--fontSubTitle);
     color: var(--textColorAccent);
     font-weight: 900;
+}
+.tab-batalla-oper {
+    max-height: 76px;
+    overflow: auto;
 }
 :is(.tab-batalla-oper, .tab-batalla-habs > div) strong {
     color: var(--accent);
