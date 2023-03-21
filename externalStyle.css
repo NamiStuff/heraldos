@@ -201,7 +201,7 @@ div.tab-batalla-dma:after {content: 'Def magica';}
 }
 
 .tab-batalla br {display: none;}
-:is(.tab-batalla-acc, .tab-batalla-habs) > div br {display: block;}
+:is(.tab-batalla-acc, .tab-batalla-habs) > div br:not(:first-of-type) {display: block;}
 
 /* CAROUSEL */
 button:is(.flickity-button, .flickity-button:hover, .flickity-button:focus) {
