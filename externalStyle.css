@@ -155,7 +155,7 @@ div.stat-int:after {content: 'INT';}
     font-family: var(--fontSubTitle);
     background: var(--neutralDark);
 }
-.tab-batalla-def > div {position: relative;}
+.tab-batalla-def > div {position: relative; line-height: initial;}
 .tab-batalla-def div:before {
     content: '0';
     display: block;
