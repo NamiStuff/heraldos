@@ -197,7 +197,7 @@ div.tab-batalla-dma:after {content: 'Def magica';}
     min-width: 300px;
     display: none;
     max-height: 150px;
-    overflow: auto;
+    overflow: auto !important;
 }
 
 .tab-batalla br {display: none;}
