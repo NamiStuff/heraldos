@@ -297,7 +297,7 @@ letter-spacing: .5px;
 
 /*Color personal*/
 .cp {--accent: var(--personalClr);}
-b.cp {color: var(--personalClr);}
+:is(b, span).cp {color: var(--personalClr);}
 
 
 /* PROFILE DESCRIPTIONS STYLE */
