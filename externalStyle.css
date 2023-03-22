@@ -296,7 +296,8 @@ letter-spacing: .5px;
 .tab-datos + br {display: none;}
 
 /*Color personal*/
-.cp {color: var(--personalClr);--accent: var(--personalClr);}
+.cp {--accent: var(--personalClr);}
+b.cp {color: var(--personalClr);}
 
 
 /* PROFILE DESCRIPTIONS STYLE */
