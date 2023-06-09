@@ -421,15 +421,13 @@ sup.gi:before {vertical-align: middle;}
   font-size: var(--large-size);
   line-height: 1em;
 }
-
 .profile-rpg > div:first-child .profile-field-content {color: var(--textColorAccent);}
-
+.profile-rpg > div:first-child .profile-field-label { display: none;}
 
 .profile-field.nivel {
-  top: 50%;
-  left: 50%;
+  inset: 50%;
   transform: translate(-50%, -50%);
-  background: var(--neutralDarker);
+  background: var(--neutralDark);
   outline: var(--borderAccent);
   outline-color: var(--accentGroup);
   outline-offset: 4px;
@@ -437,8 +435,6 @@ sup.gi:before {vertical-align: middle;}
   width: 55px;
   height: 55px;
 }
-
-.profile-rpg > div:first-child .profile-field-label { display: none;}
 
 .profile-field.nivel:after {content: 'Nivel';}
 .profile-field.destreza:after {content: 'DES';}
