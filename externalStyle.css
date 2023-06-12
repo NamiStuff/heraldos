@@ -376,7 +376,7 @@ sup.gi:before {vertical-align: middle;}
 
 /*PROFILE STATS*/
 
-.profile-rpg {
+.profile-rpg, .postprofile-stats {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -412,19 +412,19 @@ sup.gi:before {vertical-align: middle;}
   min-width: unset;
 }
 
-.profile-rpg > div:first-child .profile-field {
+.profile-rpg > div:first-child .profile-field, .postprofile-stats .postprofile-field {
   position: absolute;
   min-width: unset;
 }
 
-.profile-rpg .profile-field-content {
+.profile-rpg .profile-field-content, .postprofile-stats .postprofile-field-content {
   font-size: var(--large-size);
   line-height: 1em;
 }
-.profile-rpg > div:first-child .profile-field-content {color: var(--textColorAccent);}
-.profile-rpg > div:first-child .profile-field-label { display: none;}
+.profile-rpg > div:first-child .profile-field-content, .postprofile-field-nivel .postprofile-field-content {color: var(--textColorAccent);}
+.profile-rpg > div:first-child .profile-field-label {display: none;}
 
-.profile-field.nivel {
+.profile-field.nivel, .postprofile-field-nivel {
   inset: 50%;
   transform: translate(-50%, -50%);
   background: var(--neutralDark);
@@ -444,7 +444,7 @@ sup.gi:before {vertical-align: middle;}
 .profile-field.percepcion:after {content: 'PER';}
 .profile-field.inteligencia:after {content: 'INT';}
 
-.profile-rpg > div:first-child .profile-field:not(.nivel):before {
+.profile-rpg > div:first-child .profile-field:not(.nivel):before, .postprofile-stats .postprofile-field:not(profile-field-nivel):before {
   position: absolute;
   /*content: '\e6a7';*/
   font-family: 'game-icons';
@@ -460,14 +460,14 @@ sup.gi:before {vertical-align: middle;}
 .profile-rpg > div:first-child .profile-field.percepcion:before {content: '\e429';}
 .profile-rpg > div:first-child .profile-field.inteligencia:before {content: '\e22c';} */
 
-.profile-field.destreza, .profile-field.voluntad {top: 4%;}
-.profile-field.destreza, .profile-field.fortaleza { left: 27%;}
-.profile-field.reflejos, .profile-field.percepcion {top: 50%;transform: translate(0, -50%);}
-.profile-field.reflejos {left: 14%;}
-.profile-field.fortaleza, .profile-field.inteligencia {bottom: 0%;}
-.profile-field.voluntad, .profile-field.inteligencia {right: 27%;}
-.profile-field.percepcion {right: 14%;}
-.profile-rpg > div:first-child .profile-field:not(.nivel) {height: 53px;}
+.profile-field.destreza, .profile-field.voluntad, .postprofile-field-destreza, .postprofile-field-voluntad {top: 4%;}
+.profile-field.destreza, .profile-field.fortaleza, .postprofile-field-destreza, .postprofile-field-fortaleza { left: 27%;}
+.profile-field.reflejos, .profile-field.percepcion, .postprofile-field-reflejos, .postprofile-field-percepcion {top: 50%;transform: translate(0, -50%);}
+.profile-field.reflejos, .postprofile-field-reflejos {left: 14%;}
+.profile-field.fortaleza, .profile-field.inteligencia, .postprofile-field-fortaleza, .postprofile-field-inteligencia {bottom: 0%;}
+.profile-field.voluntad, .profile-field.inteligencia, .postprofile-field-voluntad, .postprofile-field-inteligencia {right: 27%;}
+.profile-field.percepcion, .postprofile-field-percepcion {right: 14%;}
+.profile-rpg > div:first-child .profile-field:not(.nivel), .postprofile-stats .postprofile-field:not(postprofile-field-nivel) {height: 53px;}
 
 
 /* PROFILE INVENTORY */
