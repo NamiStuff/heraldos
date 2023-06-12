@@ -467,7 +467,7 @@ sup.gi:before {vertical-align: middle;}
 .profile-field.fortaleza, .profile-field.inteligencia, .postprofile-field-fortaleza, .postprofile-field-inteligencia {bottom: 0%;}
 .profile-field.voluntad, .profile-field.inteligencia, .postprofile-field-voluntad, .postprofile-field-inteligencia {right: 27%;}
 .profile-field.percepcion, .postprofile-field-percepcion {right: 14%;}
-.profile-rpg > div:first-child .profile-field:not(.nivel), .postprofile-stats .postprofile-field:not(postprofile-field-nivel) {height: 53px;}
+.profile-rpg > div:first-child .profile-field:not(.nivel), .postprofile-stats .postprofile-field:not(.postprofile-field-nivel) {height: 53px;}
 
 
 /* PROFILE INVENTORY */
