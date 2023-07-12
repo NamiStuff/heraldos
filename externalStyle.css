@@ -198,19 +198,6 @@ div.tab-batalla-dma:after {content: 'Def magica';}
     color: var(--accent);
     text-transform: uppercase;
 }
-.tab-batalla-habs i {
-    display: inline-block;
-    font-style: normal;
-    background: var(--neutral);
-    padding: 2px 3px;
-    height: 16px;
-    border-radius: 5px;
-    color: var(--textColorAccent);
-    font-size: .8em;
-    letter-spacing: .5px;
-    text-transform: uppercase;
-    font-weight: 700;
-}
 
 .tab-batalla .tab-batalla-habs div {
     min-width: 300px;
@@ -218,6 +205,24 @@ div.tab-batalla-dma:after {content: 'Def magica';}
     max-height: 150px;
     overflow: auto !important;
 }
+.tab-batalla-habs h3 {margin-bottom: 5px;}
+.tab-batalla-habs :is(i,u) {
+    text-decoration: none;
+    font-style: normal;
+    color: var(--textColorAccent);
+    font-size: .8em;
+    text-transform: uppercase;
+}
+.tab-batalla-habs i {
+    display: inline-block;
+    background: var(--neutral);
+    padding: 2px 3px;
+    height: 16px;
+    border-radius: 5px;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+.tab-batalla-habs u {border-bottom: var(--borderAccent);}
 
 .tab-batalla br {display: none;}
 :is(.tab-batalla-acc, .tab-batalla-habs) > div br:not(:first-child,:last-child) {display: block;}
