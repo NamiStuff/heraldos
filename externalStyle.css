@@ -2,6 +2,7 @@
 
 /*** INDEX
 
+- Tablilla de batalla
 - Carousel
 - Profile Options tables
 - Tablillas de rol
@@ -196,7 +197,19 @@ div.tab-batalla-dma:after {content: 'Def magica';}
 :is(.tab-batalla-oper, .tab-batalla-habs > div) strong {
     color: var(--accent);
     text-transform: uppercase;
-    font-size: var(--little-size);
+}
+.tab-batalla-habs i {
+    display: inline-block;
+    font-style: normal;
+    background: var(--neutral);
+    padding: 2px 3px;
+    height: 16px;
+    border-radius: 5px;
+    color: var(--textColorAccent);
+    font-size: .8em;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .tab-batalla .tab-batalla-habs div {
