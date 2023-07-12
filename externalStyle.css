@@ -120,8 +120,8 @@ div.stat-int:after {content: 'INT';}
 .tab-batalla-barras div div:before {
     content: '0/0';
     position: absolute;
-     font-size: var(--litle-size);
-    line-height: 1.3em;
+    font-size: var(--little-size);
+    line-height: 1.25em;
     left: 50%;
     transform: translate(-50%);
 }
