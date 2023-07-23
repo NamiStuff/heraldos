@@ -312,7 +312,7 @@ letter-spacing: .5px;
 }
 
 /* followed threads & drafts */
-.ucp-main :is(#memberlist, .drafts-list) :is(th, td:has(*)):first-of-type {display: none;}
+.ucp-main :is(#memberlist, .drafts-list:has(th:nth-child(6))) :is(th, td):first-of-type {display: none;}
 :is(.ucp-main, .mcp-main) :is(td.posts, td:has(.postdetails)) {text-align: center;}
 
 /* drafts */
