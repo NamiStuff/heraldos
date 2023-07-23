@@ -321,7 +321,7 @@ letter-spacing: .5px;
 .drafts-list table.table1 thead th:nth-child(6):before {content: 'X';}
 
 @media screen and (max-width: 735px) {
-    .mobile-hidden:not(:has(a, [name="delete_draft[1]"])) {display: none;}
+    .drafts-list .mobile-hidden:has(a, [name="delete_draft[1]"]) {display: block;}
     .ucp-main .drafts-list td {padding: 0;}
     .drafts-list tbody tr { display: grid; grid-template-rows: 1fr 1fr; grid-template-columns: 1fr max-content max-content; justify-content: space-between; gap: 0 5px; align-items: center; justify-items: start; margin: 3px 0; }
     .drafts-list tbody tr td:has(.postdetails) {grid-row: 2;}
