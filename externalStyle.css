@@ -358,7 +358,7 @@ letter-spacing: .5px;
     margin: 30px -30px;
     border-top: 30px solid var(--neutralDark);
 }
-.content hr + br, .content hr + br + br {display: none;}
+.content hr + br, .content hr + br + br, .content br:has(+ hr) {display: none;}
 
 /* PROFILE DESCRIPTIONS STYLE */
 /* Diseño para personalizar la Historia y Datos extra */
