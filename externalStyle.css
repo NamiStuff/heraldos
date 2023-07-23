@@ -257,7 +257,7 @@ button.flickity-prev-next-button.next {right: 5px;}
 
 .table1 {width: 100%;border-spacing: 0;}
 .table1 .name, .table1 td {padding: 5px;}
-#cp-main table.table1 thead th {
+.ucp-main table.table1 thead th {
 border-bottom: var(--border);
 padding: 5px;
 }
@@ -268,14 +268,29 @@ font-size: var(--little-size);
 color: var(--textColorAccent);
 letter-spacing: .5px;
 }
-#cp-main #checkboxes th {width: 20%;}
-#cp-main #checkboxes th:first-child {width: 60%;}
+.ucp-main:has(#memberlist, .drafts-list, #checkboxes) .panel .right-box {
+    font-size: 0;
+    background: var(--neutralDarker);
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-transform: uppercase;
+    font-family: var(--fontSubTitle);
+}
+.ucp-main:has(#memberlist, .drafts-list, #checkboxes) .panel .right-box a {font-size: var(--normal-size);}
 
-#cp-main #checkboxes th:last-child {
+/* notifications */
+.ucp-main #checkboxes th {width: 20%;}
+.ucp-main #checkboxes th:first-child {width: 60%;}
+.ucp-main #checkboxes th:last-child {
   visibility: hidden;
   position: relative;
 }
-#cp-main #checkboxes th:last-child:after {
+.ucp-main #checkboxes th:last-child:after {
     content: 'En el Foro';
     visibility: visible;
     position: absolute;
@@ -289,8 +304,28 @@ letter-spacing: .5px;
     width: 100%;
 }
 
-.ucp-main #memberlist :is(th, td):first-of-type {display: none;}
+.cp_notifs table tbody:empty:before {
+    display: block;
+    content: 'No hay notificaciones.';
+    margin: 10px 0 0;
+}
+
+/* followed threads & drafts */
+.ucp-main :is(#memberlist, .drafts-list) :is(th, td):first-of-type {display: none;}
 :is(.ucp-main, .mcp-main) :is(td.posts, td:has(.postdetails)) {text-align: center;}
+
+/* drafts */
+.ucp-main table.table1 thead th i {display: none;}
+.drafts-list table.table1 thead th:nth-child(5):before {content: 'Editar';}
+.drafts-list table.table1 thead th:nth-child(6):before {content: 'X';}
+
+@media screen and (max-width: 735px) {
+    .mobile-hidden:not(:has(a, [name="delete_draft[1]"])) {display: none;}
+    .ucp-main .drafts-list td {padding: 0;}
+    .drafts-list tbody tr { display: grid; grid-template-rows: 1fr 1fr; grid-template-columns: 1fr max-content max-content; justify-content: space-between; gap: 0 5px; align-items: center; justify-items: start; margin: 3px 0; }
+    .drafts-list tbody tr td:has(.postdetails) {grid-row: 2;}
+    .drafts-list tbody tr td[nowrap] {grid-row: 1 / 2 span;}
+}
 
 /* TABLILLAS DE ROL */
 
