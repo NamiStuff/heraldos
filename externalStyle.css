@@ -304,6 +304,7 @@ letter-spacing: .5px;
     width: 100%;
 }
 
+.cp_notifs {margin-top: 10px;}
 .cp_notifs table tbody:empty:before {
     display: block;
     content: 'No hay notificaciones.';
