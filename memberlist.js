@@ -110,7 +110,7 @@ $(function() {
     // set filter in hash
     $filterButtons.each( function(i, label) {
         var $label = $(label);
-        var filterValue = $label.children('input').attr('value');
+        var filterAttr = $label.children('input').attr('value');
         location.hash = 'filter=' + encodeURIComponent(filterAttr);
     });
     
