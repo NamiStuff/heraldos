@@ -38,7 +38,8 @@ $(function() {
 
         var comboFilter = getComboFilter();
         $container.isotope({ filter: comboFilter });
-        updateFilterCounts();
+        updateFilterCounts();      
+        
     });
     
     // bind sort label click
@@ -103,10 +104,18 @@ $(function() {
         // get filter=filterName
       var matches = location.hash.match( /filter=([^&]+)/i );
       var hashFilter = matches && matches[1];
-      return hashFilter && decodeURIComponent( hashFilter );
+      return hashFilter && decodeURIComponent(hashFilter);
     }
+
+    // set filter in hash
+    $filterButtons.each( function(i, label) {
+        var $label = $(label);
+        var filterValue = $label.children('input').attr('value');
+        location.hash = 'filter=' + encodeURIComponent(filterAttr);
+    });
     
     // create hash filter function
+    var isIsotopeInit = false;
     function onHashchange() {
       var hashFilter = getHashFilter();
       if ( !hashFilter && isIsotopeInit ) {
