@@ -3,8 +3,7 @@ $(function() {
     var filters = {};    
     var $filterButtons = $('.filter-group label');
   
-    // init Isotope
-    $container.isotope({
+    var initialOptions = {
             itemSelector: '.userlist_profile',
             layoutMode: 'fitRows',
 
@@ -18,7 +17,7 @@ $(function() {
                     return Date.parse(parseIso);
                 },
             },
-    });
+    };
 
     // bind filter checkbox click
     $('.memberlist:not(.maxposters) #form-ui').on('change', function(event) {
