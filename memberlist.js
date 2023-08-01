@@ -118,11 +118,11 @@ $(function() {
       isIsotopeInit = true;
       $container.isotope({filter: hashFilter}); 
         
-        // set filter in hash    
-        $filterButtons.on('click', 'label', function() {;
-            var filterAttr = (this).children('input').attr('value');
-            location.hash = 'filter=' + encodeURIComponent(filterAttr);   
-        });
+      // set filter in hash    
+      $filterButtons.on('click', 'label', function() {;
+          var filterAttr = $(this).children('input').attr('value');
+          location.hash = 'filter=' + encodeURIComponent(filterAttr);   
+      });
         
     }  
     
