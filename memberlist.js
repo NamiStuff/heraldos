@@ -106,15 +106,7 @@ $(function() {
       var hashFilter = matches && matches[1];
       return hashFilter && decodeURIComponent(hashFilter);
     }
-    
-    
-    // set filter in hash    
-    $filterButtons.each( function(i, label) { 
-        var $label = $(label);
-        var filterAttr = $label.children('input').attr('value');
-        location.hash = 'filter=' + encodeURIComponent(filterAttr);   
-    });
-    
+        
     // create hash filter function
     var isIsotopeInit = false;
     
@@ -124,7 +116,14 @@ $(function() {
         return;
       }
       isIsotopeInit = true;
-      $container.isotope({filter: hashFilter});        
+      $container.isotope({filter: hashFilter}); 
+        
+        // set filter in hash    
+        $filterButtons.on('click', 'label', function() {;
+            var filterAttr = (this).children('input').attr('value');
+            location.hash = 'filter=' + encodeURIComponent(filterAttr);   
+        });
+        
     }  
     
     $(window).on('hashchange', onHashchange);  
