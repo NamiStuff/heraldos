@@ -74,7 +74,7 @@ $(function() {
     }
 
     // create combo filter function
-    function getComboFilter() {
+    function getComboFilter(comboFilters) {
         var combo = [];
         for (var prop in filters) {
             var group = filters[prop];
@@ -97,34 +97,29 @@ $(function() {
         var comboFilter = combo.join(', ');
         return comboFilter;
     }
+
+    // build a hash for all our options
+    var options = {
+            // special hash for combination filters
+            comboFilters: {}
+    };
     
-    // get hash filter
-    function getHashFilter() {
-        // get filter=filterName
-      var matches = location.hash.match(/filter=([^&]+)/i);
-      var hashFilter = matches && matches[1];
-      return hashFilter && decodeURIComponent(hashFilter);
-    }    
-        
-      // set filter in hash    
-      $filterButtons.on('click', 'label', function() {;
-          var filterAttr = $(this).children('input').attr('value');
-          location.hash = 'filter=' + encodeURIComponent(filterAttr);   
-      });
-        
-    // create hash filter function
-    var isIsotopeInit = false;
-    
-    var hashFilter = getHashFilter();
-    function onHashchange() {
-      if (!hashFilter && isIsotopeInit) {
-        return;
-      }
-      isIsotopeInit = true;
-      $container.isotope({filter: hashFilter});         
-    }  
-    
-    $(window).on('hashchange', onHashchange);  
-    onHashchange();
+  $(window).on('hashchange', function() {
+    // get options from hash
+    if (location.hash) {
+      $.extend(options, $.deparam.fragment(location.hash, true) );
+    }
+    // build options from hash and initial options
+    var isoOptions = $.extend( {}, initialOptions, options );
+
+    if (options.comboFilters) {
+      isoOptions.filter = getComboFilter(options.comboFilters);
+    }
+
+    $container.isotope(isoOptions);
+  })
+    // trigger hashchange to capture initial hash options
+    .trigger('hashchange');
+
         
 });
