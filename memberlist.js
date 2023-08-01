@@ -42,6 +42,7 @@ $(function() {
         
         var hashFilter = getHashFilter();
         $container.isotope({filter: hashFilter});
+        $(window).on('hashchange', onHashchange);
         
     });
     
@@ -116,7 +117,5 @@ $(function() {
             location.hash = 'filter=' + encodeURIComponent(filterAttr);
         });        
     }
-    
-    $(window).on('hashchange', onHashchange);
-        
+           
 });
