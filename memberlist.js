@@ -38,8 +38,7 @@ $(function() {
 
         var comboFilter = getComboFilter();
         $container.isotope({ filter: comboFilter });
-        updateFilterCounts();      
-        
+        updateFilterCounts();     
     });
     
     // bind sort label click
@@ -48,7 +47,7 @@ $(function() {
         $container.isotope('updateSortData').isotope({ sortBy: sortValue });
     });
   
-    // change is-checked class on checkbox
+    // change is-checked class on sort labels
     $('.memberlist:not(.maxposters) .sort-group').each(function(i, buttonGroup) {
         var $buttonGroup = $(buttonGroup);
         $buttonGroup.on('click', 'label', function() {
@@ -62,7 +61,7 @@ $(function() {
         // get filtered item elements
         var itemElems = $container.isotope('getFilteredItemElements');
         var $itemElems = $(itemElems);
-        $filterButtons.each( function(i, label) {
+        $filterButtons.each(function(i, label) {
             var $label = $(label);
             var filterValue = $label.children('input').attr('value');
             if (!filterValue) {
@@ -105,7 +104,13 @@ $(function() {
       var matches = location.hash.match(/filter=([^&]+)/i);
       var hashFilter = matches && matches[1];
       return hashFilter && decodeURIComponent(hashFilter);
-    }
+    }    
+        
+      // set filter in hash    
+      $filterButtons.on('click', 'label', function() {;
+          var filterAttr = $(this).children('input').attr('value');
+          location.hash = 'filter=' + encodeURIComponent(filterAttr);   
+      });
         
     // create hash filter function
     var isIsotopeInit = false;
@@ -116,14 +121,7 @@ $(function() {
         return;
       }
       isIsotopeInit = true;
-      $container.isotope({filter: hashFilter}); 
-        
-      // set filter in hash    
-      $filterButtons.on('click', 'label', function() {;
-          var filterAttr = $(this).children('input').attr('value');
-          location.hash = 'filter=' + encodeURIComponent(filterAttr);   
-      });
-        
+      $container.isotope({filter: hashFilter});         
     }  
     
     $(window).on('hashchange', onHashchange);  
