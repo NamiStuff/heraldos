@@ -40,10 +40,6 @@ $(function() {
         $container.isotope({ filter: comboFilter });
         updateFilterCounts();      
         
-        var hashFilter = getHashFilter();
-        $container.isotope({filter: hashFilter});
-        $(window).on('hashchange', onHashchange);
-        
     });
     
     // bind sort label click
@@ -105,17 +101,30 @@ $(function() {
     
     // get hash filter
     function getHashFilter() {
-      // get filter=filterName
+        // get filter=filterName
       var matches = location.hash.match(/filter=([^&]+)/i);
       var hashFilter = matches && matches[1];
       return hashFilter && decodeURIComponent(hashFilter);
-        
-        // set filter in hash
-        $filterButtons.each( function(label) {
-            var $label = $(label);
-            var filterAttr = $label.children('input').attr('value');
-            location.hash = 'filter=' + encodeURIComponent(filterAttr);
-        });        
     }
-           
+
+    // set filter in hash
+    $filterButtons.each( function(i, label) {
+        var $label = $(label);
+        var filterAttr = $label.children('input').attr('value');
+        location.hash = 'filter=' + encodeURIComponent(filterAttr);
+    });
+    
+    // create hash filter function
+    var isIsotopeInit = false;
+    function onHashchange() {
+      var hashFilter = getHashFilter();
+      if ( !hashFilter && isIsotopeInit ) {
+        return;
+      }
+      isIsotopeInit = true;
+      $container.isotope({filter: hashFilter});
+    }  
+    
+    $(window).on('hashchange', onHashchange);  
+        
 });
