@@ -115,8 +115,14 @@ $(function() {
     });
     
     // create hash filter function
+    var isIsotopeInit = false;
+    
     var hashFilter = getHashFilter();
     function onHashchange() {
+      if (!hashFilter && isIsotopeInit) {
+        return;
+      }
+      isIsotopeInit = true;
       $container.isotope({filter: hashFilter});        
     }  
     
