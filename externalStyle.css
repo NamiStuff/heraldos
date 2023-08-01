@@ -9,6 +9,7 @@
 - Profile Descriptions Style
 - Profile Stats
 - Profile Inventory
+- Profile Abilities
 - Awards
 - Color Picker
 - Sceditor toolbar
@@ -212,7 +213,6 @@ div.tab-batalla-dma:after {content: 'Def magica';}
     font-style: normal;
     color: var(--textColorAccent);
     font-size: .8em;
-    line-height: .8em;
     text-transform: uppercase;
 }
 :is(.tab-batalla-habs, .profile-abilities-content, .profile-powers-content) i, .ability-type {
@@ -222,6 +222,7 @@ div.tab-batalla-dma:after {content: 'Def magica';}
     border-radius: 4px;
     font-weight: 700;
     letter-spacing: .5px;
+    max-height: 16px;
 }
 :is(.tab-batalla-habs) u {border-bottom: var(--borderAccent);}
 
@@ -604,7 +605,6 @@ sup.gi:before {vertical-align: middle;}
     cursor: pointer;
 }
 
-
 .item-info .item-icon {font-size: 4.5em}
 
 .item-name {
@@ -633,6 +633,10 @@ sup.gi:before {vertical-align: middle;}
     font-size: 1.1em;
     text-align: justify;
 }
+
+/* PROFILE ABILITIES */
+
+.ability-type {line-height: .8em;}
 
 /*AWARDS*/
 .profile-awards-content {
