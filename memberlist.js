@@ -18,7 +18,7 @@ $(function() {
                     return Date.parse(parseIso);
                 },
             },
-        });
+    });
 
     // bind filter checkbox click
     $('.memberlist:not(.maxposters) #form-ui').on('change', function(event) {
@@ -73,7 +73,7 @@ $(function() {
         });
     }
 
-    // create combo filter fuction
+    // create combo filter function
     function getComboFilter() {
         var combo = [];
         for (var prop in filters) {
@@ -97,4 +97,27 @@ $(function() {
         var comboFilter = combo.join(', ');
         return comboFilter;
     }
+    
+    // get hash filter
+    function getHashFilter() {
+        // get filter=filterName
+      var matches = location.hash.match( /filter=([^&]+)/i );
+      var hashFilter = matches && matches[1];
+      return hashFilter && decodeURIComponent( hashFilter );
+    }
+    
+    // create hash filter function
+    function onHashchange() {
+      var hashFilter = getHashFilter();
+      if ( !hashFilter && isIsotopeInit ) {
+        return;
+      }
+      isIsotopeInit = true;
+      $container.isotope({filter: filterFns[ hashFilter ] || hashFilter});
+    }
+    
+    // trigger event handler to init Isotope
+    $(window).on( 'hashchange', onHashchange );
+    onHashchange();
+        
 });
