@@ -106,7 +106,7 @@ $(function() {
   $(window).on('hashchange', function() {
     // get options from hash
     if (location.hash) {
-      $.extend(options, $.deparam.fragment(location.hash, true) );
+      $.extend( options, $.deparam.fragment( location.hash, true ) );
     }
     // build options from hash and initial options
     var isoOptions = $.extend( {}, initialOptions, options );
