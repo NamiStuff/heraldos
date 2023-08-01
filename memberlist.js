@@ -115,6 +115,7 @@ $(function() {
     });
     
     // create hash filter function
+    var hashFilter = getHashFilter();
     function onHashchange() {
       $container.isotope({filter: hashFilter});        
     }  
