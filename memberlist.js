@@ -102,7 +102,7 @@ $(function() {
     // get hash filter
     function getHashFilter() {
         // get filter=filterName
-      var matches = location.hash.match( /filter=([^&]+)/i );
+      var matches = location.hash.match(/filter=([^&]+)/i);
       var hashFilter = matches && matches[1];
       return hashFilter && decodeURIComponent(hashFilter);
     }
@@ -123,10 +123,6 @@ $(function() {
       }
       isIsotopeInit = true;
       $container.isotope({filter: hashFilter});
-    }
-    
-    // trigger event handler to init Isotope
-    $(window).on( 'hashchange', onHashchange );
-    onHashchange();
+    }    
         
 });
