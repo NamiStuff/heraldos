@@ -107,23 +107,16 @@ $(function() {
       return hashFilter && decodeURIComponent(hashFilter);
     }
     
-    // create hash filter function
-    var isIsotopeInit = false;
-    function onHashchange() {
-      var hashFilter = getHashFilter();
-      if ( !hashFilter && isIsotopeInit ) {
-        return;
-      }
-      isIsotopeInit = true;
-      $container.isotope({filter: hashFilter});
-    
-      // set filter in hash    
-      $filterButtons.each( function(i, label) {
+    // set filter in hash    
+    $filterButtons.each( function(i, label) {
         var $label = $(label);
         var filterAttr = $label.children('input').attr('value');
         location.hash = 'filter=' + encodeURIComponent(filterAttr);    
-      });
-        
+    });
+    
+    // create hash filter function
+    function onHashchange() {
+      $container.isotope({filter: hashFilter});        
     }  
     
     $(window).on('hashchange', onHashchange);  
