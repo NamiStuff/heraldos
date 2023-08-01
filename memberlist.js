@@ -107,6 +107,13 @@ $(function() {
       return hashFilter && decodeURIComponent(hashFilter);
     }
     
+    // set filter in hash
+    $filterButtons.each( function(i, label) {
+        var $label = $(label);
+        var filterAttr = $label.children('input').attr('value');
+        location.hash = 'filter=' + encodeURIComponent(filterAttr);
+    });
+    
     // create hash filter function
     var isIsotopeInit = false;
     function onHashchange() {
