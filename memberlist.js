@@ -122,7 +122,7 @@ $(function() {
         return;
       }
       isIsotopeInit = true;
-      $container.isotope({filter: filterFns[ hashFilter ] || hashFilter});
+      $container.isotope({filter: hashFilter});
     }
     
     // trigger event handler to init Isotope
