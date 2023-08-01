@@ -35,11 +35,6 @@ $(function() {
             var index = filterGroup.indexOf(checkbox.value);
             filterGroup.splice(index, 1);
         }
-    
-        // set filter in hash    
-        var $label = $(label);
-        var filterAttr = $label.children('input').attr('value');
-        location.hash = 'filter=' + encodeURIComponent(filterAttr);   
 
         var comboFilter = getComboFilter();
         $container.isotope({ filter: comboFilter });
@@ -111,6 +106,14 @@ $(function() {
       var hashFilter = matches && matches[1];
       return hashFilter && decodeURIComponent(hashFilter);
     }
+    
+    
+    // set filter in hash    
+    $filterButtons.each( function(i, label) { 
+        var $label = $(label);
+        var filterAttr = $label.children('input').attr('value');
+        location.hash = 'filter=' + encodeURIComponent(filterAttr);   
+    });
     
     // create hash filter function
     var isIsotopeInit = false;
