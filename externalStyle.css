@@ -773,6 +773,15 @@ div.sceditor-dropdown label {
     text-align: left;
 }
 
+.sceditor-dropdown > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.sceditor-dropdown div div {width: 100%;}
+
 .sceditor-dropdown div:has(.button) {text-align: center;}
 
 /* Tool inputs */
@@ -781,6 +790,11 @@ div.sceditor-dropdown label {
     box-shadow: inherit;
 }
 .sceditor-container div.sceditor-dropdown .button:hover {background:  var(--neutralDarker);}
+
+.sceditor-dropdown div :is(select, input[type="text"]) {
+    width: -webkit-fill-available;
+    margin: 0;
+}
 
 /* Mentions user list */
 p.sceditor-mention-user {
@@ -793,6 +807,12 @@ p.sceditor-mention-user img {
     border-radius: 0;
     border: var(--border);
     margin: 0 10px 0 0;
+}
+
+/* Disabled buttons */
+.sceditor-button.disabled {
+    color: var(--textColor);
+    opacity: .5;
 }
 
 /*** ------------------------------- ***/
