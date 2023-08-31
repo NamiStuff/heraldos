@@ -371,10 +371,7 @@ letter-spacing: .5px;
   font-size: var(--little-size);
 }
 
-:is(.profile-history, .profile-extra) :is(i, sub) {
-  color: var(--textColorAccent); 
-  font-style: italic;
-}
+:is(.profile-history, .profile-extra) :is(i, sub, sup) {color: var(--textColorAccent);}
 
 :is(.profile-history, .profile-extra) :is(u, strike) {
   text-decoration-color: var(--accent);
@@ -396,11 +393,11 @@ letter-spacing: .5px;
 }
 :is(.profile-history, .profile-extra) blockquote div {padding: 0;}
 
-:is(.profile-history, .profile-extra) sup:is(.fa-solid, .fas, .fa, .gi, .cp) { /*font icons*/
+:is(.profile-history, .profile-extra) i:is(.fa-solid, .gi, .icofont) { /*font icons*/
   font-size: inherit;
-  vertical-align: unset;
+  vertical-align: middle;
+  color: inherit;
 }
-sup.gi:before {vertical-align: middle;}
 
 /* Images */
 :is(.profile-history, .profile-extra) img { /*general*/
