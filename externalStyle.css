@@ -365,7 +365,7 @@ letter-spacing: .5px;
 /* PROFILE DESCRIPTIONS STYLE */
 /* Diseño para personalizar la Historia y Datos extra */
 
-/* Texts */
+/*Textos*/
 :is(.profile-history, .profile-extra) strong {
   text-transform: uppercase;
   font-size: var(--little-size);
@@ -385,14 +385,6 @@ letter-spacing: .5px;
   font-style: italic;
 }
 
-:is(.profile-history, .profile-extra) div:is([align="center"],[align="left"],[align="right"]) sup { /*iconos con círculo grande*/
-  place-content: center;
-  display: grid;
-  width: 50px;
-  height: 50px;
-  font-size: var(--title-size);
-}
-
 :is(.profile-history, .profile-extra) blockquote { /*texto en dos columnas*/
   margin: 0;
   column-count: 2;
@@ -402,19 +394,33 @@ letter-spacing: .5px;
 }
 :is(.profile-history, .profile-extra) blockquote div {padding: 0;}
 
+/*Iconos*/
+
 :is(.profile-history, .profile-extra) i:is(.fa-solid, .gi, .icofont) { /*font icons*/
   font-size: inherit;
   vertical-align: middle;
   color: inherit;
 }
 
-/* Images + Iconos grandes */
+:is(.profile-history, .profile-extra) div:is([align="center"],[align="left"],[align="right"]) sup { /*iconos grandes con circulo*/
+  place-content: center;
+  display: grid;
+  width: 50px;
+  height: 50px;
+  font-size: var(--title-size);    
+  border-radius: 100%;
+  outline: var(--borderAccent);
+  outline-offset: 4px;
+  margin: 6px;
+}
+
+/*Imagenes + Iconos grandes*/
 :is(.profile-history, .profile-extra) img { /*general*/
   max-width: 100%;
   object-fit: cover;
 }
 
-:is(.profile-history, .profile-extra) div[align="center"] :is(img, sup) { /*imagen centrada*/
+:is(.profile-history, .profile-extra) div[align="center"] img { /*imagen centrada con circulo */
   border-radius: 100%;
   outline: var(--borderAccent);
   outline-offset: 4px;
@@ -422,7 +428,7 @@ letter-spacing: .5px;
   margin: 6px;
 }
 
-:is(.profile-history, .profile-extra) div:is([align="left"], [align="right"]):has(img, sup) { /*imagen flotante*/
+:is(.profile-history, .profile-extra) div:is([align="left"], [align="right"]):has(img, sup) { /*imagen e icon grande flotante*/
   max-width: calc(50% - 10px);
   margin: 5px 5px 0;
 }
