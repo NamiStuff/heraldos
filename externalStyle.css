@@ -378,10 +378,20 @@ letter-spacing: .5px;
   text-decoration-thickness: 2px;
 }
 
-:is(.profile-history, .profile-extra) sub { /*texto en subtitulo decoratibo*/
+:is(.profile-history, .profile-extra) sub { /*texto en subtitulo decorativo*/
   max-width: 250px;
   display: block;
   margin: auto;
+  font-style: italic;
+}
+
+:is(.profile-history, .profile-extra) div[align="center"] sup { /*iconos con círculo grande*/
+  width: 50px;
+  width: 50px;
+  border-radius: 100%;
+  outline: var(--borderAccent);
+  outline-offset: 4px;
+  margin: 6px;
 }
 
 :is(.profile-history, .profile-extra) blockquote { /*texto en dos columnas*/
