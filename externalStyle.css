@@ -424,7 +424,7 @@ letter-spacing: .5px;
 
 :is(.profile-history, .profile-extra) div:is([align="left"], [align="right"]):has(img, sup) { /*imagen flotante*/
   max-width: calc(50% - 10px);
-  margin: 8px 5px 0;
+  margin: 5px 5px 0;
 }
 
 :is(.profile-history, .profile-extra) div[align="left"]:has(img, sup) {    
