@@ -387,6 +387,7 @@ letter-spacing: .5px;
 
 :is(.profile-history, .profile-extra) blockquote { /*texto en dos columnas*/
   margin: 0;
+  padding: 0;
   column-count: 2;
   column-rule: var(--border);
   column-gap: 25px;
