@@ -786,7 +786,7 @@ div.sceditor-dropdown label {
     text-align: left;
 }
 
-.sceditor-dropdown > div {
+.sceditor-dropdown, .sceditor-dropdown > div > div:has(div) {
     display: flex;
     flex-direction: column;
     gap: 10px;
