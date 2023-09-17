@@ -37,6 +37,8 @@
 }
 .tab-batalla-pj2 {
     flex-direction: row-reverse;
+    border-top: var(--border);
+    padding-top: 10px;
 }
 
 .tab-batalla > div > div {
