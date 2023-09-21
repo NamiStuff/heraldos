@@ -791,14 +791,14 @@ div.sceditor-dropdown label {
     text-align: left;
 }
 
-.sceditor-dropdown, .sceditor-dropdown > div:has(div) {
+.sceditor-dropdown:not(.sceditor-color-picker), .sceditor-dropdown > div:has(div) {
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
 }
 
-.sceditor-dropdown div div {width: 100%;}
+.sceditor-dropdown:not(.sceditor-color-picker) div div {width: 100%;}
 
 .sceditor-dropdown div:has(.button) {text-align: center;}
 
