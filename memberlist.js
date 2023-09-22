@@ -16,7 +16,7 @@ $(function() {
                     var date = $(itemElem).find('.userlist_joined .userlist_content').text().split("/");
                     var parseIso = new Date(parseInt(date[2]),parseInt(date[1])-1,parseInt(date[0])).toISOString();
                     return Date.parse(parseIso);
-                },
+                }
             },
         });
 
