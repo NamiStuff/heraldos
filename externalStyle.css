@@ -791,7 +791,7 @@ div.sceditor-dropdown label {
     text-align: left;
 }
 
-.sceditor-dropdown:not(.sceditor-color-picker, .colorpicker), .sceditor-dropdown > div:has(div) {
+.sceditor-dropdown:not(.sceditor-color-picker, .colorpicker), .sceditor-dropdown:not(.sceditor-color-picker, .colorpicker) > div:has(div) {
     display: flex;
     flex-direction: column;
     gap: 10px;
