@@ -982,6 +982,7 @@ div.sceditor-dropdown div.colorpicker_submit {
  letter-spacing: .51px;
  background: var(--neutralDarker);
  border: var(--border);
+ color:  var(--accent);
  padding: 4px 8px;
  height: auto;
  line-height: 15px;
