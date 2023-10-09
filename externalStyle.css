@@ -509,7 +509,7 @@ blockquote :is(.tab-datos:first-of-type, .tab-datos:last-child) {margin: 0;}
   transform: translate(-50%, -50%);
   background: var(--neutralDark);
   outline: var(--borderAccent);
-  outline-color: var(--accentGroup);
+  outline-color: var(--accent);
   outline-offset: 4px;
   border-radius: 100%;
   width: 55px;
