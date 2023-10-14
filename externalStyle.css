@@ -345,7 +345,7 @@ letter-spacing: .5px;
     font-size: var(--little-size);
 }
 
-.content:not(:has(h2:first-child)) .tab-datos:first-of-type, .tab-datos:last-child {
+.tab-datos:first-child, .tab-datos:last-child {
     margin: -30px -30px 0;
     background: var(--opacity);
     padding: 10px;
