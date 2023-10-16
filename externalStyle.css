@@ -797,7 +797,6 @@ div.sceditor-dropdown label {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    align-items: center;
 }
 
 .sceditor-dropdown:not(.sceditor-color-picker) div div {width: 100%;}
