@@ -835,6 +835,21 @@ p.sceditor-mention-user img {
     opacity: .5;
 }
 
+/* Boton de modificar pj */
+
+.sceditor-dropdown.sceditor-charMask-picker > div:has(div) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 400px;
+    width: max-content;
+}
+.sceditor-charMask-picker div div {
+    flex: 1 48%;
+}
+.sceditor-dropdown.sceditor-charMask-picker div .button {
+    flex: 0;
+}
+
 /*** ------------------------------- ***/
 /* COLOR PICKER------ -------------- ***/
 
