@@ -842,6 +842,7 @@ p.sceditor-mention-user img {
     flex-wrap: wrap;
     max-width: 400px;
     width: max-content;
+    justify-content: center;
 }
 .sceditor-charMask-picker div div {
     flex: 1 48%;
