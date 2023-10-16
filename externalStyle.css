@@ -850,6 +850,22 @@ p.sceditor-mention-user img {
     flex: 0;
 }
 
+.sceditor-charMask-stats {
+    display: flex;
+    gap: 0 3px;
+    flex-wrap: wrap;
+}
+div.sceditor-charMask-picker .sceditor-charMask-stats input {
+    flex: 1;
+    padding: 0 3px;
+}
+div.sceditor-charMask-stats label {
+    width: 100%;
+    padding-bottom: 0;
+}
+
+
+
 /*** ------------------------------- ***/
 /* COLOR PICKER------ -------------- ***/
 
