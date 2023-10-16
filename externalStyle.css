@@ -811,7 +811,7 @@ div.sceditor-dropdown label {
 }
 .sceditor-container div.sceditor-dropdown .button:hover {background:  var(--neutralDarker);}
 
-.sceditor-dropdown div :is(select, input[type="text"]) {
+div.sceditor-dropdown div :is(select, input) {
     width: -webkit-fill-available;
     margin: 0;
 }
