@@ -871,7 +871,7 @@ div.sceditor-charMask-stats label {
     justify-content: center;
     align-items: center;
 }
-:is(.sceditor-charMask-icon, .sceditor-charMask-hide) :last-child {flex: 1;}
+:is(.sceditor-charMask-icon, .sceditor-charMask-hide) :last-child {flex: 1; width: inherit;}
 .sceditor-dropdown .sceditor-charMask-hide input {width: unset;}
 
 
