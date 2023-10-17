@@ -864,6 +864,16 @@ div.sceditor-charMask-stats label {
     padding-bottom: 0;
 }
 
+.sceditor-charMask-icon, .sceditor-charMask-hide {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+:is(.sceditor-charMask-icon, .sceditor-charMask-hide) :last-child {flex: 1;}
+.sceditor-dropdown .sceditor-charMask-hide input {width: unset;}
+
 
 
 /*** ------------------------------- ***/
