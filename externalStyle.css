@@ -844,12 +844,8 @@ p.sceditor-mention-user img {
     justify-content: center;
     gap: 5px;
 }
-.sceditor-charMask-picker div div {
-    flex: 1 48%;
-}
-.sceditor-dropdown.sceditor-charMask-picker div .button {
-    flex: 0;
-}
+.sceditor-charMask-picker div div {flex: 1 48%;}
+.sceditor-dropdown.sceditor-charMask-picker div .button {flex: 0; margin-top: 5px;}
 
 .sceditor-charMask-stats {
     display: flex;
