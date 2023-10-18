@@ -864,7 +864,11 @@ div.sceditor-charMask-stats label {
     padding-bottom: 0;
 }
 
-.sceditor-charMask-checkbox {
+.sceditor-charMask-checkbox:has(div) {
+    display: flex;
+    flex-direction: column;
+}
+.sceditor-charMask-checkbox:not(:has(div)), .sceditor-charMask-checkbox div {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
