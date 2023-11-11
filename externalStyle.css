@@ -359,8 +359,8 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
 .tab-datos + br:has(+br) {display: none;}
 
 /*Color personal*/
-.cp {--accent: var(--personalClr);}
-:is(b, span).cp {color: var(--personalClr);}
+.cp {--accent: var(--personalClr, var(--accentGroup));}
+:is(b, span).cp {color: var(--accent);}
 
 /*Separador de secciones*/
 .post_row .content hr {
