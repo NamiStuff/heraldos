@@ -334,7 +334,7 @@ letter-spacing: .5px;
 
 /* TABLILLAS DE ROL */
 
-/*datos del rol*/
+/*Datos del rol*/
 .tab-datos {
     text-align: center;
     text-transform: uppercase;
@@ -368,6 +368,16 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
     border-top: 30px solid var(--neutralDark);
 }
 .content hr + br, .content hr + br + br, .content br:has(+ hr) {display: none;}
+
+/*Imágenes*/
+.content:has(.tab-datos, .cp) img {
+    margin: 5px auto;
+    display: block;
+    border-radius: 100%;
+    outline: var(--borderAccent);
+    outline-offset: 4px;
+}
+.content:has(.tab-datos, .cp) img + br {display: none;}
 
 /* PROFILE DESCRIPTIONS STYLE */
 /* Diseño para personalizar la Historia y Datos extra */
