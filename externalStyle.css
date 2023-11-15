@@ -21,8 +21,12 @@
 
 /***** RESPONSIVE DESIGN -----*****/
 @media screen and (min-width: 1800px) {
-  .main_forum {max-width: 1200px;}
+  .main_forum {max-width: 1250px;}
+  .tablon-ambi, .mod-recent-row {font-size: inherit;}
   .tablon-links {justify-content: center;}
+  div.posts, .review {gap: 20px;}
+  .post_row, .profile {gap: 10px 15px;}
+  .profile-bottom, .profile-info {flex: 1 calc(100% - 290px);}
 }
 @media screen and (max-width: 810px) {
   .topicslist-avatar-lastpost {display: none;}
