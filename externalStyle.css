@@ -25,7 +25,7 @@
   .main_forum {max-width: 1250px;}
   .tablon-ambi, .mod-recent-row, .forum_desc, .stadistics-top, #newest_user, .stadistics-content > div {font-size: inherit;}
   .tablon-links {justify-content: center;}
-  .forum_left {width: 300px;}
+  .forum_left, .forum_lastpost {width: 300px;}
   /*posts & profile*/
   div.posts, .review {gap: 20px;}
   .post_row, .profile {gap: 10px 15px;}
