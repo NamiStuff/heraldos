@@ -20,12 +20,12 @@
 
 
 /***** RESPONSIVE DESIGN -----*****/
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 2000px) {
   /*index*/
   .main_forum {max-width: 1250px;}
   .tablon-ambi, .mod-recent-row, .forum_desc, .stadistics-top, #newest_user, .stadistics-content > div {font-size: inherit;}
   .tablon-links {justify-content: center;}
-  .forum_left, .forum_lastpost {width: 300px;}
+  .forum_left, .forum_lastpost {width: 300px; flex: 1;}
   /*posts & profile*/
   div.posts, .review {gap: 20px;}
   .post_row, .profile {gap: 10px 15px;}
