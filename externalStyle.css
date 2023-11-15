@@ -30,6 +30,7 @@
   div.posts, .review {gap: 20px;}
   .post_row, .profile {gap: 10px 15px;}
   .profile-bottom, .profile-info {flex: 1 calc(100% - 290px);}
+  #preview .post_message { max-width: 885px; }
   /*other*/
   .userlist {justify-content: flex-start;}
 }
