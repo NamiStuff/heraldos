@@ -20,7 +20,7 @@
 
 
 /***** RESPONSIVE DESIGN -----*****/
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1800px) {
   .main_forum {max-width: 1200px;}
   .tablon-links {justify-content: center;}
 }
