@@ -758,9 +758,8 @@ flex-wrap: wrap;
 .award {
 width: 70px;
 height: 70px;
-display: flex;
-justify-content: center;
-align-items: center;
+display: grid;
+place-content: center;
 position: relative;
 border: 2px solid var(--accent);
 background-image: var(--award-image);
