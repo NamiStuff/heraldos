@@ -892,7 +892,7 @@ div.sceditor-dropdown label {
 
 .sceditor-dropdown:not(.sceditor-color-picker) div div {width: 100%;}
 
-.sceditor-dropdown div:has(.button) {text-align: center;}
+.sceditor-dropdown div:has(.button):not(:has(div)), .sceditor-dropdown div .button {align-self: center;width: fit-content;}
 
 /* Tool inputs */
 .sceditor-container div.sceditor-dropdown :is(input, textarea, .button):is(:focus, :hover) {
