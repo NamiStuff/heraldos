@@ -281,7 +281,7 @@ div.tab-batalla-dma:after {content: 'Def magica';}
     max-height: 76px;
     overflow: auto;
 }
-:is(.tab-batalla-oper, .tab-batalla-habs, .profile-abilities-content, .profile-powers-content) strong, .ability-name {
+:is(.tab-batalla-oper, .tab-batalla-habs, .profile-abilities-content, .profile-powers-content, .monstruo-habs) strong, .ability-name {
     color: var(--accent);
     text-transform: uppercase;
     font-weight: 900;
