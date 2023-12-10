@@ -854,13 +854,13 @@ a.sceditor-button {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 0;
 }
 a.sceditor-button.hover { background: inherit; box-shadow: none;}
 
 /* Tool buttons hover */
 .sceditor-container .sceditor-button:is(.active, :active, :hover) {
     background:  var(--opacity);
-    border-radius: 0;
     box-shadow: none;
 }
 
