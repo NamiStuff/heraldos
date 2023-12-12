@@ -347,7 +347,7 @@ button.flickity-prev-next-button.next {right: 5px;}
     align-items: center;
     gap: 3px;
 }
-.ability-type i {color: var(--accent);}
+.ability-type i {color: var(--accent); padding: 0;}
 
 /* PROFILE OPTIONS TABLES */
 
