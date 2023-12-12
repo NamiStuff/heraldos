@@ -311,7 +311,6 @@ div.tab-batalla-dma:after {content: 'Def magica';}
     letter-spacing: .5px;
 }
 :is(.tab-batalla-habs, .profile-abilities-content, .profile-powers-content) u {border-bottom: var(--borderAccent);}
-.ability-type i {color: var(--accent);}
 
 .tab-batalla br {display: none;}
 :is(.tab-batalla-acc, .tab-batalla-habs) > div br:not(:first-child,:last-child) {display: block;}
@@ -341,6 +340,14 @@ button.flickity-prev-next-button.previous {left: 5px;}
 button.flickity-prev-next-button.next {right: 5px;}
 
 .flickity-viewport img {display: block;}
+
+
+.ability-type {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+}
+.ability-type i {color: var(--accent);}
 
 /* PROFILE OPTIONS TABLES */
 
