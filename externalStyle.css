@@ -310,7 +310,7 @@ div.tab-batalla-dma:after {content: 'Def magica';}
     font-weight: 700;
     letter-spacing: .5px;
 }
-:is(.tab-batalla-habs, .profile-abilities-content, .profile-powers-content) u {border-bottom: var(--borderAccent);}
+:is(.tab-batalla-habs, .profile-abilities-content, .profile-powers-content) u {border-bottom: 1px solid var(--accent);}
 
 .tab-batalla br {display: none;}
 :is(.tab-batalla-acc, .tab-batalla-habs) > div br:not(:first-child,:last-child) {display: block;}
