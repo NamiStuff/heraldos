@@ -311,6 +311,7 @@ div.tab-batalla-dma:after {content: 'Def magica';}
     letter-spacing: .5px;
 }
 :is(.tab-batalla-habs, .profile-abilities-content, .profile-powers-content) u {border-bottom: var(--borderAccent);}
+.ability-type i {color: var(--accent);}
 
 .tab-batalla br {display: none;}
 :is(.tab-batalla-acc, .tab-batalla-habs) > div br:not(:first-child,:last-child) {display: block;}
