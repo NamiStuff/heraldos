@@ -196,15 +196,15 @@ div.stat-int:after {content: 'INT';}
     font-family: var(--fontSubTitle);
     text-transform: uppercase;
 }
-.tab-batalla-barras div div {
+.tab-batalla-barras > div > div {
     background: var(--neutralDarker);
     color: var(--textColorAccent);
     position: relative;
     height: 15px;
     flex: 1;
 }
-.tab-batalla-barras div:has(.tab-batalla-sal) {flex: 100%;}
-.tab-batalla-barras div div:before {
+.tab-batalla-barras > div:has(.tab-batalla-sal) {flex: 100%;}
+.tab-batalla-barras > div > div:before {
     content: '0/0';
     position: absolute;
     font-size: var(--little-size);
@@ -215,11 +215,10 @@ div.stat-int:after {content: 'INT';}
 .tab-batalla .tab-batalla-sal:before {content: attr(salud-actual) '/' attr(salud-total);}
 .tab-batalla .tab-batalla-vig:before {content: attr(vigor-actual) '/' attr(vigor-total);}
 .tab-batalla .tab-batalla-mag:before {content: attr(magia-actual) '/' attr(magia-total);}
-.tab-batalla-barras div div:after {
-    content: '';
+.tab-batalla-fill {
     background: var(--accent);
-    display: block;
     height: 100%;
+    width: 100%;
 }
 
 .tab-batalla-boton {
