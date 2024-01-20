@@ -315,6 +315,7 @@ div.tab-batalla-dma:after {content: 'Def magica';}
 :is(.tab-batalla-acc, .tab-batalla-habs) > div br:not(:first-child,:last-child) {display: block;}
 
 /* CAROUSEL */
+
 button:is(.flickity-button, .flickity-button:hover, .flickity-button:focus) {
     background: none;
     border: none;
@@ -339,14 +340,6 @@ button.flickity-prev-next-button.previous {left: 5px;}
 button.flickity-prev-next-button.next {right: 5px;}
 
 .flickity-viewport img {display: block;}
-
-
-.ability-type {
-    display: inline-flex;
-    align-items: center;
-    gap: 3px;
-}
-.ability-type i {color: var(--accent); padding: 0;}
 
 /* PROFILE OPTIONS TABLES */
 
@@ -756,6 +749,25 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
 
 /* PROFILE ABILITIES */
 
+.ability-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.ability-name {line-height: 1.1em;}
+
+.ability-type {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.ability-type i {color: var(--accent); padding: 0;}
+
+.ability-desc {
+    width: 100%;
+    line-height: 1.2em;
+}
 
 /*AWARDS*/
 .profile-awards-content {
