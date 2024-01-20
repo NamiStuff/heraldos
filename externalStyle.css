@@ -724,10 +724,11 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
   font-weight: 900;
   font-family: var(--fontTitle);
   font-size: var(--large-size);
+  line-height: 1em;
   text-transform: uppercase;
   color: var(--accent);
   letter-spacing: .5px;
-  margin: 15px auto 10px;
+  margin: 10px auto;
   text-align: center;
 }
 
