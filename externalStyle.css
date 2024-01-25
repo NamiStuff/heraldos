@@ -748,6 +748,12 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
     text-align: justify;
 }
 
+.item-desc strong {
+    text-transform: uppercase;
+    font-size: .9em;
+    color: var(--accent);
+}
+
 /* PROFILE ABILITIES */
 
 .ability-box {
