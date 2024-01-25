@@ -651,8 +651,9 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
 
 .profile-inventory-content {
   display: flex;
-  gap: 5px;
   flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 5px;
   position: relative;
   height: calc(100% - 45px);
   overflow: auto;
