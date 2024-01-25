@@ -684,7 +684,8 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
   position: absolute;
   top: 0;
   right: 0;
-  display: flex;
+  display: grid;
+  place-items: center;
   font-weight: 900;
   font-family: var(--fontSubTitle);
   font-size: .7em;
@@ -693,8 +694,6 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
   border-radius: 100%;
   width: 14px;
   height: 14px;
-  justify-content: center;
-  align-items: center;
 }
 
 .item-info {
