@@ -698,7 +698,7 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
     z-index: 1;
     position: absolute;
     background: var(--neutralDarker);
-    padding: 20px;
+    padding: 15px;
     font-size: var(--little-size);
     line-height: 1em;
     top: 0;
@@ -706,6 +706,7 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
     display: none;
     height: 100%;
     width: 100%;
+    overflow: auto;
 }
 
 .item-close:before {
@@ -734,7 +735,7 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
 
 .item-sub {
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-family: var(--fontSubTitle);
     text-transform: uppercase;
     color: var(--textColorAccent);
@@ -743,7 +744,7 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
 }
 
 .item-desc {
-    line-height: 1.2em;
+    line-height: 1.1em;
     font-size: 1.1em;
     text-align: justify;
 }
