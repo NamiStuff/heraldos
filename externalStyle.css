@@ -657,6 +657,9 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
   height: calc(100% - 45px);
   overflow: auto;
 }
+.profile-inventory-content > br {
+    display: none;
+}
 
 .item-box {
   display: grid;
