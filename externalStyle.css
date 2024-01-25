@@ -701,7 +701,7 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
     z-index: 1;
     position: absolute;
     background: var(--neutralDarker);
-    padding: 25px;
+    padding: 20px;
     font-size: var(--little-size);
     line-height: 1em;
     top: 0;
