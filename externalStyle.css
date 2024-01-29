@@ -661,7 +661,7 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
   overflow: auto;
 }
 
-.item-box {
+.item-box, .item-upgrades .item-info .item-icon {
   display: grid;
   place-content: center;
   width: 50px;
@@ -779,11 +779,9 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
     grid-template-areas:
         'upgrade-icon .'
         'upgrade-icon .'
-        'upgrade-icon .'
         'upgrade-icon .';
-    grid-template-columns: 90px 1fr;
-    gap: 10px;
-    padding: 10px;
+    gap: 10px 15px;
+    padding: 10px 12px;
     height: auto;
 }
 .item-open .item-info {display: grid;}
@@ -791,7 +789,7 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
     grid-area: upgrade-icon;
     width: 70px;
     height: 70px;
-    place-self: center;
+    align-self: center;
 }
 .item-upgrades :is(.item-name, .item-sub) {text-align: left;margin: 0;}
 
