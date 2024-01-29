@@ -772,6 +772,7 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
 .item-upgrades:has(.item-open) {justify-content: flex-end;}
 
 .item-upgrades .item-box {width: 40px;height: 40px; z-index: 2;}
+.item-open .item-box .item-icon {color: var(--accent);}
 
 .item-upgrades .item-info {
     font-size: inherit;
@@ -787,9 +788,10 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
 .item-open .item-info {display: grid;}
 .item-upgrades .item-info .item-icon {
     grid-area: upgrade-icon;
+    align-self: center;
     width: 70px;
     height: 70px;
-    align-self: center;
+    font-size: 3.5em;
 }
 .item-upgrades :is(.item-name, .item-sub) {text-align: left;margin: 0;}
 
