@@ -796,7 +796,7 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
     height: 70px;
     font-size: 3.5em;
 }
-.item-upgrades :is(.item-name, .item-sub) {text-align: left;margin: 0;}
+.item-upgrades :is(.item-name, .item-sub, .item-effect) {text-align: left;margin: 0;}
 
 
 /* PROFILE ABILITIES */
