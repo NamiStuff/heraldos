@@ -777,6 +777,7 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
 .item-upgrades .item-info {
     font-size: inherit;
     background: var(--neutral);
+    display: grid;
     grid-template-areas:
         'upgrade-icon .'
         'upgrade-icon .'
@@ -785,7 +786,6 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
     padding: 10px 12px;
     height: auto;
 }
-.item-open .item-info {display: grid;}
 .item-upgrades .item-info .item-icon {
     grid-area: upgrade-icon;
     align-self: center;
