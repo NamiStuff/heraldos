@@ -745,13 +745,14 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
     letter-spacing: .5px;
 }
 
-.item-desc {
+.item-desc, .item-effect {
     line-height: 1.1em;
     font-size: 1.1em;
     text-align: justify;
 }
 
-.item-desc strong {
+.item-effect {margin-top: 5px;}
+.item-effect strong {
     text-transform: uppercase;
     font-size: .9em;
     color: var(--accent);
