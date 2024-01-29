@@ -782,13 +782,15 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
         'upgrade-icon .'
         'upgrade-icon .'
         'upgrade-icon .';
-    gap: 10px 15px;
+    gap: 5px 15px;
     padding: 10px 12px;
     height: auto;
+    justify-content: start;
+    align-content: center;
+    align-items: center;
 }
 .item-upgrades .item-info .item-icon {
     grid-area: upgrade-icon;
-    align-self: center;
     width: 70px;
     height: 70px;
     font-size: 3.5em;
