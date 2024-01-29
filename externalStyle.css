@@ -766,9 +766,9 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
     justify-content: center;
     gap: 5px;
     background: var(--neutral);
-    padding: 9px 10px;
-    position: relative;
-    margin: 10px -15px -15px;
+    padding: 8px 10px;
+    position: absolute;
+    inset: auto 0 0;
 }
 .item-upgrades:has(.item-open) {justify-content: flex-end;}
 
