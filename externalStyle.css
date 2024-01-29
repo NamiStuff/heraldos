@@ -721,7 +721,7 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
     cursor: pointer;
 }
 
-.item-info .item-icon {font-size: 4.5em}
+.item-info > .item-icon {font-size: 4.5em}
 
 .item-name {
   font-weight: 900;
