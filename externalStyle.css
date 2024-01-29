@@ -757,6 +757,45 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
     color: var(--accent);
 }
 
+/* UPGRADES*/
+
+.item-upgrades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    background: var(--neutral);
+    padding: 10px;
+    position: relative;
+    margin: 10px -15px -15px;
+}
+.item-upgrades:has(.item-open) {justify-content: flex-end;}
+
+.item-upgrades .item-box {width: 40px;height: 40px; z-index: 2;}
+
+.item-upgrades .item-info {
+    font-size: inherit;
+    background: var(--neutral);
+    grid-template-areas:
+        'upgrade-icon .'
+        'upgrade-icon .'
+        'upgrade-icon .'
+        'upgrade-icon .';
+    grid-template-columns: 90px 1fr;
+    gap: 10px;
+    padding: 10px;
+    height: auto;
+}
+.item-open .item-info {display: grid;}
+.item-upgrades .item-info .item-icon {
+    grid-area: upgrade-icon;
+    width: 70px;
+    height: 70px;
+    place-self: center;
+}
+.item-upgrades :is(.item-name, .item-sub) {text-align: left;margin: 0;}
+
+
 /* PROFILE ABILITIES */
 
 .ability-box {
