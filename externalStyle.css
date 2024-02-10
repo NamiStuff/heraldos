@@ -775,7 +775,7 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
 .item-upgrades:has(.item-open) {justify-content: flex-end;}
 
 .item-upgrades .item-box {width: 40px;height: 40px; z-index: 2;}
-.item-open .item-box .item-icon {color: var(--accent);}
+.item-upgrades .item-open .item-box .item-icon {color: var(--accent);}
 
 .item-upgrades .item-info {
     font-size: inherit;
