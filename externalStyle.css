@@ -680,7 +680,7 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
   text-align: center;
 }
 
-.item-number, .item-close:before {
+.item-number, .item-close {
   position: absolute;
   top: 0;
   right: 0;
@@ -711,7 +711,7 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
     overflow: auto;
 }
 
-.item-close:before {
+.item-close {
     content: 'x';
     top: 5px;
     right: 5px;
@@ -720,6 +720,8 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
     font-size: 1em;
     cursor: pointer;
 }
+.item-close:before {content: 'x';}
+
 
 .item-info > .item-icon {font-size: 4.5em}
 
