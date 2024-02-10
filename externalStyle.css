@@ -705,7 +705,7 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
     line-height: 1em;
     top: 0;
     left: 0;
-    display: none;
+    display: grid;
     height: 100%;
     width: 100%;
     overflow: auto;
