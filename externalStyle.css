@@ -85,9 +85,8 @@
   .tablon-ambi {display: none;}
   .tablon-links a {height: auto;width: auto;background: none;}
   /*segundo tablon*/  
-  .sidebar {height: 100%;}
-  .sidebar > div:not(.close) {flex: 1 100%;}
-  .sidebar > div > div {padding: 15px;min-width: 220px;}
+  .sidebar {height: 100%; display: flex; flex-direction: column;}
+  .sidebar > div:not(.close) {padding: 15px;min-width: 220px;}
   /*post*/
   .poll_option {width: 180px;}
   .post_poster {padding: 15px; font-size: var(--little-size);}
