@@ -680,7 +680,7 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
   grid-area: item-icon;
 }
 
-.item-number, .item-close {
+.item-number {
   position: absolute;
   top: 0;
   right: 0;
@@ -729,14 +729,13 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
 }
 
 .item-close {
+    position: absolute;
     top: 5px;
     right: 5px;
-    width: 18px;
-    height: 18px;
     font-size: 1em;
     cursor: pointer;
+    color: var(--accent);
 }
-.item-close:before {content: 'x';}
 
 
 .item-info > .item-icon {font-size: 4.5em}
