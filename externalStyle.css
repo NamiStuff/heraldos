@@ -730,8 +730,8 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
 
 .item-close {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 8px;
+    right: 8px;
     font-size: 1em;
     cursor: pointer;
     color: var(--accent);
