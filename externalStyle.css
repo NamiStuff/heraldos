@@ -417,6 +417,8 @@ letter-spacing: .5px;
 
 /* TABLILLAS DE ROL */
 
+.post_message .content:has(.cp, .tab-datos) {--accent: var(--personalClr, var(--accentGroup));}
+
 /*Datos del rol*/
 .tab-datos {
     text-align: center;
@@ -457,7 +459,7 @@ blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
     margin: 5px auto;
     display: block;
     border-radius: 100%;
-    outline: var(--borderAccent);
+    outline: 2px solid var(--accent);
     outline-offset: 4px;
 }
 .content:has(.tab-datos, .cp) img + br {display: none;}
