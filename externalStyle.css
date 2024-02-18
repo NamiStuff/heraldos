@@ -417,7 +417,7 @@ letter-spacing: .5px;
 
 /* TABLILLAS DE ROL */
 
-.c3 .post_message .content:has(.cp, .tab-datos), .cp, .tab-datos {--accent: var(--personalClr, var(--accentGroup));}
+.c3 .post_message .content:has(.cp, .tab-datos), .cp {--accent: var(--personalClr, var(--accentGroup));}
 
 /*Datos del rol*/
 .tab-datos {
