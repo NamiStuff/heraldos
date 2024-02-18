@@ -51,7 +51,7 @@
   .profile-avatar {display: none;}
   .profile-info {height: 360px;}
   dl {display: flex; flex-wrap: wrap; gap: 5px;}
-  .forum_left {flex: 100%;}
+  .forum_lastpost_topic {max-width: unset;}
 }
 @media screen and (max-width: 585px) {
   /*indice y foros*/
