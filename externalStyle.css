@@ -417,8 +417,6 @@ letter-spacing: .5px;
 
 /* TABLILLAS DE ROL */
 
-.c3 .post_message .content:has(.cp, .tab-datos), .cp {--accent: var(--personalClr, var(--accentGroup));}
-
 /*Datos del rol*/
 .tab-datos {
     text-align: center;
@@ -430,7 +428,7 @@ letter-spacing: .5px;
     font-size: var(--little-size);
 }
 
-.tab-datos:first-child, .tab-datos:last-child {
+.tab-datos :where(:first-child,:last-child), style :where(+ .tab-datos, + br + .tab-datos), .tab-datos :where(+ style, + br + style) {
     margin: -30px -30px 0;
     background: var(--opacity);
     padding: 10px;
@@ -438,14 +436,15 @@ letter-spacing: .5px;
 .tab-datos:last-child {margin: 0 -30px -30px;}
 h2 + :is(br, br + br) + .tab-datos {margin-top: -10px;}
 
-blockquote :is(.tab-datos:first-child, .tab-datos:last-child) {margin: 0;}
+blockquote .tab-datos:is(:first-child,:last-child) {margin: 0;}
 
 .tab-datos i {color: var(--accent);}
 .tab-datos + br:has(+br) {display: none;}
 
 /*Color personal*/
+.c3 .post_message .content:has(.cp, .tab-datos), .cp {--accent: var(--personalClr, var(--accentGroup));}
 .cp {--accent: var(--personalClr, var(--accentGroup));}
-:is(b, span).cp {color: var(--accent);}
+:is(b, span, strong).cp {color: var(--accent);}
 
 /*Separador de secciones*/
 .post_row .content hr {
