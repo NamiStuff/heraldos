@@ -346,14 +346,13 @@ letter-spacing: .5px;
     font-size: var(--little-size);
 }
 
-.tab-datos:where(:first-child,:last-child), style :where(+ .tab-datos, + br + .tab-datos), .tab-datos :where(+ style, + br + style) {
+.tab-datos:where(:first-child,:last-child), :where(style, style + br) + .tab-datos, .tab-datos:has(+ style, + br + style) {
     margin: -30px -30px 0;
     background: var(--opacity);
     padding: 10px;
 }
-.tab-datos:last-child {margin: 0 -30px -30px;}
+.tab-datos:last-child, .tab-datos:has(+ style, + br + style) {margin: 0 -30px -30px;}
 h2 + :is(br, br + br) + .tab-datos {margin-top: -10px;}
-blockquote .tab-datos:where(:first-child,:last-child) {margin: 0;}
 
 .tab-datos i {color: var(--accent);}
 .tab-datos + br:has(+br) {display: none;}
