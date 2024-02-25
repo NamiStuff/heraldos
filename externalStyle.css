@@ -353,6 +353,7 @@ letter-spacing: .5px;
 }
 .tab-datos:last-child, .tab-datos:has(+ style, + br + style) {margin: 0 -30px -30px;}
 h2 + :is(br, br + br) + .tab-datos {margin-top: -10px;}
+blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
 
 .tab-datos i {color: var(--accent);}
 .tab-datos + br:has(+br) {display: none;}
