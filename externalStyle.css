@@ -337,9 +337,11 @@ letter-spacing: .5px;
 
 /*Datos del rol*/
 .tab-datos {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
     align-items: center;
     justify-content: center;
+    justify-items: start;
     gap: 5px;
     text-transform: uppercase;
     font-family: var(--fontSubTitle);
