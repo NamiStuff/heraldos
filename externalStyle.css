@@ -1263,7 +1263,7 @@ div.sceditor-dropdown div.colorpicker_submit {
   .userlist {justify-content: flex-start;}
 }
 @media screen and (max-width: 810px) {
-  .topicslist-avatar-lastpost {display: none;}
+  .header-name, .topicslist-avatar-lastpost {display: none;}
   .memberlist #form-ui {align-items: flex-start;}
   .userlist[style] {width: 100%;}
 }
