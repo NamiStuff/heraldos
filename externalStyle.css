@@ -1305,7 +1305,7 @@ div.sceditor-dropdown div.colorpicker_submit {
   .navlink {width: 22px; height: 22px; font-size: .85em; border: 0;}
   .navlink.mensajeria span, #fa_right #fa_notifications #notif_unread {right: -5px;top: -5px;}
   /*header*/
-  #header {height: 50vw; font-size: .85em;}
+  #header {height: 60vw; font-size: .80em;}
   .header-name, .header-logo:before {display: none;}
   .header-logo {clip-path: unset; text-align: center;}
   /*tablon*/
