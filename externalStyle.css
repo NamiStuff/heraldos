@@ -1304,9 +1304,9 @@ div.sceditor-dropdown div.colorpicker_submit {
   .navlink {width: 22px; height: 22px; font-size: .85em; border: 0;}
   .navlink.mensajeria span, #fa_right #fa_notifications #notif_unread {right: -5px;top: -5px;}
   /*header*/
-  #header {height: 60vw; font-size: .80em;}
+  #header {font-size: .80em;}
   .header-name, .header-logo:before {display: none;}
-  .header-logo {clip-path: unset; text-align: center; line-height: 1em;}
+  .header-logo {clip-path: unset; text-align: center; line-height: 1em; width: auto;}
   /*tablon*/
   .tablon > div {gap: 10px;}
   .tablon-ambi {display: none;}
