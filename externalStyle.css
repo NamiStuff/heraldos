@@ -1326,5 +1326,9 @@ div.sceditor-dropdown div.colorpicker_submit {
   .tablon-links a {font-size: var(--medium-size);}
   .poster-list, .post_poster:before, .postprofile-status, .profile-top:before, .profile-status, .field-visited {display: none;}
   .profile-content {align-content: flex-start;}
-  #privmsgs-menu li i {display: none;}
+  .item-icon, #privmsgs-menu li i {display: none;}
+  .item-info {grid-template-areas: 'item-name' 'item-sub' 'item-desc' 'item-effect'; grid-auto-columns: 100%; align-content: unset;}
+  .item-info:has(.item-upgrades) {grid-template-areas:'item-name''item-sub''item-desc''item-effect''item-upgrades';}
+  .item-upgrades:has(.item-open) {height: 175px; position: absolute; bottom: 0; width: 115%; }
+  .item-upgrades .item-info {grid-template-areas: 'item-name' 'item-sub' 'item-effect'; margin-top: 35px;}
 }
