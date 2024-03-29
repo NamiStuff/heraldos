@@ -1308,7 +1308,7 @@ div.sceditor-dropdown div.colorpicker_submit {
   /*header*/
   #header {font-size: .80em;}
   .header-logo:before {display: none;}
-  .header-logo {clip-path: unset; text-align: center; line-height: 1em; width: auto;}
+  .header-logo {clip-path: unset; font-size: 40vw; text-align: center; line-height: 1em; width: auto;}
   /*tablon*/
   .tablon > div {gap: 10px;}
   .tablon-ambi {display: none;}
