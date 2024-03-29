@@ -1306,8 +1306,8 @@ div.sceditor-dropdown div.colorpicker_submit {
   .navlink.mensajeria span, #fa_right #fa_notifications #notif_unread {right: -5px;top: -5px;}
   /*header*/
   #header {height: 50vw; font-size: .85em;}
-  .header-title:before, .header-title:after {display: none;}
-  #header span:last-child {font-size: 15vw;}
+  .header-name, .header-logo:before {display: none;}
+  .header-logo {clip-path: unset; text-align: center;}
   /*tablon*/
   .tablon > div {gap: 10px;}
   .tablon-ambi {display: none;}
