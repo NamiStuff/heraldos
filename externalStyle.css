@@ -849,6 +849,8 @@ div.sceditor-toolbar {
 .sceditor-container iframe,
 .sceditor-container textarea {
   background-color: var(--neutral)!important;
+  font-family: var(--font) !important;
+  font-size: var(--normal-size) !important;
   border-radius: 0;
   /*do not remove*/
   width: 100% !important;
