@@ -27,8 +27,8 @@
     flex-wrap: wrap;
     flex-direction: column;
     gap: 10px;
-    font-size: 13px;
-    line-height: 1em;
+    font-size: .95px;
+    line-height: 1.2em;
 }
 
 .tab-batalla > div {
