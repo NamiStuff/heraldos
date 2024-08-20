@@ -27,7 +27,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     gap: 10px;
-    font-size: .95px;
+    font-size: .95em;
     line-height: 1.2em;
 }
 
