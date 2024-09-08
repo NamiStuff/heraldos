@@ -19,6 +19,8 @@
 ***/
 
 /* TABLILLA DE BATALLA */
+.post_row.post_battle {display: block;}
+
 .tab-batalla {
     width: 100%;
     background: var(--neutralDarker);
