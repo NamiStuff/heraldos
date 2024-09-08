@@ -1271,7 +1271,7 @@ div.sceditor-dropdown div.colorpicker_submit {
   .postprofile-avatar img {width: var(--profile-width); height: var(--profile-height); object-fit: cover;}
   .postprofile-content {display: none;}
   .post_message.postbody {order: 4; padding: 15px:}
-  .post_message .content {padding: 15px:}
+  .post_message .content {padding: 20px:}
   /*account options*/
   .mobile-hidden {display: none;}
   .drafts-list .mobile-hidden:has(a, [name="delete_draft[1]"]) {display: block;}
