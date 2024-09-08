@@ -52,7 +52,7 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-:is(.tab-batalla-datos > div, .tab-batalla-acc > div, .tab-batalla-def, .tab-batalla-habs > div) {
+:is(.tab-batalla-datos, .tab-batalla-acc .tab-batalla-habs) > div, .tab-batalla-def {
     background: var(--neutralDark);
     padding: 10px;
     flex: 1;
@@ -184,7 +184,7 @@ div.tab-batalla-dma:after {content: 'Def Mágica';}
     color: var(--neutral);
 }
 
-.tab-batalla-acc {min-width: 225px;}
+.tab-batalla :is(.tab-batalla-datos,.tab-batalla-acc) {min-width: 225px;}
 .tab-batalla .tab-batalla-tit {
     flex: 0;
     font-family: var(--fontSubTitle);
