@@ -330,12 +330,13 @@ letter-spacing: .5px;
 
 /*Datos del rol*/
 .tab-datos {
-    display: grid;
+    /*display: grid;
     grid-template-columns: repeat(6, auto);
     align-items: center;
     justify-content: center;
     justify-items: start;
-    gap: 5px;
+    gap: 5px;*/
+    text-align: center;
     text-transform: uppercase;
     font-family: var(--fontSubTitle);
     font-weight: 900;
@@ -345,11 +346,11 @@ letter-spacing: .5px;
 }
 
 .tab-datos:where(:first-child,:last-child), :where(style, style + br) + .tab-datos, .tab-datos:has(+ style, + br + style) {
-    margin: -30px -30px 0;
+    margin: var(--post-padding-neg) var(--post-padding-neg) 0;
     background: var(--opacity);
     padding: 10px;
 }
-.tab-datos:last-child, .tab-datos:has(+ style, + br + style) {margin: 0 -30px -30px;}
+.tab-datos:last-child, .tab-datos:has(+ style, + br + style) {margin: 0 var(--post-padding-neg) var(--post-padding-neg);}
 h2 + :is(br, br + br) + .tab-datos {margin-top: -10px;}
 h2 + .tab-datos {margin-top: 9px;}
 blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
@@ -1270,8 +1271,8 @@ div.sceditor-dropdown div.colorpicker_submit {
   .postprofile {position: static; padding: 0; height: var(--profile-height); width: var(--profile-width); --profile-height: 100px; --profile-width: 100px;}
   .postprofile-avatar img {width: var(--profile-width); height: var(--profile-height); object-fit: cover;}
   .postprofile-content {display: none;}
-  .post_message.postbody {order: 4; padding: 15px:}
-  .post_message .content {padding: 20px:}
+  .post_message.postbody {order: 4; padding: 15px;}
+  .post_message .content {--post-padding: 20px;}
   /*account options*/
   .mobile-hidden {display: none;}
   .drafts-list .mobile-hidden:has(a, [name="delete_draft[1]"]) {display: block;}
