@@ -52,7 +52,7 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-:is(.tab-batalla-datos, .tab-batalla-acc .tab-batalla-habs) > div, .tab-batalla-def {
+:is(.tab-batalla-datos, .tab-batalla-acc, .tab-batalla-habs) > div, .tab-batalla-def {
     background: var(--neutralDark);
     padding: 10px;
     flex: 1;
