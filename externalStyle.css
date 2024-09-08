@@ -1322,9 +1322,12 @@ div.sceditor-dropdown div.colorpicker_submit {
   /*segundo tablon*/  
   .sidebar {height: 100%; display: flex; flex-direction: column;}
   .sidebar > div:not(.close) {padding: 15px;min-width: 220px;}
-  /*post*/
+  /*posts*/
   .poll_option {width: 180px;}
   .post_poster {padding: 15px; font-size: var(--little-size);}
+  .tab-batalla .tab-batalla-def {max-width: 50px;}
+  div.tab-batalla-dfi:after { content: 'DFI';}
+  div.tab-batalla-dma:after { content: 'DMA';}
   /*pms*/
   :is(.newpm_button, .pmreply):has(+ #privmsgs-menu) {display: none;}
 }
@@ -1332,8 +1335,6 @@ div.sceditor-dropdown div.colorpicker_submit {
   .tablon-links a {font-size: var(--medium-size);}
   .poster-list, .post_poster:before, .postprofile-status, .profile-top:before, .profile-status, .field-visited {display: none;}
   .profile-content {align-content: flex-start;}
-  div.tab-batalla-dfi:after { content: 'DFI';}
-  div.tab-batalla-dma:after { content: 'DMA';}
   /*profile inventory*/
   .item-info > .item-icon, .item-upgrades .item-info .item-icon, #privmsgs-menu li i {display: none;}
   .item-info {grid-template-areas: 'item-name' 'item-sub' 'item-desc' 'item-effect'; grid-auto-columns: 100%; align-content: unset;}
