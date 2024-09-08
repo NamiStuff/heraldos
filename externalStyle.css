@@ -325,13 +325,6 @@ letter-spacing: .5px;
 .drafts-list table.table1 thead th:nth-last-child(2):before {content: 'Editar';}
 .drafts-list table.table1 thead th:last-child:before {content: 'X';}
 
-@media screen and (max-width: 735px) {
-    .drafts-list .mobile-hidden:has(a, [name="delete_draft[1]"]) {display: block;}
-    .ucp-main .drafts-list td {padding: 0;}
-    .drafts-list tbody tr { display: grid; grid-template-rows: 1fr 1fr; grid-template-columns: 1fr max-content max-content; justify-content: space-between; gap: 0 5px; align-items: center; justify-items: start; margin: 3px 0; }
-    .drafts-list tbody tr td:has(.postdetails) {grid-row: 2;}
-    .drafts-list tbody tr td[nowrap] {grid-row: 1 / 2 span;}
-}
 
 /* TABLILLAS DE ROL */
 
@@ -1272,12 +1265,20 @@ div.sceditor-dropdown div.colorpicker_submit {
   .userlist[style] {width: 100%;}
 }
 @media screen and (max-width: 735px) {
+  /* posts */
   .post_poster {flex: 1 calc(100% - 105px); order: 3;}
   .postprofile {position: static; padding: 0; height: var(--profile-height); width: var(--profile-width); --profile-height: 100px; --profile-width: 100px;}
   .postprofile-avatar img {width: var(--profile-width); height: var(--profile-height); object-fit: cover;}
   .postprofile-content {display: none;}
-  .post_message.postbody {order: 4;}
+  .post_message.postbody {order: 4; padding: 15px:}
+  .post_message .content {padding: 15px:}
+  /*account options*/
   .mobile-hidden {display: none;}
+  .drafts-list .mobile-hidden:has(a, [name="delete_draft[1]"]) {display: block;}
+  .ucp-main .drafts-list td {padding: 0;}
+  .drafts-list tbody tr { display: grid; grid-template-rows: 1fr 1fr; grid-template-columns: 1fr max-content max-content; justify-content: space-between; gap: 0 5px; align-items: center; justify-items: start; margin: 3px 0; }
+  .drafts-list tbody tr td:has(.postdetails) {grid-row: 2;}
+  .drafts-list tbody tr td[nowrap] {grid-row: 1 / 2 span;}
 }
 @media screen and (max-width: 644px) {
   .profile-avatar {display: none;}
