@@ -1312,8 +1312,9 @@ div.sceditor-dropdown div.colorpicker_submit {
   .header-logo:before {display: none;}
   .header-logo {clip-path: unset; font-size: 40vw; text-align: center; line-height: 1em; width: auto;}
   /*tablon*/
-  .tablon > div {gap: 10px;}
-  .tablon-ambi {display: none;}
+  .tablon {display: flex; flex-wrap: wrap;}
+  .tablon > div {flex: 1 100%;}
+  .tablon-ambi, .tablon-noti, .tablon-user, .tablon-cale {display: none;}
   .tablon-links a {height: auto;width: auto;background: none;}
   /*segundo tablon*/  
   .sidebar {height: 100%; display: flex; flex-direction: column;}
