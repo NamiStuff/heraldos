@@ -843,6 +843,7 @@ div.sceditor-toolbar {
   background-color: var(--neutral)!important;
   font-family: var(--font) !important;
   font-size: var(--normal-size) !important;
+  color: var(--textColor) !important;
   border-radius: 0;
   /*do not remove*/
   width: 100% !important;
