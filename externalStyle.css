@@ -1315,7 +1315,7 @@ div.sceditor-dropdown div.colorpicker_submit {
   /*tablon*/
   .tablon {display: flex; flex-wrap: wrap;}
   .tablon > div {flex: 1 100%;}
-  .tablon-ambi, .tablon-noti, .tablon-user, .tablon-cale {display: none;}
+  .tablon-ambi, .news, .tablon-user, .tablon-calendar {display: none;}
   .tablon-links a {height: auto;width: auto;background: none;}
   /*segundo tablon*/  
   .sidebar {height: 100%; display: flex; flex-direction: column;}
