@@ -207,7 +207,8 @@ div.tab-batalla-dma:after {content: 'Def Mágica';}
     max-height: 150px;
     overflow: auto !important;
 }
-.tab-batalla-habs h3 {margin-bottom: 5px;}
+.tab-batalla-habs h3 {margin: 10px 0 5px;}
+.tab-batalla-habs h3:first-of-type {margin-top: 0;}
 :is(.tab-batalla-habs, .profile-abilities-content, .profile-powers-content) :is(i,u), .ability-type {
     text-decoration: none;
     font-style: normal;
