@@ -353,7 +353,6 @@ h2 + :is(br, br + br) + .tab-datos {margin-top: -10px;}
 h2 + .tab-datos {margin-top: 9px;}
 blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
 
-
 .tab-datos i {color: var(--accent);}
 .tab-datos + br:has(+br) {display: none;}
 
@@ -379,6 +378,50 @@ blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
     user-select: none;
 }
 .content:has(.tab-datos, .cp) img + br:has(+br) {display: none;}
+
+/* TABLILLAS STAFF */
+
+/* Tablas */
+.tab-tabla {
+  display: grid;
+  gap: 1px;
+  background: var(--neutral);
+  font-size: .98em;
+  grid-template-columns: var(--tabla-row); /*distribucion para tablas horizontales*/
+}
+:is(.tab-tabla,
+.tab-tabla > div) > br {
+  display: none;
+}
+
+.tab-tabla > div {
+  display: grid;
+  grid-template-columns: var(--tabla-col);  /*distribucion para tablas verticales*/
+  gap: 1px;
+}
+.tabla-cell {
+  padding: 5px;
+  background: var(--opacity);
+}
+.tabla-head .tabla-cell {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: var(--textColorAccent);
+  font-family: var(--fontSubTitle);
+  font-size: var(--medium-size);
+}
+/* Borde primera columna en tablas verticales */
+.tab-tabla[style*="col"] .tabla-head .tabla-cell {
+  border-bottom: var(--borderAccent);
+}
+/* Borde primera columna en tablas horizontales*/
+.tab-tabla[style*="row"] .tabla-head .tabla-cell {
+  border-right: var(--borderAccent);
+}
+/* Separacion entre primera y segunda columna */
+.tab-tabla[style*="row"]:has(.tabla-head) > div:nth-child(3) .tabla-cell {
+  padding-left: 10px;
+}
 
 /* PROFILE DESCRIPTIONS STYLE */
 /* Diseño para personalizar la Historia y Datos extra */
