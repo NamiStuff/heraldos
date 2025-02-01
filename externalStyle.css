@@ -371,14 +371,17 @@ blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
 
 /*Imagen o Icono de cabecera */
 .content:has(.tab-datos, .cp) :is(img, i:has(+ br + :is(h2, h3)) {
+    display: grid;
+    place-content: center;
     margin: 6px auto;
-    display: block;
     border-radius: 100%;
     outline: 2px solid var(--accent);
+    font-size: 4em;
+    color: var(--borderAccent);
     outline-offset: 4px;
     user-select: none;
 }
-.content:has(.tab-datos, .cp) img + br:has(+br) {display: none;}
+.content:has(.tab-datos, .cp) :is(img, i:has(+ br + :is(h2, h3)) + br:has(+br) {display: none;}
 
 /* TABLILLAS STAFF */
 
