@@ -369,9 +369,9 @@ blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
 }
 .content hr + br, .content hr + br + br, .content br:has(+ hr) {display: none;}
 
-/*Imágenes*/
-.content:has(.tab-datos, .cp) img {
-    margin: 5px auto;
+/*Imagen o Icono de cabecera */
+.content:has(.tab-datos, .cp) :is(img, i:has(+ br + :is(h2, h3)) {
+    margin: 6px auto;
     display: block;
     border-radius: 100%;
     outline: 2px solid var(--accent);
