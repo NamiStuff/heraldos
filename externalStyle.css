@@ -377,7 +377,7 @@ blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
     border-radius: 100%;
     outline: 2px solid var(--accent);
     font-size: 4em;
-    color: var(--borderAccent);
+    color: var(--textColorAccent);
     outline-offset: 4px;
     user-select: none;
 }
