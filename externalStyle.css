@@ -329,12 +329,6 @@ letter-spacing: .5px;
 
 /*Datos del rol*/
 .tab-datos {
-    /*display: grid;
-    grid-template-columns: repeat(6, auto);
-    align-items: center;
-    justify-content: center;
-    justify-items: start;
-    gap: 5px;*/
     text-align: center;
     text-transform: uppercase;
     font-family: var(--fontSubTitle);
@@ -370,7 +364,7 @@ blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
 .content hr + br, .content hr + br + br, .content br:has(+ hr) {display: none;}
 
 /*Imagen o Icono de cabecera */
-.content:has(.tab-datos, .cp) :is(img, i:has(+ br + :is(h2, h3))) {
+.content:has(.tab-datos, .cp) :is(img, i:first-child:has(+br), i:has(+ br + :is(h2, h3))) {
     display: grid;
     place-content: center;
     max-width: 100px;
