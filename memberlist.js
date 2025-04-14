@@ -11,7 +11,7 @@ $(function() {
             getSortData: {
                 nombre: '.userlist_pseudo',
                 playedby: '.sort-pb',
-                dios: '.sort-dios',
+                dios: '.userlist_rank',
                 edad: '.sort-edad parseInt',
                 inscripcion: function(itemElem) {
                     var date = $(itemElem).find('.userlist_joined .userlist_content').text().split("/");
