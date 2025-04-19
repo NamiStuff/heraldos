@@ -518,7 +518,7 @@ blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
   align-items: center;
   flex-wrap: wrap;
   position: relative;
-  flex: 1 275px;
+  flex: 1;
   gap: 10px;
   padding: 20px 0;
   z-index: 1;
@@ -541,7 +541,6 @@ blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
 .profile-rpg > div:last-child {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   height: 100px;
   gap: 5px;
 }
@@ -1287,7 +1286,7 @@ div.sceditor-dropdown div.colorpicker_submit {
 
 
 /***** RESPONSIVE DESIGN -----*****/
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1950px) {
   /*index*/
   .main_forum {max-width: 1250px;}
   .tablon-ambi, .mod-recent-row, .forum_desc, .stadistics-top, #newest_user, .stadistics-content > div {font-size: inherit;}
@@ -1295,9 +1294,7 @@ div.sceditor-dropdown div.colorpicker_submit {
   .forum_left, .forum_lastpost {width: 300px; flex: 1;}
   /*posts & profile*/
   div.posts, .review {gap: 20px;}
-  .post_row, .profile {gap: 10px 15px;}
-  .profile-bottom, .profile-info {flex: 1 calc(100% - 290px);}
-  #preview .post_message { max-width: 885px; }
+  .post_row, .profile {--postGap: 12px;}
   /*other*/
   .userlist {justify-content: flex-start;}
 }
