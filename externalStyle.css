@@ -378,7 +378,7 @@ blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
     outline-offset: 4px;
     user-select: none;
 }
-.content:has(.tab-datos, .cp) :is(img, i) + br:has(+br) {display: none;}
+.content:has(.tab-datos, .cp) :is(img, i:first-child:has(+br)) + br:has(+ br) {display: none;}
 
 /* TABLILLAS STAFF */
 
