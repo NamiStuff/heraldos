@@ -963,6 +963,7 @@ div.sceditor-dropdown label {
 
 div.sceditor-dropdown div :is(select, input) {
     width: -webkit-fill-available;
+    width: -moz-available;
     margin: 0;
 }
 
