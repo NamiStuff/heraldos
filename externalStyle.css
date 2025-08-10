@@ -1335,6 +1335,8 @@ div.sceditor-dropdown div.colorpicker_submit {
   .container:not(.pms) .topicslist_row {display: grid; grid-template-columns: max-content calc(100% - 60px); gap: 0 10px;} 
   .topicslist-img {grid-row: 1 / span 2;}
   .container:not(.pms) .topicslist-infos > :is(span, br), .topicslist-stats, .topicslist-description {display: none;}
+  /*posts styles*/
+  :is(.content, .profile-info-tab, .guidebook, .sidebar) :is(ol, ul) {padding-left: 15px;}
   /*estadisticas*/
   .stadistics {display: flex;flex-wrap: wrap;}
   .stadistics-sidebar {flex-direction: row;width: 100%;flex-wrap: wrap;}
