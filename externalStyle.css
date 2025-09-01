@@ -129,6 +129,7 @@ div.stat-int:after {content: 'INT';}
     content: '0/0';
     position: absolute;
     font-size: var(--little-size);
+    font-weight: 700;
     line-height: 1.25em;
     left: 50%;
     transform: translate(-50%);
