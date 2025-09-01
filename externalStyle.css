@@ -232,10 +232,6 @@ div.tab-batalla-dma:after {content: 'Def Mágica';}
 :is(.tab-batalla-acc, .tab-batalla-habs) > div br:not(:first-child,:last-child) {display: block;}
 
 /* DADOS PERSONALIZADOS */
-
-
-
-/*** DADOS PERSONALIZADOS --- ***/
 .post-dados :is(.postprofile, .post_poster) {display: none;}
 
 .tirada-user {
@@ -280,7 +276,7 @@ div.tab-batalla-dma:after {content: 'Def Mágica';}
   font-size: var(--large-size);
 }
 
-/*monstruos*/
+/* Dado de monstruos */
 .dado-monstruo {
   
   .dado {
