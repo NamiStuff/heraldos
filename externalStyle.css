@@ -511,7 +511,7 @@ blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
 .tab-tabla {
   display: grid;
   gap: 1px;
-  background: var(--neutral);
+  background: var(--neutralDark);
   font-size: .98em;
   grid-template-columns: var(--tabla-row); /*distribucion para tablas horizontales*/
 }
