@@ -925,7 +925,7 @@ blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
 .ability-type {
     display: flex;
     align-items: center;
-    gap: 3px;
+    gap: 4px;
 }
 .ability-type i {color: var(--accent); padding: 0;}
 
