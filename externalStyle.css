@@ -916,7 +916,7 @@ blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
 
 /* PROFILE ABILITIES */
 
-.ability-box {
+.ability-box, .ability-sub  {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
