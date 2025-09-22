@@ -742,8 +742,6 @@ blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
   align-content: flex-start;
   gap: 5px;
   position: relative;
-  height: calc(100% - 45px);
-  overflow: auto;
 }
 
 .item-box, .item-upgrades .item-info .item-icon {
