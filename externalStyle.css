@@ -845,7 +845,7 @@ blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
     grid-area: item-sub;
     display: flex;
     flex-wrap: wrap;
-    grid: 5px;
+    gap: 5px;
 }
 .item-info:has(.item-close) > .item-sub {
   justify-content: center;
