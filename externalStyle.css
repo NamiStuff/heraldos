@@ -839,13 +839,19 @@ blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
 }
 
 .item-sub {
-    text-align: center;
     font-family: var(--fontSubTitle);
     text-transform: uppercase;
     color: var(--textColorAccent);
     font-weight: 900;
     letter-spacing: .5px;
     grid-area: item-sub;
+    display: flex;
+    flex-wrap: wrap;
+    grid: 5px;
+}
+.item-info:has(.item-close) > .item-sub {
+  justify-content: center;
+  align-self: baseline;
 }
 
 .item-desc, .item-effect {
