@@ -760,7 +760,7 @@ blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
 .item-icon {
   font-size: 1.9em;
   color: var(--textColorAccent);
-  text-align: center;
+  justify-self: center;
   grid-area: item-icon;
 }
 
