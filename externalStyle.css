@@ -56,7 +56,6 @@
     background: var(--neutralDark);
     padding: 10px;
     flex: 1;
-    text-transform: uppercase;
 }
 
 .tab-batalla-stats {
@@ -64,6 +63,7 @@
     justify-content: space-evenly;
     gap: 10px;
     align-items: center;
+    text-transform: uppercase;
 }
 .tab-batalla-stats div {
     display: flex;
@@ -152,7 +152,7 @@ div.stat-int:after {content: 'INT';}
     cursor: pointer;
 }
 
-.tab-batalla-def, .tab-batalla-acc {text-align: center;flex-direction: column;}
+.tab-batalla-def, .tab-batalla-acc {text-align: center;flex-direction: column;text-transform: uppercase;}
 
 .tab-batalla .tab-batalla-def {
     max-width: 110px;
