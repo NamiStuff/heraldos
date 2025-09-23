@@ -347,6 +347,26 @@ div.tab-batalla-dma:after {content: 'Def Mágica';}
     grid-area: habilidades;
     max-height: 200px;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    line-height: 1.15em;
+      
+    .leg::before {
+      content: 'Legendaria';
+      display: block;
+      width: fit-content;
+      margin: 3px 0 2px;
+      padding: 0 4px;
+      border-radius: 5px;
+      background: var(--neutral);
+      color: var(--textColorAccent);
+      text-transform: uppercase;
+      font-family: var(--fontSubTitle);
+      font-size: var(--little-size);
+      font-weight: 700;
+      letter-spacing: .5px;
+    }
   }
 }
 
