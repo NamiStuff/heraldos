@@ -338,7 +338,7 @@ div.tab-batalla-dma:after {content: 'Def Mágica';}
     color: var(--textColorAccent);
     line-height: 1em;
     
-    &:after {content: attr(stat); color: var(--accent);}
+    &:after {content: attr(stat); color: var(--accent); text-transform: uppercase;}
   }
   .monstruo-stats {grid-area: stats;}
   .monstruo-def {grid-area: defensas;}
