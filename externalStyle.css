@@ -860,7 +860,7 @@ blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
     font-family: var(--fontSubTitle);
     text-transform: uppercase;
     color: var(--textColorAccent);
-    font-weight: 900;
+    font-weight: 700;
     letter-spacing: .5px;
     grid-area: item-sub;
     display: flex;
