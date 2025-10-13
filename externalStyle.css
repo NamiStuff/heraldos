@@ -643,12 +643,12 @@ blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
 
 :is(.profile-history, .profile-extra) div[align="left"]:has(img, sup) {    
   float: left;
-  margin-right: 10px;
+  margin-inline: 0 10px;
 }
 
 :is(.profile-history, .profile-extra) div[align="right"]:has(img, sup) {
   float: right;
-  margin-left: 10px;
+  margin-inline: 10px 0;
 }
 
 :is(.profile-history, .profile-extra) div:is([align="left"], [align="right"]) img {
