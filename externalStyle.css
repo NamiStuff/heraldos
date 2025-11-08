@@ -911,38 +911,39 @@ blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
     position: relative;
     grid-area: item-upgrades;
     margin: 0 -15px -15px;
-}
-.item-upgrades:has(.item-open) {justify-content: flex-end;height: 75px;}
-.item-upgrades, .item-upgrades .item-box {transition: var(--transition);}
+    transition: var(--transition);
+    width: -webkit-fill-available;
+    width: -moz-available;
+    
+    &:has(.item-open) {height: 75px;justify-content: flex-end;}
+    
+    .item-box {width: 40px;height: 40px; z-index: 2;}
+    &:has(.item-open) .item-box {width: 35px;height: 35px;font-size: .9em;}
+    .item-open .item-box .item-icon {color: var(--accent);}
+    
+    .item-info {
+        font-size: inherit;
+        background: var(--neutral);
+        display: grid;
+        grid-template-areas:
+            'upgrade-icon item-name'
+            'upgrade-icon item-sub'
+            'upgrade-icon item-effect';
+        gap: 5px 15px;
+        padding: 10px 12px;
+        height: auto;
+        justify-content: start;
+        grid-auto-columns: auto;
+        grid-auto-rows: auto;
 
-.item-upgrades .item-box {width: 40px;height: 40px; z-index: 2;}
-.item-upgrades:has(.item-open) .item-box {
-    width: 35px;
-    height: 35px;
-    font-size: .9em;
+        .item-icon {
+        grid-area: upgrade-icon;
+        font-size: 2.5em;
+        }
+    }    
+    .item-name, .item-sub, .item-effect {justify-self: left;}
+    .item-sub .dato {padding: 0;}
 }
-.item-upgrades .item-open .item-box .item-icon {color: var(--accent);}
-
-.item-upgrades .item-info {
-    font-size: inherit;
-    background: var(--neutral);
-    display: grid;
-    grid-template-areas:
-        'upgrade-icon item-name'
-        'upgrade-icon item-sub'
-        'upgrade-icon item-effect';
-    gap: 5px 15px;
-    padding: 10px 12px;
-    height: auto;
-    justify-content: start;
-    grid-auto-columns: auto;
-    grid-auto-rows: auto;
-}
-.item-upgrades .item-info .item-icon {
-    grid-area: upgrade-icon;
-    font-size: 2.5em;
-}
-.item-upgrades :is(.item-name, .item-sub, .item-effect) {text-align: left;}
 
 
 /* PROFILE ABILITIES */
