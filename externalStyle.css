@@ -729,11 +729,11 @@ blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
 
 .profile-rpg > div:first-child .profile-field:not(.nivel):before, .postprofile-stats .postprofile-field:not(profile-field-nivel):before {
   position: absolute;
-  /*content: '\e6a7';*/
   font-family: 'game-icons';
   opacity: .2;
   font-size: 2.8em;
   top: -2px;
+  left: -6px;
   z-index: -1;
 }
 /*.profile-rpg > div:first-child .profile-field.destreza:before {content: '\e3a7';}
