@@ -865,12 +865,20 @@ blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
     grid-area: item-sub;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 5px;
+
+    .dato {
+      display: flex;
+      gap: 4px;
+      background: var(--neutral);
+      padding: 2px 4px;
+      line-height: .9em;
+      border-radius: 4px;
+      font-size: .8em;
+    }
 }
-.item-info:has(.item-close) > .item-sub {
-  justify-content: center;
-  align-self: baseline;
-}
+
 
 .item-desc, .item-effect {
     line-height: 1.1em;
