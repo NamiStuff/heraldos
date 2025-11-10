@@ -994,8 +994,6 @@ color: var(--accent);
 font-family: 'game-icons';
 }
 
-.award-tooltip {display: none;}
-
 .award_tooltiptext {
 pointer-events: none;
 position: absolute;
