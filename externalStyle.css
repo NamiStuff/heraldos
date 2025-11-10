@@ -986,13 +986,17 @@ border-radius: 100%;
 background-position: center;
 background-size: cover;
 margin: 3px;
+
+    &[class*=" gi"],[class*=" fa"],[class*=" if"] {background: var(--neutralDarker);}
+    &[class*=" gi"],[class*=" fa"],[class*=" if"]:before {
+        font-size: 35px;
+        color: var(--accent);
+    }
+    .award_tooltip {display: none;}
 }
-.award[class*=" gi"] {background: var(--neutralDarker);}
-.award[class*=" gi"]:before {
-font-size: 35px;
-color: var(--accent);
-font-family: 'game-icons';
-}
+.award[class*=" gi"]:before {font-family: 'game-icons';}
+.award[class*=" fa"]:before {font-family: var(--fontAwesome);}
+.award[class*=" if"]:before {font-family: 'IcoFont';}
 
 .award_tooltiptext {
 pointer-events: none;
