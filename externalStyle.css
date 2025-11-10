@@ -994,6 +994,8 @@ color: var(--accent);
 font-family: 'game-icons';
 }
 
+.award-tooltip {display: none;}
+
 .award_tooltiptext {
 pointer-events: none;
 position: absolute;
@@ -1006,7 +1008,7 @@ width: 150px;
 text-align: justify;
 font-size: var(--little-size);
 line-height: 1em;
-background: var(--neutralDarker);
+background: var(--neutral);
 opacity: 0;
 padding: 8px;
 }
@@ -1026,15 +1028,12 @@ bottom: -14px;
 right: 45%;
 border-width: 7px;
 border-style: solid;
-border-color: var(--neutralDarker) transparent transparent transparent;
+border-color: var(--neutral) transparent transparent transparent;
 }
-
-
 
 
 /*** ------------------------------- ***/
 /*** SCEDITOR TOOLBAR ------------- ***/
-
 
 /* Toolbar box */
 div.sceditor-toolbar {
