@@ -336,13 +336,13 @@ blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
 
 /* TABLILLAS DE BÚSQUEDA */
 
-.forum-16 :is(.content, summary) > :is(img, .gi, .fa-solid, .icofont) {
+.forum-9 :is(.content, summary) > :is(img, .gi, .fa-solid, .icofont) {
     width: 80px;
     height: 80px;
 }
 
 /* Búsqueda dual */
-.forum-16 .content:has(h3:nth-of-type(2)) { 
+.forum-9 .content:has(h3:nth-of-type(2)) { 
     display: grid; 
     gap: 10px var(--post-padding); 
     grid-template-columns: 1fr var(--post-padding) 1fr; 
@@ -360,14 +360,22 @@ blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
 }
 
 /* Búsqueda con toggles */
-.forum-16 details {margin: 0; } 
-.forum-16 details summary + br {display: none;} 
-.forum-16 details + br:has(+ br + hr) {display: none;} 
-.forum-16 summary {display: grid; grid: 1fr 1fr / 92px 1fr; justify-items: center;} 
-.forum-16 summary h2 {align-self: end;} 
-.forum-16 summary > br {display: none;} 
-.forum-16 summary :is(img, .fa-solid, .gi, .icofont) { grid-area: 1 / 1 / span end / 1; } 
-.forum-16 details[estado="ocupada"] {opacity: 0.7;}
+.forum-9 details {
+   margin: 0; 
+
+    &[estado="ocupada"] {opacity: 0.7;}
+    + br:has(+ br + hr) {display: none;} 
+
+    summary {
+        display: grid; grid: 1fr 1fr / 92px 1fr; 
+        justify-items: center;
+
+        h2 {align-self: end;} 
+        > br, + br {display: none;} 
+        :is(img, .fa-solid, .gi, .icofont) { grid-area: 1 / 1 / span end / 1; } 
+        
+    }
+} 
 
 /* PROFILE OPTIONS TABLES */
 
