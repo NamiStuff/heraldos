@@ -342,22 +342,7 @@ blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
 }
 
 /* Búsqueda dual */
-.forum-9 .content:has(h3:nth-of-type(2)) { 
-    display: grid; 
-    gap: 10px var(--post-padding); 
-    grid-template-columns: 1fr var(--post-padding) 1fr; 
-    grid-auto-flow: column;
 
-    > br {display: none;} 
-    hr {grid-area: 1 / 2 / 5 / 2; margin: calc(var(--post-padding) * -2) 0; border: 0; background: var(--neutralDark); } 
-    .tab-datos { margin: 0 0 10px} 
-    blockquote {background: none;padding: 0; font-size: var(--little-size); max-height: 325px; overflow: auto;} 
-    h3 {text-align: center; color: var(--accent);} 
-    > :is(img, .gi, .fa-solid, .icofont) {width: 50px; height: 50px; font-size: 3em;} 
-} 
-@media screen and (max-width: 585px) {
-    .forum-16 .content:has(h3:nth-of-type(2)) {--post-padding: 12px;} 
-}
 
 /* Búsqueda con toggles */
 .forum-9 details {
