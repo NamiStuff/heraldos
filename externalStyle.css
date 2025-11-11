@@ -343,6 +343,68 @@ blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
 
 /* Búsqueda dual */
 
+.forum-9 .content:has(blockquote blockquote) {
+  display: flex;
+  flex-wrap: wrap;
+  --post-padding: 20px;
+  gap: var(--post-padding);
+  padding: var(--post-padding);
+  
+  > br {display: none;}  
+  
+  hr {background: var(--neutralDark); border: 0;}
+  
+  > blockquote {
+    background: none;
+    padding: 0;
+    flex: 1;
+    
+    > div > :is(img,.gi,.fa-solid,.icofont) {
+      width: 50px;
+      height: 50px;
+      font-size: 3em;
+    }
+    h3 {text-align: center;color: var(--accent);}
+    .tab-datos {margin: 0 0 10px}
+    blockquote {
+      font-size: var(--little-size);
+      max-height: 275px;
+      overflow: auto;
+      padding: 0;
+    }
+  }
+}
+
+.forum-9 .content:has(blockquote:first-of-type:not(:has(ol, ul)) blockquote) hr {
+  &:nth-of-type(odd) {
+    margin: calc(var(--post-padding) * -2) 0;
+    flex: 1;
+    max-width: var(--post-padding);
+  }
+  &:nth-of-type(even) {
+    margin: 0 calc(var(--post-padding) * -2);
+    width: -moz-available;
+    height: var(--post-padding);
+  }
+}
+.forum-9 .content:has(blockquote:first-of-type :is(ol, ul)) hr {
+  &:nth-of-type(odd) {
+    margin: 0 calc(var(--post-padding) * -2);
+    width:-moz-available;
+    height: var(--post-padding);
+  }
+  &:nth-of-type(even) {
+    margin: calc(var(--post-padding) * -2) 0;
+    flex: 1;
+    max-width: var(--post-padding);
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .forum-9 .content:has(blockquote blockquote) {
+    --post-padding: 12px;
+  }
+}
 
 /* Búsqueda con toggles */
 .forum-9 details {
