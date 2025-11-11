@@ -375,7 +375,7 @@ blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
   }
 }
 
-.forum-9 .content:has(blockquote:first-of-type:not(:has(ol, ul)) blockquote) hr {
+.forum-9 .content:has(blockquote:first-of-type:has(:not(ol, ul)) blockquote) hr {
   &:nth-of-type(odd) {
     margin: calc(var(--post-padding) * -2) 0;
     flex: 1;
