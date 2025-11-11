@@ -375,7 +375,7 @@ blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
   }
 }
 
-.forum-9 .content:has(blockquote:first-of-type:has(:not(ol, ul)) blockquote) hr {
+.forum-9 .content:has(> blockquote:first-of-type :not(ol, ul)) hr {
   &:nth-of-type(odd) {
     margin: calc(var(--post-padding) * -2) 0;
     flex: 1;
@@ -387,7 +387,7 @@ blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
     height: var(--post-padding);
   }
 }
-.forum-9 .content:has(blockquote:first-of-type :is(ol, ul)) hr {
+.forum-9 .content:has(> blockquote:first-of-type :is(ol, ul)) hr {
   &:nth-of-type(odd) {
     margin: 0 calc(var(--post-padding) * -2);
     width:-moz-available;
