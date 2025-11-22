@@ -1122,8 +1122,8 @@ letter-spacing: .5px;
 }
   
 .guidebook blockquote {
-    margin: 20px 10px;
-    font-size: 0.95em;
+    margin: 15px 10px;
+    font-size: .95em;
 
     &:has(+br + h3) {margin-bottom: 10px;}
     &[data-title]:before {
