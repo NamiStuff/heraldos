@@ -1091,9 +1091,9 @@ letter-spacing: .5px;
     .fa-solid {color: var(--accent);}
 }  
 .guidebook-subsection {
-    margin: 0 0 0 10px;
+    margin-left: 5px;
+    padding-left: 5px;
     border-left: var(--border);
-    padding-left: 8px;
 }
 
 .guidebook-container {
