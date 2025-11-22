@@ -1036,10 +1036,6 @@ letter-spacing: .5px;
 }
 
 /* GUIDEBOOK BASE */
-
-
-  
-/* GUIDEBOOK BASE */
   
 .guidebook {
     display: flex;
@@ -1079,8 +1075,7 @@ letter-spacing: .5px;
       padding: 0 9px 5px;
       font-family: var(--fontSubTitle);
       font-size: var(--normal-size);
-    }
-    
+    }    
     .active a {
       color: var(--accent);
       font-weight: 900;
@@ -1105,8 +1100,7 @@ letter-spacing: .5px;
     flex: 1 calc(100% - 255px);
     min-width: 320px;
     display: flex;
-}
-  
+} 
 .guidebook-content {
     padding: 30px;
     background: var(--neutralDarker);
@@ -1148,10 +1142,6 @@ letter-spacing: .5px;
 }
   
 /*  Responsive design */
-  
-@media screen and (max-width: 580px) {
-  .crono-event {margin: 0 0 0 20px;}
-}
 @media screen and (max-width: 535px) {
   .guidebook-menu {flex: 1 100%; flex-wrap: wrap; flex-direction: row; position: static;}
   .guidebook-category:has(.active, [style*="display: block;"]) {flex: 1 100%; display: flex; flex-wrap: wrap; gap: 0 10px;}
