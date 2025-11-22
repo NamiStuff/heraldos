@@ -12,6 +12,7 @@
 - Profile Inventory
 - Profile Abilities
 - Dados personalizados
+- Guidebook base
 - Carousel
 - Awards
 - Color Picker
@@ -1032,6 +1033,145 @@ letter-spacing: .5px;
 
 @media screen and (max-width: 650px) {
   .dado-monstruo .dado {display: flex; flex-direction: column;}
+}
+
+/* GUIDEBOOK BASE */
+
+
+  
+/* GUIDEBOOK BASE */
+  
+.guidebook {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    --headerHeight: 82px;
+    scroll-margin-top: calc(var(--navHeight) + var(--headerHeight));
+}
+
+.guidebook-header {
+    background: rgb(from var(--accent) r g b / .7);
+    width: 100%;
+    padding: 20px;
+}
+.guidebook-header h1 {
+  margin: 0;
+}
+.guidebook-header h4 {
+  font-size: var(--little-size);
+  color: var(--neutralDarker);
+  text-align: center;
+}
+  
+.guidebook-menu {
+    background: var(--neutralDark);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1 250px;    
+    position: sticky;
+    top: 57px;
+    height: fit-content;
+}
+.guidebook-menu h3 {
+  border-bottom: var(--borderAccent);
+  width: fit-content;
+  padding: 0 9px 5px;
+  font-family: var(--fontSubTitle);
+  font-size: var(--normal-size);
+}
+  
+.guidebook-section {
+  margin: 5px 0;
+  font-weight: 700;
+  color: var(--accent);
+}
+.toggle-click.active {margin-bottom: 2px;}
+  
+.guidebook-subsection {
+    margin: 0 0 0 10px;
+    border-left: var(--border);
+    padding-left: 8px;
+  }
+.guidebook-menu .active a {
+    color: var(--accent);
+    font-weight: 900;
+}
+  
+.guidebook-section .fa-solid {
+    color: var(--accent);
+}
+
+.guidebook-container {
+    flex: 1 calc(100% - 255px);
+    min-width: 320px;
+    display: flex;
+}
+  
+.guidebook-content {
+    padding: 30px;
+    background: var(--neutralDarker);
+    text-align: justify;
+    width: 100%;
+    scroll-margin-top: calc(var(--navHeight) + var(--headerHeight));
+}
+  
+.guidebook h2 {
+  letter-spacing: 1px;
+}    
+.guidebook :is(i, em) {
+    color: rgb(from var(--textColor) r g b / .7);
+}
+.guidebook u {
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent);
+}  
+.guidebook b {
+  color: var(--accent);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+  
+.guidebook blockquote {
+    margin: 20px 10px;
+    font-size: 0.95em;
+}
+.guidebook blockquote:has(+br + h3) {
+    margin-bottom: 10px;
+}
+.guidebook blockquote[data-title]:before {
+    content: attr(data-title) ':';
+    display: block;
+    font-family: var(--fontSubTitle);
+    color: var(--accent);
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: .5px;
+    font-size: var(--normal-size);
+    margin-bottom: 5px;
+}  
+  .guidebook blockquote p:first-child {
+    margin-top: 0px;
+}  
+.guidebook blockquote p:last-child {
+    margin-bottom: 0px;
+}
+
+
+  
+  /* GUIDEBOOK RESPONSIVE DESIGN */
+  
+@media screen and (max-width: 580px) {
+  .crono-event {margin: 0 0 0 20px;}
+}
+@media screen and (max-width: 535px) {
+  .guidebook-menu {flex: 1 100%; flex-wrap: wrap; flex-direction: row; position: static;}
+  .guidebook-category:has(.active, [style*="display: block;"]) {flex: 1 100%; display: flex; flex-wrap: wrap; gap: 0 10px;}
+  .guidebook-category:not(:first-child):has(.active) {order: 4;}
+  .guidebook-menu h3 {flex-basis: 100%;}
+  .guidebook-container {min-width: auto;}
+  .guidebook-content {padding: 15px;}
 }
 
 /* CAROUSEL */
