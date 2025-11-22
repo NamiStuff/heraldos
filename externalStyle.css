@@ -1053,14 +1053,13 @@ letter-spacing: .5px;
     background: rgb(from var(--accent) r g b / .7);
     width: 100%;
     padding: 20px;
-}
-.guidebook-header h1 {
-  margin: 0;
-}
-.guidebook-header h4 {
-  font-size: var(--little-size);
-  color: var(--neutralDarker);
-  text-align: center;
+
+    h1 {margin: 0;}
+    h4 {
+      font-size: var(--little-size);
+      color: var(--neutralDarker);
+      text-align: center;
+    }
 }
   
 .guidebook-menu {
@@ -1073,34 +1072,33 @@ letter-spacing: .5px;
     position: sticky;
     top: 57px;
     height: fit-content;
-}
-.guidebook-menu h3 {
-  border-bottom: var(--borderAccent);
-  width: fit-content;
-  padding: 0 9px 5px;
-  font-family: var(--fontSubTitle);
-  font-size: var(--normal-size);
+
+    h3 {
+      border-bottom: var(--borderAccent);
+      width: fit-content;
+      padding: 0 9px 5px;
+      font-family: var(--fontSubTitle);
+      font-size: var(--normal-size);
+    }
+    
+    .active a {
+      color: var(--accent);
+      font-weight: 900;
+    }
 }
   
 .guidebook-section {
-  margin: 5px 0;
-  font-weight: 700;
-  color: var(--accent);
-}
-.toggle-click.active {margin-bottom: 2px;}
-  
+    margin: 5px 0;
+    font-weight: 700;
+    color: var(--accent);
+    
+    .toggle-click.active {margin-bottom: 2px;}
+    .fa-solid {color: var(--accent);}
+}  
 .guidebook-subsection {
     margin: 0 0 0 10px;
     border-left: var(--border);
     padding-left: 8px;
-  }
-.guidebook-menu .active a {
-    color: var(--accent);
-    font-weight: 900;
-}
-  
-.guidebook-section .fa-solid {
-    color: var(--accent);
 }
 
 .guidebook-container {
@@ -1117,12 +1115,8 @@ letter-spacing: .5px;
     scroll-margin-top: calc(var(--navHeight) + var(--headerHeight));
 }
   
-.guidebook h2 {
-  letter-spacing: 1px;
-}    
-.guidebook :is(i, em) {
-    color: rgb(from var(--textColor) r g b / .7);
-}
+.guidebook h2 {letter-spacing: 1px;}    
+.guidebook :is(i, em) {color: rgb(from var(--textColor) r g b / .7);}
 .guidebook u {
     text-decoration: none;
     border-bottom: 1px solid var(--accent);
@@ -1136,31 +1130,24 @@ letter-spacing: .5px;
 .guidebook blockquote {
     margin: 20px 10px;
     font-size: 0.95em;
-}
-.guidebook blockquote:has(+br + h3) {
-    margin-bottom: 10px;
-}
-.guidebook blockquote[data-title]:before {
-    content: attr(data-title) ':';
-    display: block;
-    font-family: var(--fontSubTitle);
-    color: var(--accent);
-    text-transform: uppercase;
-    font-weight: 900;
-    letter-spacing: .5px;
-    font-size: var(--normal-size);
-    margin-bottom: 5px;
-}  
-  .guidebook blockquote p:first-child {
-    margin-top: 0px;
-}  
-.guidebook blockquote p:last-child {
-    margin-bottom: 0px;
-}
 
-
+    &:has(+br + h3) {margin-bottom: 10px;}
+    &[data-title]:before {
+      content: attr(data-title) ':';
+      display: block;
+      font-family: var(--fontSubTitle);
+      color: var(--accent);
+      text-transform: uppercase;
+      font-weight: 900;
+      letter-spacing: .5px;
+      font-size: var(--normal-size);
+      margin-bottom: 5px;
+    } 
+    p:first-child {margin-top: 0px;} 
+    p:last-child {margin-bottom: 0px;}
+}
   
-  /* GUIDEBOOK RESPONSIVE DESIGN */
+/*  Responsive design */
   
 @media screen and (max-width: 580px) {
   .crono-event {margin: 0 0 0 20px;}
@@ -1173,6 +1160,7 @@ letter-spacing: .5px;
   .guidebook-container {min-width: auto;}
   .guidebook-content {padding: 15px;}
 }
+
 
 /* CAROUSEL */
 
