@@ -692,7 +692,7 @@ letter-spacing: .5px;
   display: grid;
   place-content: center;
   width: 50px;
-  aspect-ration: 1/1;
+  aspect-ratio: 1/1;
   background: var(--opacity);
   border-radius: 100%;
   border: var(--borderAccent);
