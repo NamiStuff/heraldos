@@ -1196,11 +1196,10 @@ display: grid;
 place-content: center;
 position: relative;
 border: 2px solid var(--accent);
-background-image: var(--award-image);
 border-radius: 100%;
+background-image: var(--award-image);
 background-position: center;
 background-size: cover;
-margin: 3px;
 
     &[class*=" gi"],[class*=" fa"],[class*=" if"] {background: var(--neutralDarker);}
     &[class*=" gi"],[class*=" fa"],[class*=" if"]:before {
@@ -1213,22 +1212,6 @@ margin: 3px;
 .award[class*=" fa"]:before {font-family: var(--fontAwesome);}
 .award[class*=" if"]:before {font-family: 'IcoFont';}
 
-.award_tooltiptext {
-pointer-events: none;
-position: absolute;
-margin-bottom: 85px;
-transform: translateY(-50%);
-transition: opacity .4s;
-visibility: collapse;
-z-index: 6;
-width: 150px;
-text-align: justify;
-font-size: var(--little-size);
-line-height: 1em;
-background: var(--neutral);
-opacity: 0;
-padding: 8px;
-}
 .award_tooltiptext_title {
 text-transform: uppercase;
 color: var(--accent);
@@ -1237,15 +1220,6 @@ letter-spacing: .5px;
 font-weight: 900;
 font-style: normal;
 padding-bottom: 3px;
-}
-.award_tooltiptext::after {
-content: '';
-position: absolute;
-bottom: -14px;
-right: 45%;
-border-width: 7px;
-border-style: solid;
-border-color: var(--neutral) transparent transparent transparent;
 }
 
 
