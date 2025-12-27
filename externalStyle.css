@@ -439,19 +439,20 @@ text-transform: uppercase;
 font-size: var(--little-size);
 color: var(--textColorAccent);
 letter-spacing: .5px;
+background: var(--accent);
 }
 .ucp-main:has(#memberlist, .drafts-list, #checkboxes) .panel .right-box {
-    font-size: 0;
-    background: var(--neutralDarker);
-    padding: 10px;
-    margin: 10px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    text-transform: uppercase;
-    font-family: var(--fontSubTitle);
+font-size: 0;
+background: var(--neutralDarker);
+padding: 10px;
+margin: 10px 0;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 5px;
+text-transform: uppercase;
+font-family: var(--fontSubTitle);
 }
 .ucp-main:has(#memberlist, .drafts-list, #checkboxes) .panel .right-box a {font-size: var(--normal-size);}
 
