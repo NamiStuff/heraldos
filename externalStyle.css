@@ -902,7 +902,7 @@ font-family: var(--fontSubTitle);
   margin: 0 auto 20px;
   span {color: var(--accent);}
   
-  &:after {content: ' va a probar su suerte';}
+  &:after {content: ' hechó su suerte';}
  .tirada-monstruo &:before {content: '¡Alerta, ';}
  .tirada-monstruo &:after {content: ' ha encontrado peligro!';}
 }
