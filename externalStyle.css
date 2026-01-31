@@ -1345,7 +1345,8 @@ div.sceditor-color-picker-modern {
   background: inherit;
   border: none;
 }
-a.sceditor-color-option {border: var(--border);}
+.sceditor-palette-row, .sceditor-palette, .sceditor-color-grid, .sceditor-color-row {gap: 2px;}
+a.sceditor-color-option {border: none !important;}
 
 /* Modificar pj */
 .sceditor-dropdown.sceditor-charMask-picker > div:has(div) {
