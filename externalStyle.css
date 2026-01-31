@@ -1282,6 +1282,7 @@ a.sceditor-button.hover { background: inherit; box-shadow: none;}
     border: var(--border);
     border-radius: 0;
     color: var(--textColor);
+    padding: 10px;
 }
 
 div.sceditor-dropdown a.sceditor-font-option, div .sceditor-header-option, div a.sceditor-fontsize-option, p.sceditor-mention-user, div.sceditor-dropdown label {
@@ -1340,7 +1341,11 @@ p.sceditor-mention-user img {
 }
 
 /* Color picker*/ 
-.sceditor-color-option {border: var(--border);}
+div.sceditor-color-picker-modern {
+  background: inherit;
+  border: none;
+}
+a.sceditor-color-option {border: var(--border);}
 
 /* Modificar pj */
 .sceditor-dropdown.sceditor-charMask-picker > div:has(div) {
