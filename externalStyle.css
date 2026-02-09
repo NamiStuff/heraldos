@@ -1553,8 +1553,8 @@ div.sceditor-charMask-stats label {
   .tablon-ambi, .tablon-news, .tablon-user, .tablon-calendar {display: none;}
   .tablon-links a {height: auto;width: auto;background: none;}
   /*segundo tablon*/  
-  .sidebar {height: 100%; display: flex; flex-direction: column;}
-  .sidebar > div:not(.close) {padding: 15px;min-width: 220px;}
+  .modal {height: 100%; display: flex; flex-direction: column;}
+  .modal > div:not(.close) {padding: 15px;min-width: 220px;}
   /*post*/
   .poll_option {width: 180px;}
   .post_poster {padding: 15px; font-size: var(--little-size);}
