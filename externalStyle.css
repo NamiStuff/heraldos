@@ -463,24 +463,19 @@ font-family: var(--fontSubTitle);
   position: relative;
 }
 .ucp-main #checkboxes th:last-child:after {
-    content: 'En el Foro';
-    visibility: visible;
-    position: absolute;
-    border-bottom: var(--border);
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
+  content: 'En el Foro';
+  visibility: visible;
+  position: absolute;
+  inset: 0;
+  place-content: center;
+  background: var(--accent);
 }
 
 .cp_notifs {margin-top: 10px;}
 .cp_notifs table tbody:empty:before {
     display: block;
     content: 'No hay notificaciones.';
-    margin: 10px 0 0;
+    margin: 10px;
 }
 
 /* followed threads & drafts */
