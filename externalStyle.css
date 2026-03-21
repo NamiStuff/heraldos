@@ -905,7 +905,7 @@ font-family: var(--fontSubTitle);
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  flex: 1 200px;
+  flex: 1;
   align-content: flex-start;
 }
 .caja-tiradas {gap: 15px;}
@@ -936,7 +936,8 @@ font-family: var(--fontSubTitle);
 
 /* Dado de monstruos */
 .dado-monstruo {
-  
+  flex: 1 100%;
+    
   .dado {
     background: var(--neutral);
     padding: 20px;
