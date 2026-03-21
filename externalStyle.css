@@ -6,6 +6,7 @@
 - Tablillas de rol
 - Tablillas staff
 - Tablillas de búsqueda
+- Tooltip cheats
 - Profile Options tables
 - Profile Descriptions Style
 - Profile Stats
@@ -422,6 +423,27 @@ blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
         
     }
 } 
+
+/* TOOLTIP CHEATS */
+
+.gd-cheat:not(:has(span)), .gd-cheat .gd-name {
+    font: 900 var(--normal-size)/1em var(--fontSubTitle); 
+    text-transform: uppercase; 
+    color: var(--accent);
+} 
+.gd-cheat:has(span) {cursor: pointer;} 
+.gd-cheat .gd-data {display: none;} 
+
+.tooltipster-content {
+    u {text-decoration: none;} 
+    strong,.item-sub i {color:var(--accent);}
+   .item-sub {
+    font-size: .8em; 
+    gap: 0 5px; 
+    line-height: 1em; 
+    margin-top: 5px;
+    } 
+}
 
 /* PROFILE OPTIONS TABLES */
 
