@@ -270,8 +270,7 @@ blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
 }
 
 /*Color personal*/
-/*.category-3 .content:has(.cp, .tab-datos), */
-.cp {--accent: var(--personalClr, var(--accentGroup));}
+.category-3 .content:has(.cp, .tab-datos), .cp {--accent: var(--personalClr, var(--accentGroup));}
 :where(b, span, strong).cp {color: var(--accent);}
 
 /*Separador de secciones*/
