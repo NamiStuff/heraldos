@@ -248,31 +248,38 @@ div.tab-batalla-dma:after {content: 'Def Mágica';}
     color: var(--textColorAccent);
     font-size: var(--little-size);
 }
+br + .tab-datos {margin-top: 10px;}
+br:has(+ .tab-datos):not(:has(.tab-datos + style)) {display: none;}
 
-.tab-datos:where(:first-child,:last-child), :where(style, style + br) + .tab-datos, .tab-datos:has(+ style, + br + style) {
+.tab-datos:where(:first-child, :last-child), :where(style:first-child ~ br, style) + .tab-datos, .tab-datos:has(+ style, ~ br + style:last-child) {
     margin: var(--post-padding-neg) var(--post-padding-neg) 0;
     background: var(--opacity);
     padding: 10px;
 }
-.tab-datos:last-child, .tab-datos:has(+ style, + br + style) {margin: 0 var(--post-padding-neg) var(--post-padding-neg);}
-h2 + :is(br, br + br) + .tab-datos {margin-top: -10px;}
-h2 + .tab-datos {margin-top: 9px;}
+.tab-datos:last-child, .tab-datos:has(+ style, ~ br + style:last-child) {margin: 0 var(--post-padding-neg) var(--post-padding-neg);}
 blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
 
 .tab-datos i {color: var(--accent);}
 .tab-datos + br:has(+br) {display: none;}
 
+/*Citas para temas oficiales*/
+.category-3 blockquote:where(:last-child, :has(~ style:last-child)) {
+    margin: 0 var(--post-padding-neg) var(--post-padding-neg); 
+    background: var(--opacity); 
+    padding: 15px 30px;
+}
+
 /*Color personal*/
-.c3 .post_message .content:has(.cp, .tab-datos), .cp {--accent: var(--personalClr, var(--accentGroup));}
+/*.category-3 .content:has(.cp, .tab-datos), */
 .cp {--accent: var(--personalClr, var(--accentGroup));}
-:is(b, span, strong).cp {color: var(--accent);}
+:where(b, span, strong).cp {color: var(--accent);}
 
 /*Separador de secciones*/
 .post_row .content hr {
     margin: 30px -30px;
     border-top: 30px solid var(--neutralDark);
 }
-.content hr + br, .content hr + br + br, .content br:has(+ hr) {display: none;}
+.content hr + br + br, .content br:has(+ hr) {display: none;}
 
 /*Imagen o Icono de cabecera */
 .content:has(.tab-datos, .cp) :is(img, i:first-child:has(+br), i:has(+ br + :is(h2, h3))) {
