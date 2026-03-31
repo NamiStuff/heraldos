@@ -249,7 +249,6 @@ div.tab-batalla-dma:after {content: 'Def Mágica';}
     font-size: var(--little-size);
 }
 br + .tab-datos {margin-top: 10px;}
-br:has(+ .tab-datos):not(:has(.tab-datos + style)) {display: none;}
 
 .tab-datos:where(:first-child, :last-child), :where(style:first-child ~ br, style) + .tab-datos, .tab-datos:has(+ style, ~ br + style:last-child) {
     margin: var(--post-padding-neg) var(--post-padding-neg) 0;
@@ -260,7 +259,7 @@ br:has(+ .tab-datos):not(:has(.tab-datos + style)) {display: none;}
 blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
 
 .tab-datos i {color: var(--accent);}
-.tab-datos + br:has(+br) {display: none;}
+.tab-datos + br:has(+br), br:has(+ .tab-datos:not(:last-child)):not(:has(+ .tab-datos + style)) {display: none;}
 
 /*Citas para temas oficiales*/
 .category-3 blockquote:where(:last-child, :has(~ style:last-child)) {
