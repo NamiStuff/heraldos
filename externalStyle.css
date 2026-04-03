@@ -1594,7 +1594,7 @@ div.sceditor-charMask-stats label {
   :is(.newpm_button, .pmreply):has(+ #privmsgs-menu) {display: none;}
 }
 @media screen and (max-width: 385px) {  
-  .tablon-link {font-size: var(--medium-size);}
+  a.tablon-link {font-size: var(--medium-size);}
   .poster-list, .post_poster:before, .postprofile-status, .profile-top:before, .profile-status, .field-visited {display: none;}
   .profile-content {align-content: flex-start;}
   .tab-batalla .tab-batalla-def {max-width: 100%;flex-direction: unset;}
