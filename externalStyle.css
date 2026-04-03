@@ -1578,13 +1578,14 @@ div.sceditor-charMask-stats label {
   .header-logo {clip-path: unset; font-size: 40vw;}
   .header-logo:before {display: none;}
   /*tablon*/
-  .tablon {display: flex; flex-wrap: wrap;}
-  .tablon > div {flex: 1 100%;}
+  .tablon {display: flex; flex-wrap: wrap; padding: 0;}
+  .tablon > div {flex: 1 100%; }
   .tablon-ambi, .tablon-news, .tablon-user, .tablon-calendar {display: none;}
+  .tablon .tablon-temas {padding: 15px;}
   a.tablon-link {background: none; border: 0; width: auto;}
   /*segundo tablon*/  
-  .modal:popover-open {height: 100%; display: flex; flex-direction: column;}
-  .modal > div:not(.close) {padding: 15px;min-width: 220px;}
+  .modal:popover-open {max-height: 100%; overflow: auto;}
+  .modal > div:not(.close) {padding: 15px; min-width: 220px;}
   /*post*/
   .poll_option {width: 180px;}
   .post_poster {padding: 15px; font-size: var(--little-size);}
