@@ -1571,7 +1571,7 @@ div.sceditor-charMask-stats label {
   /*topbar*/
   .topbar {padding: 7px 15px;}
   .navbar {gap: 5px; width: 100%; justify-content: space-between}
-  .navlink {width: 22px; font-size: .85em}
+  .navlink {width: 22px;  font-size: .85em; /*! border: 0; */}
   .navlink.mensajeria span, #fa_right #fa_notifications #notif_unread {right: -5px;top: -5px;}
   /*header*/
   #header {margin-bottom: 50px;}
@@ -1581,7 +1581,7 @@ div.sceditor-charMask-stats label {
   .tablon {display: flex; flex-wrap: wrap;}
   .tablon > div {flex: 1 100%;}
   .tablon-ambi, .tablon-news, .tablon-user, .tablon-calendar {display: none;}
-  .tablon-link {width: auto; background: none; border: 0;}
+  .tablon a.tablon-link {background: none;border: 0;width: auto;}
   /*segundo tablon*/  
   .modal:popover-open {height: 100%; display: flex; flex-direction: column;}
   .modal > div:not(.close) {padding: 15px;min-width: 220px;}
@@ -1593,8 +1593,8 @@ div.sceditor-charMask-stats label {
   /*pms*/
   :is(.newpm_button, .pmreply):has(+ #privmsgs-menu) {display: none;}
 }
-@media screen and (max-width: 385px) {
-  .tablon-link {font-size: var(--medium-size);}
+@media screen and (max-width: 385px) {  
+  .tablon a.tablon-link {font-size: var(--medium-size);}
   .poster-list, .post_poster:before, .postprofile-status, .profile-top:before, .profile-status, .field-visited {display: none;}
   .profile-content {align-content: flex-start;}
   .tab-batalla .tab-batalla-def {max-width: 100%;flex-direction: unset;}
