@@ -1522,8 +1522,8 @@ div.sceditor-charMask-stats label {
 }
 @media screen and (max-width: 810px) {
   .topicslist-avatar-lastpost {display: none;}
-  .header-title {flex-direction: column; gap: 10px;}
-  .header-name {order: 2;width: auto;font-size: var(--normal-size);line-height: 1em;text-shadow: none;text-align: center;transform: none;font-family: var(--font);letter-spacing: 4px;}
+  .header-title {flex-direction: column;}
+  .header-name {order: 2;width: auto; font-size: var(--normal-size); line-height: 1em; text-shadow: none; font-family: var(--font); letter-spacing: 4px; transform: unset;}
   .memberlist #form-ui {align-items: flex-start;}
   .userlist[style] {width: 100%;}
 }
@@ -1574,9 +1574,8 @@ div.sceditor-charMask-stats label {
   .navlink {width: 22px; height: 22px; font-size: .85em; border: 0;}
   .navlink.mensajeria span, #fa_right #fa_notifications #notif_unread {right: -5px;top: -5px;}
   /*header*/
-  #header {font-size: .80em;}
   .header-logo:before {display: none;}
-  .header-logo {clip-path: unset; font-size: 40vw; text-align: center; line-height: 1em; width: auto;}
+  .header-logo {clip-path: unset; font-size: 40vw;}
   /*tablon*/
   .tablon {display: flex; flex-wrap: wrap;}
   .tablon > div {flex: 1 100%;}
