@@ -1581,7 +1581,7 @@ div.sceditor-charMask-stats label {
   .tablon {display: flex; flex-wrap: wrap;}
   .tablon > div {flex: 1 100%;}
   .tablon-ambi, .tablon-news, .tablon-user, .tablon-calendar {display: none;}
-  .tablon a.tablon-link {background: none;border: 0;width: auto;}
+  a.tablon-link {background: none; border: 0; width: auto;}
   /*segundo tablon*/  
   .modal:popover-open {height: 100%; display: flex; flex-direction: column;}
   .modal > div:not(.close) {padding: 15px;min-width: 220px;}
@@ -1594,7 +1594,7 @@ div.sceditor-charMask-stats label {
   :is(.newpm_button, .pmreply):has(+ #privmsgs-menu) {display: none;}
 }
 @media screen and (max-width: 385px) {  
-  .tablon a.tablon-link {font-size: var(--medium-size);}
+  .tablon-link {font-size: var(--medium-size);}
   .poster-list, .post_poster:before, .postprofile-status, .profile-top:before, .profile-status, .field-visited {display: none;}
   .profile-content {align-content: flex-start;}
   .tab-batalla .tab-batalla-def {max-width: 100%;flex-direction: unset;}
