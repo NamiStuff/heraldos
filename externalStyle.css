@@ -1241,7 +1241,7 @@ background-size: cover;
     &[class*=" fa"]:before {font-family: var(--fontAwesome); content: var(--fa);}
     &[class*=" if"]:before {font-family: 'IcoFont';}
     
-    .award-tooltiptext {display: none;}
+    .award_tooltiptext {display: none;}
 }
 
 .award_tooltiptext_title {
