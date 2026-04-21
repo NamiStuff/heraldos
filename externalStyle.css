@@ -1217,6 +1217,7 @@ button.flickity-prev-next-button.next {right: 5px;}
 .profile-awards-content {
 display: flex;
 flex-wrap: wrap;
+gap: 5px;
 }
 
 .award {
