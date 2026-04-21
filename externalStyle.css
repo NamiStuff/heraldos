@@ -630,12 +630,10 @@ font-family: var(--fontSubTitle);
   flex: 1;
   min-width: 270px;
 }
-
 .profile-rpg > div:first-child {
   min-height: 180px;
   position: relative;
 }
-
 .profile-rpg > div:last-child {
   display: flex;
   flex-wrap: wrap;
@@ -645,13 +643,9 @@ font-family: var(--fontSubTitle);
 
 .profile-rpg .profile-field {
   gap: 0;
-  min-width: unset;
+  min-width: auto;
 }
-
-.profile-rpg > div:first-child .profile-field, .postprofile-stats .postprofile-field {
-  position: absolute;
-  min-width: unset;
-}
+.profile-rpg > div:first-child .profile-field, .postprofile-stats .postprofile-field {position: absolute;}
 
 .profile-rpg .profile-field-content, .postprofile-stats .postprofile-field-content {
   font-size: var(--large-size);
@@ -685,26 +679,17 @@ font-family: var(--fontSubTitle);
   font-family: 'game-icons';
   opacity: .2;
   font-size: 2.8em;
-  top: -2px;
-  left: -6px;
-  z-index: -1;
 }
-/*.profile-rpg > div:first-child .profile-field.destreza:before {content: '\e3a7';}
-.profile-rpg > div:first-child .profile-field.reflejos:before {content: '\efe2';}
-.profile-rpg > div:first-child .profile-field.fortaleza:before {content: '\e9aa';}
-.profile-rpg > div:first-child .profile-field.voluntad:before {content: '\e115';}
-.profile-rpg > div:first-child .profile-field.percepcion:before {content: '\e429';}
-.profile-rpg > div:first-child .profile-field.inteligencia:before {content: '\e22c';} */
 
-.profile-field.destreza, .profile-field.voluntad {top: 4%;}
+.profile-rpg > div:first-child .profile-field:not(.nivel), .postprofile-stats .postprofile-field:not(.postprofile-field-nivel) {min-width: 40px; height: 40px;}
+.profile-field.destreza, .profile-field.voluntad {top: 0;}
 .postprofile-field-destreza, .postprofile-field-voluntad {top: 0;}
 .profile-field.destreza, .profile-field.fortaleza, .postprofile-field-destreza, .postprofile-field-fortaleza { left: 27%;}
 .profile-field.reflejos, .profile-field.percepcion, .postprofile-field-reflejos, .postprofile-field-percepcion {top: 50%;transform: translate(0, -50%);}
-.profile-field.reflejos, .postprofile-field-reflejos {left: 14%;}
+.profile-field.reflejos, .postprofile-field-reflejos {left: 12%;}
 .profile-field.fortaleza, .profile-field.inteligencia, .postprofile-field-fortaleza, .postprofile-field-inteligencia {bottom: 0;}
 .profile-field.voluntad, .profile-field.inteligencia, .postprofile-field-voluntad, .postprofile-field-inteligencia {right: 27%;}
-.profile-field.percepcion, .postprofile-field-percepcion {right: 14%;}
-.profile-rpg > div:first-child .profile-field:not(.nivel), .postprofile-stats .postprofile-field:not(.postprofile-field-nivel) {height: 53px;}
+.profile-field.percepcion, .postprofile-field-percepcion {right: 12%;}
 
 
 /* PROFILE INVENTORY */
