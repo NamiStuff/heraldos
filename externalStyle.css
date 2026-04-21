@@ -1225,7 +1225,6 @@ width: 70px;
 height: 70px;
 display: grid;
 place-content: center;
-position: relative;
 border: 2px solid var(--accent);
 border-radius: 100%;
 background-image: var(--award-image);
