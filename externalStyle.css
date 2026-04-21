@@ -1232,16 +1232,17 @@ background-image: var(--award-image);
 background-position: center;
 background-size: cover;
 
-    &[class*=" gi"],[class*=" fa"],[class*=" if"] {background: var(--neutralDarker);}
-    &[class*=" gi"],[class*=" fa"],[class*=" if"]:before {
-        font-size: 35px;
-        color: var(--accent);
+    &:is([class*=" gi"],[class*=" fa"],[class*=" if"]) {
+        background: var(--neutralDarker);
+        &:before {font-size: 35px; color: var(--accent);}
     }
-    .award-tooltip {display: none;}
+    
+    &[class*=" gi"]:before {font-family: 'game-icons';}
+    &[class*=" fa"]:before {font-family: var(--fontAwesome); content: var(--fa);}
+    &[class*=" if"]:before {font-family: 'IcoFont';}
+    
+    .award-tooltiptext {display: none;}
 }
-.award[class*=" gi"]:before {font-family: 'game-icons';}
-.award[class*=" fa"]:before {font-family: var(--fontAwesome); content: var(--fa);}
-.award[class*=" if"]:before {font-family: 'IcoFont';}
 
 .award_tooltiptext_title {
 text-transform: uppercase;
