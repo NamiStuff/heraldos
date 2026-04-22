@@ -437,6 +437,8 @@ blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
         text-transform: uppercase; 
         color: var(--accent);
     } 
+    &.rule > a i {font-size: .85em; padding-left: 1px;}
+    
     &:has(span) {cursor: pointer;} 
     .gd-data {display: none;}
 }
