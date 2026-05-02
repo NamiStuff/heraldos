@@ -1046,6 +1046,7 @@ font-family: var(--fontSubTitle);
       font-weight: 700;
       letter-spacing: .5px;
     }
+    h3 {margin-block: 5px;}
   }
 }
 
