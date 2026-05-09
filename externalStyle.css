@@ -111,7 +111,6 @@ div.stat-int:after {content: 'INT';}
     flex: 1;
     flex-wrap: wrap;
     align-items: center;
-    min-width: 100%;
 }
 .tab-batalla-barras > div span {
     width: 50px;
@@ -1560,7 +1559,7 @@ div.sceditor-charMask-stats label {
   /*topbar*/
   .topbar {padding: 7px 15px;}
   .navbar {gap: 5px; width: 100%; justify-content: space-between}
-  .navlink {width: 22px;  font-size: .85em; /*! border: 0; */}
+  .navlink {width: 22px; font-size: .85em;}
   .navlink.mensajeria span, #fa_right #fa_notifications #notif_unread {right: -5px;top: -5px;}
   /*header*/
   #header {margin-bottom: 50px;}
@@ -1575,9 +1574,11 @@ div.sceditor-charMask-stats label {
   /*segundo tablon*/  
   .modal:popover-open {max-height: 100%; overflow: auto;}
   .modal > div:not(.close) {padding: 15px; min-width: 220px;}
-  /*post*/
+  /*polls*/
   .poll_option {width: 180px;}
-  .post_poster {padding: 15px; font-size: var(--little-size);}
+  .post_poster {padding: 15px; font-size: var(--little-size);}  
+  /*tablilla de batalla*/  
+  .tab-batalla-barras > div {in-width: 100%;}
   div.tab-batalla-dfi:after { content: 'DFI';}
   div.tab-batalla-dma:after { content: 'DMA';}
   /*pms*/
