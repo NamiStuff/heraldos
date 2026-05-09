@@ -1515,9 +1515,11 @@ div.sceditor-charMask-stats label {
   /*memberlist*/
   .memberlist #form-ui {align-items: flex-start;}
   .userlist[style] {width: 100%;}
-  /*topics*/
-  .category {.forum_row {gap: 10px;align-items: baseline;}.forum_left {flex: 100%;}}
+  /*forums*/
+  .forum_row {gap: 10px;align-items: baseline;}
+  .forum_left {flex: 100%;}
   .topicslist-avatar-lastpost {display: none;}
+  /*topics*/
   .tab-batalla-barras > div {min-width: 100%;}
 }
 @media screen and (max-width: 735px) {
