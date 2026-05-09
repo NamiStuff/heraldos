@@ -1509,11 +1509,15 @@ div.sceditor-charMask-stats label {
   .userlist {justify-content: flex-start;}
 }
 @media screen and (max-width: 810px) {
-  .topicslist-avatar-lastpost {display: none;}
+  /*index*/
   .header-title {flex-direction: column;}
   .header-name {order: 2;width: auto; font-size: var(--normal-size); line-height: 1em; text-shadow: none; font-family: var(--font); letter-spacing: 4px; transform: unset;}
+  /*memberlist*/
   .memberlist #form-ui {align-items: flex-start;}
   .userlist[style] {width: 100%;}
+  /*topics*/
+  .topicslist-avatar-lastpost {display: none;}
+  .tab-batalla-barras > div {in-width: 100%;}
 }
 @media screen and (max-width: 735px) {
   /* posts */
@@ -1574,11 +1578,9 @@ div.sceditor-charMask-stats label {
   /*segundo tablon*/  
   .modal:popover-open {max-height: 100%; overflow: auto;}
   .modal > div:not(.close) {padding: 15px; min-width: 220px;}
-  /*polls*/
+  /*posts*/
   .poll_option {width: 180px;}
   .post_poster {padding: 15px; font-size: var(--little-size);}  
-  /*tablilla de batalla*/  
-  .tab-batalla-barras > div {in-width: 100%;}
   div.tab-batalla-dfi:after { content: 'DFI';}
   div.tab-batalla-dma:after { content: 'DMA';}
   /*pms*/
