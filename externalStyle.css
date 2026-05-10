@@ -150,7 +150,7 @@ div.stat-int:after {content: 'INT';}
     .tab-batalla-sal:after {width: calc(attr(salud-actual px) / attr(salud-total px) * 100%);}
     .tab-batalla-vig:after {width: calc(attr(vigor-actual px) / attr(vigor-total px) * 100%);}
     .tab-batalla-mag:after {width: calc(attr(magia-actual px) / attr(magia-total px) * 100%);}
-    @supports not (x: attr(x px)) {
+    @supports not (x: attr(x px)) { /* FIREFOX */
       .tab-batalla-fill {
           background: var(--accent);
           height: 100%;
