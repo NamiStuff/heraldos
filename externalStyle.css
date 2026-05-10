@@ -66,37 +66,39 @@
     justify-content: space-evenly;
     gap: 10px;
     align-items: center;
+    
+    .stat-des:before {content: attr(stat-des);}
+    .stat-ref:before {content: attr(stat-ref);}
+    .stat-for:before {content: attr(stat-for);}
+    .stat-vol:before {content: attr(stat-vol);}
+    .stat-per:before {content: attr(stat-per);}
+    .stat-int:before {content: attr(stat-int);}
+    .stat-des:after {content: 'DES';}
+    .stat-ref:after {content: 'REF';}
+    .stat-for:after {content: 'FOR';}
+    .stat-vol:after {content: 'VOL';}
+    .stat-per:after {content: 'PER';}
+    .stat-int:after {content: 'INT';}
 }
 .tab-batalla-stats div {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-weight: 900;
+
+    &:before {
+        content: '0';
+        color: var(--textColorAccent);
+        font-size: var(--medium-size);
+        font-family: var(--fontTitle);
+    }
+    &:after {
+        content: 'DES';
+        color: var(--accent);
+        font-family: var(--fontSubTitle);
+        line-height: 1em;
+    }
 }
-.tab-batalla-stats div:before {
-    content: '0';
-    color: var(--textColorAccent);
-    font-size: var(--medium-size);
-    font-family: var(--fontTitle);
-}
-div.stat-des:before {content: attr(stat-des);}
-div.stat-ref:before {content: attr(stat-ref);}
-div.stat-for:before {content: attr(stat-for);}
-div.stat-vol:before {content: attr(stat-vol);}
-div.stat-per:before {content: attr(stat-per);}
-div.stat-int:before {content: attr(stat-int);}
-.tab-batalla-stats div:after {
-    content: 'DES';
-    color: var(--accent);
-    font-family: var(--fontSubTitle);
-    line-height: 1em;
-}
-div.stat-des:after {content: 'DES';}
-div.stat-ref:after {content: 'REF';}
-div.stat-for:after {content: 'FOR';}
-div.stat-vol:after {content: 'VOL';}
-div.stat-per:after {content: 'PER';}
-div.stat-int:after {content: 'INT';}
 
 .tab-batalla .tab-batalla-barras {
     display: flex;
@@ -128,6 +130,7 @@ div.stat-int:after {content: 'INT';}
     }
     &:has(.tab-batalla-sal) {flex: 100%;}
     
+    /* Salud counter */    
     > div:before {
         content: '0/0';
         position: absolute;
@@ -140,7 +143,7 @@ div.stat-int:after {content: 'INT';}
     .tab-batalla-sal:before {content: attr(salud-actual) '/' attr(salud-total);}
     .tab-batalla-vig:before {content: attr(vigor-actual) '/' attr(vigor-total);}
     .tab-batalla-mag:before {content: attr(magia-actual) '/' attr(magia-total);}
-
+    /* Stats fill */
     :is(.tab-batalla-sal, .tab-batalla-vig, .tab-batalla-mag):after {
         content: '';
         background: var(--accent);
@@ -157,6 +160,24 @@ div.stat-int:after {content: 'INT';}
           width: 100%;
       }
       :is(.tab-batalla-sal, .tab-batalla-vig, .tab-batalla-mag):after {display: none;}
+    }
+    /* Salud status */
+    .tab-batalla-sal {
+        container: salud / size;
+        
+        .tab-batalla-status {
+            position: absolute;            
+            &:after {content: 'Sano';}
+        }
+        @container salud style(calc(attr(salud-actual px) / attr(salud-total px) * 100) <= 60) {
+            .tab-batalla-status:after {content: 'Herido';}
+        }
+        @container salud style(calc(attr(salud-actual px) / attr(salud-total px) * 100) <= 30) {
+            .tab-batalla-status:after {content: 'Grave';}
+        }
+        @container salud style(calc(attr(salud-actual px) / attr(salud-total px) * 100) = 0) {
+            .tab-batalla-status:after {content: 'Incapacitado';}
+        }
     }
 }
 
