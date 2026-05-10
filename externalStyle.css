@@ -197,6 +197,10 @@ div.stat-int:after {content: 'INT';}
             position: relative;
             z-index: 1;
         }
+        &.tab-batalla-dfi:before {content: attr(defensa-fisica);}
+        &.tab-batalla-dma:before {content: attr(defensa-magica);}
+        &.tab-batalla-dfi:after {content: 'Def Física';}
+        &.tab-batalla-dma:after {content: 'Def Mágica';}        
         i {
             position: absolute;
             left: 50%;
@@ -206,10 +210,6 @@ div.stat-int:after {content: 'INT';}
         }
     }
 }
-div.tab-batalla-dfi:before {content: attr(defensa-fisica);}
-div.tab-batalla-dma:before {content: attr(defensa-magica);}
-div.tab-batalla-dfi:after {content: 'Def Física';}
-div.tab-batalla-dma:after {content: 'Def Mágica';}
 
 .tab-batalla :is(.tab-batalla-datos,.tab-batalla-acc) {min-width: 225px;}
 .tab-batalla .tab-batalla-tit {
