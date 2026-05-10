@@ -111,38 +111,52 @@ div.stat-int:after {content: 'INT';}
     flex: 1;
     flex-wrap: wrap;
     align-items: center;
-}
-.tab-batalla-barras > div span {
-    width: 50px;
-    font-weight: 900;
-    line-height: 1em;
-    color: var(--textColorAccent);
-    font-family: var(--fontSubTitle);
-}
-.tab-batalla-barras > div > div {
-    background: var(--neutralDarker);
-    color: var(--textColorAccent);
-    position: relative;
-    height: 15px;
-    flex: 1;
-}
-.tab-batalla-barras > div:has(.tab-batalla-sal) {flex: 100%;}
-.tab-batalla-barras > div > div:before {
-    content: '0/0';
-    position: absolute;
-    font-size: var(--little-size);
-    font-weight: 700;
-    line-height: 1.25em;
-    left: 50%;
-    transform: translate(-50%);
-}
-.tab-batalla .tab-batalla-sal:before {content: attr(salud-actual) '/' attr(salud-total);}
-.tab-batalla .tab-batalla-vig:before {content: attr(vigor-actual) '/' attr(vigor-total);}
-.tab-batalla .tab-batalla-mag:before {content: attr(magia-actual) '/' attr(magia-total);}
-.tab-batalla-fill {
-    background: var(--accent);
-    height: 100%;
-    width: 100%;
+
+    span {
+        width: 50px;
+        font-weight: 900;
+        line-height: 1em;
+        color: var(--textColorAccent);
+        font-family: var(--fontSubTitle);
+    }
+    > div {
+        background: var(--neutralDarker);
+        color: var(--textColorAccent);
+        position: relative;
+        height: 15px;
+        flex: 1;
+    }
+    &:has(.tab-batalla-sal) {flex: 100%;}
+    
+    > div:before {
+        content: '0/0';
+        position: absolute;
+        font-size: var(--little-size);
+        font-weight: 700;
+        line-height: 1.25em;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .tab-batalla-sal:before {content: attr(salud-actual) '/' attr(salud-total);}
+    .tab-batalla-vig:before {content: attr(vigor-actual) '/' attr(vigor-total);}
+    .tab-batalla-mag:before {content: attr(magia-actual) '/' attr(magia-total);}
+
+    :is(.tab-batalla-sal, .tab-batalla-vig, .tab-batalla-mag):after {
+        content: '';
+        background: var(--accent);
+        height: 100%;
+        display: block;
+    }
+    .tab-batalla-sal:after {width: calc(attr(salud-actual px) / attr(salud-total px) * 100%);}
+    .tab-batalla-vig:after {width: calc(attr(vigor-actual px) / attr(vigor-total px) * 100%);}
+    .tab-batalla-mag:after {width: calc(attr(magia-actual px) / attr(magia-total px) * 100%);}
+    @supports not (x: attr(x px)) {
+      .tab-batalla-fill {
+          background: var(--accent);
+          height: 100%;
+          width: 100%;
+      }
+    }
 }
 
 .tab-batalla-boton {
@@ -154,39 +168,47 @@ div.stat-int:after {content: 'INT';}
     cursor: pointer;
 }
 
-.tab-batalla-def, .tab-batalla-acc {text-align: center;flex-direction: column;text-transform: uppercase;}
-
+.tab-batalla-def, .tab-batalla-acc {
+    text-align: center;
+    flex-direction: column
+    ;text-transform: uppercase;
+}
 .tab-batalla .tab-batalla-def {
     max-width: 110px;
     font-weight: 900;
     color: var(--textColorAccent);
     font-family: var(--fontSubTitle);
-}
-.tab-batalla-def > div {position: relative;line-height: initial;}
-.tab-batalla-def > div:before {
-    content: '0';
-    display: block;
-    color: var(--accent);
-    font-size: var(--title-size);
-    font-family: var(--fontTitle);
-    position: relative;
-    z-index: 1;
+
+    > div {
+        position: relative;
+        line-height: initial;
+
+        &:before {
+            content: '0';
+            display: block;
+            color: var(--accent);
+            font-size: var(--title-size);
+            font-family: var(--fontTitle);
+            position: relative;
+            z-index: 1;
+        }
+        &:after {
+            position: relative;
+            z-index: 1;
+        }
+        i {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2.5em;
+            color: var(--neutral);
+        }
+    }
 }
 div.tab-batalla-dfi:before {content: attr(defensa-fisica);}
 div.tab-batalla-dma:before {content: attr(defensa-magica);}
-.tab-batalla-def div:after {
-    position: relative;
-    z-index: 1;
-}
 div.tab-batalla-dfi:after {content: 'Def Física';}
 div.tab-batalla-dma:after {content: 'Def Mágica';}
-.tab-batalla-def > div i {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2.5em;
-    color: var(--neutral);
-}
 
 .tab-batalla :is(.tab-batalla-datos,.tab-batalla-acc) {min-width: 225px;}
 .tab-batalla .tab-batalla-tit {
