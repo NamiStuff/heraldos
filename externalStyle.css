@@ -156,6 +156,7 @@ div.stat-int:after {content: 'INT';}
           height: 100%;
           width: 100%;
       }
+      :is(.tab-batalla-sal, .tab-batalla-vig, .tab-batalla-mag):after {display: none;}
     }
 }
 
