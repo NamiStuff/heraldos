@@ -174,11 +174,11 @@
         }
         @container salud style(calc(attr(salud-actual px) / attr(salud-total px) * 100) <= 60) {
             .tab-batalla-status:after {content: 'Herido';}
-            &:after {background-image: repeating-linear-gradient(45deg, var(--accent), var(--accent) 5px, var(--neutral) 5px, var(--neutral) 12px);}
+            /*&:after {background-image: repeating-linear-gradient(45deg, var(--accent), var(--accent) 5px, var(--neutral) 5px, var(--neutral) 12px);}*/
         }
         @container salud style(calc(attr(salud-actual px) / attr(salud-total px) * 100) <= 30) {
             .tab-batalla-status:after {content: 'Grave';}
-            &:after {background-image: repeating-linear-gradient(45deg, var(--accent), var(--accent) 5px, var(--neutral) 5px, var(--neutral) 18px);}
+            /*&:after {background-image: repeating-linear-gradient(45deg, var(--accent), var(--accent) 5px, var(--neutral) 5px, var(--neutral) 18px);}*/
         }
         @container salud style(calc(attr(salud-actual px) / attr(salud-total px) * 100) = 0) {
            .tab-batalla-status:after {content: 'Incapacitado';}*/
