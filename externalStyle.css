@@ -298,7 +298,7 @@
 }
 br + .tab-datos {margin-top: 10px;}
 
-.tab-datos:where(:first-child, :last-child), :where(style:first-child ~ br, style) + .tab-datos {
+.tab-datos:where(:first-child, :last-child), :where(style:first-child ~ br, style) + .tab-datos, .tab-datos:has(+ style, + br + style, + br + br + style) {
     margin: var(--post-padding-neg) var(--post-padding-neg) 0;
     background: var(--opacity);
     padding: 10px;
