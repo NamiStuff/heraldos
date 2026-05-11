@@ -166,7 +166,10 @@
         container: salud / size;
         
         .tab-batalla-status {
-            position: absolute;            
+            position: absolute;    
+            opacity: 0;
+            
+            :hover > & {opacity: 1; transition: var(--transition);}       
             &:after {content: 'Sano';}
         }
         @container salud style(calc(attr(salud-actual px) / attr(salud-total px) * 100) <= 60) {
