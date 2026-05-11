@@ -298,16 +298,16 @@
 }
 br + .tab-datos {margin-top: 10px;}
 
-.tab-datos:where(:first-child, :last-child), :where(style:first-child ~ br, style) + .tab-datos, .tab-datos:has(+ style, ~ br + style:last-child) {
+.tab-datos:where(:first-child, :last-child, :last-of-type), :where(style:first-child ~ br, style) + .tab-datos {
     margin: var(--post-padding-neg) var(--post-padding-neg) 0;
     background: var(--opacity);
     padding: 10px;
 }
-.tab-datos:last-child, .tab-datos:has(+ style, ~ br + style:last-child) {margin: 0 var(--post-padding-neg) var(--post-padding-neg);}
+.tab-datos:last-child, .tab-datos:has(+ style, + br + style, + br + br + style) {margin: 0 var(--post-padding-neg) var(--post-padding-neg);}
 blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
 
 .tab-datos i {color: var(--accent);}
-.tab-datos + br:has(+br), br:has(+ .tab-datos:not(:last-child)):not(:has(+ .tab-datos + style)) {display: none;}
+.tab-datos + br:has(+ br), br:has(+ .tab-datos:not(:last-child, :last-of-type)):not(:has(+ .tab-datos + style)) {display: none;}
 
 /*Citas para temas oficiales*/
 .category-3 blockquote:where(:last-child, :has(~ style:last-child)) {
