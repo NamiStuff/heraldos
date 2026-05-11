@@ -307,7 +307,7 @@ br + .tab-datos {margin-top: 10px;}
 blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
 
 .tab-datos i {color: var(--accent);}
-.tab-datos + br:has(+ br), br:has(+ .tab-datos:not(:last-child)):not(:has(+ .tab-datos + style)) {display: none;}
+.tab-datos + br:has(+ br), br:has(+ .tab-datos:not(:last-child)):not(:has(+ .tab-datos + style, + .tab-datos + br + style, + .tab-datos + br + br + style)) {display: none;}
 
 /*Citas para temas oficiales*/
 .category-3 blockquote:where(:last-child, :has(~ style:last-child)) {
