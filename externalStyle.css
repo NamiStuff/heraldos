@@ -328,11 +328,10 @@ blockquote div .tab-datos:where(:first-child,:last-child) {margin: 0;}
 .content hr + br, .content hr + br + br, .content br:has(+ hr) {display: none;}
 
 /*Imagen o Icono de cabecera */
-.content:has(.tab-datos) :is(img, i):has(+ br + br, + br + br + :is(h2, h3)) {
+.content:has(.tab-datos) :is(img, i[class]):has(+ br + br, + br + br + :is(h2, h3)) {
     display: grid;
     place-content: center;
     max-width: 100px;
-    max-height: 100px;
     aspect-ratio: 1;
     margin: 6px auto;
     border-radius: 100%;
