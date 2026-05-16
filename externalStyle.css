@@ -1572,6 +1572,7 @@ div.sceditor-charMask-stats label {
   .tab-batalla-barras > div {min-width: 100%;}
 }
 @media screen and (max-width: 735px) {
+  .forum_topics:empty {display: none;}
   /* posts */
   .post_poster {flex: 1 calc(100% - 105px); order: 3;}
   .postprofile {position: static; padding: 0; height: var(--profile-height); width: var(--profile-width); --profile-height: 100px; --profile-width: 100px;}
