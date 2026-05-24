@@ -958,7 +958,7 @@ font-family: var(--fontSubTitle);
 
 /* DADOS PERSONALIZADOS */
 
-.post-dados :is(.postprofile, .post_poster) {display: none;}
+.topic .post-dados :is(.postprofile, .post_poster) {display: none;}
 
 .tirada-user {
   margin: 0 auto 20px;
