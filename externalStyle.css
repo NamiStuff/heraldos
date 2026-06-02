@@ -990,7 +990,7 @@ font-family: var(--fontSubTitle);
   flex-wrap: wrap;
   gap: 10px;
 }
-.tirada:not(.dado-monstruo) .dado {
+.dado:not(.monstruo) {
   width: 50px;
   height: 50px;
   display: flex;
@@ -1003,7 +1003,7 @@ font-family: var(--fontSubTitle);
 }
 
 /* Dado de monstruos */
-.dado-monstruo {
+.dado-monstruo, .dado-bestiario-numerico {
   flex: 1 100%;
     
   .dado {
