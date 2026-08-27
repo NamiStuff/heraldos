@@ -20,7 +20,9 @@ $(function() {
                 },
             },
         });
-
+    
+    updateFilterCounts();
+    
     // bind filter checkbox click
     $('.memberlist:not(.maxposters) #form-ui').on('change', function(event) {
         var checkbox = event.target;
