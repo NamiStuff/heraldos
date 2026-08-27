@@ -21,7 +21,9 @@ $(function() {
             },
         });
     
-    updateFilterCounts();
+	setTimeout(function(){
+        updateFilterCounts();    
+	}, 600);
     
     // bind filter checkbox click
     $('.memberlist:not(.maxposters) #form-ui').on('change', function(event) {
