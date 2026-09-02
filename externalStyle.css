@@ -150,8 +150,8 @@
         display: block;
     }
     .tab-batalla-sal:after {width: calc(attr(salud-actual number, 0) / attr(salud-total number, 0) * 100%);}
-    .tab-batalla-vig:after {width: calc(attr(salud-actual number, 0) / attr(salud-total number, 0) * 100%);}
-    .tab-batalla-mag:after {width: calc(attr(salud-actual number, 0) / attr(salud-total number, 0) * 100%);}
+    .tab-batalla-vig:after {width: calc(attr(vigor-actual number, 0) / attr(vigor-total number, 0) * 100%);}
+    .tab-batalla-mag:after {width: calc(attr(magia-actual number, 0) / attr(magia-total number, 0) * 100%);}
     
     /* Salud status */
     .tab-batalla-sal {
