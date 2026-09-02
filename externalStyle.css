@@ -1,3 +1,9 @@
+/**
+ * Failed to minify the file using clean-css v5.3.3. Serving the original version.
+ * Original file: /gh/NamiStuff/heraldos@main/externalStyle.css
+ *
+ * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
+ */
 @charset "UTF-8";
 
 /*** INDEX
@@ -132,7 +138,6 @@
     
     /* Salud counter */    
     > div:before {
-        content: '0/0';
         position: absolute;
         font-size: var(--little-size);
         font-weight: 700;
@@ -140,9 +145,9 @@
         left: 50%;
         transform: translate(-50%);
     }
-    .tab-batalla-sal:before {content: attr(salud-actual) '/' attr(salud-total);}
-    .tab-batalla-vig:before {content: attr(vigor-actual) '/' attr(vigor-total);}
-    .tab-batalla-mag:before {content: attr(magia-actual) '/' attr(magia-total);}
+    .tab-batalla-sal:before {content: attr(salud-actual, 0) '/' attr(salud-total, 0);}
+    .tab-batalla-vig:before {content: attr(vigor-actual, 0) '/' attr(vigor-total, 0);}
+    .tab-batalla-mag:before {content: attr(magia-actual, 0) '/' attr(magia-total, 0);}
     /* Stats fill */
     :is(.tab-batalla-sal, .tab-batalla-vig, .tab-batalla-mag):after {
         content: '';
@@ -150,17 +155,10 @@
         height: 100%;
         display: block;
     }
-    .tab-batalla-sal:after {width: calc(attr(salud-actual px) / attr(salud-total px) * 100%);}
-    .tab-batalla-vig:after {width: calc(attr(vigor-actual px) / attr(vigor-total px) * 100%);}
-    .tab-batalla-mag:after {width: calc(attr(magia-actual px) / attr(magia-total px) * 100%);}
-    @supports not (x: attr(x px)) { /* FIREFOX */
-      .tab-batalla-fill {
-          background: var(--accent);
-          height: 100%;
-          width: 100%;
-      }
-      :is(.tab-batalla-sal, .tab-batalla-vig, .tab-batalla-mag):after {display: none;}
-    }
+    .tab-batalla-sal:after {width: calc(attr(salud-actual number, 0) / attr(salud-total number, 0) * 100%);}
+    .tab-batalla-vig:after {width: calc(attr(salud-actual number, 0) / attr(salud-total number, 0) * 100%);}
+    .tab-batalla-mag:after {width: calc(attr(salud-actual number, 0) / attr(salud-total number, 0) * 100%);}
+    
     /* Salud status */
     .tab-batalla-sal {
         container: salud / size;
@@ -169,6 +167,8 @@
             position: absolute;     
             opacity: 0;
             
+            color: var(--accent);
+            mix-blend-mode: difference;
             :hover > & {opacity: 1; transition: var(--transition);}     
             &:after {content: 'Sano';}
         }
@@ -1540,7 +1540,6 @@ div.sceditor-charMask-stats label {
 }
 .comment_details .left {flex-grow: 100;}
 .comment_content {margin-left: 50px;}
-
 
 
 /***** RESPONSIVE DESIGN -----*****/
