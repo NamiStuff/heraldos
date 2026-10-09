@@ -254,8 +254,12 @@
     max-height: 150px;
     overflow: auto !important;
 }
-.tab-batalla-habs h3 {margin: 10px 0 5px;}
-.tab-batalla-habs h3:first-of-type {margin-top: 0;}
+.tab-batalla-bloque {
+    margin-block: 5px;
+    &:first-of-type {margin-top: 0;}
+    &:last-of-type {margin-bottom: 0;}
+}
+.tab-batalla-habs h3 {margin-bottom: 5px;}
 :is(.tab-batalla-habs, .profile-abilities-content, .profile-powers-content) :is(i,u), .ability-type {
     text-decoration: none;
     font-style: normal;
