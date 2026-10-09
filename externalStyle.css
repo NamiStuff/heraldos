@@ -248,7 +248,7 @@
     font-weight: 900;
 }
 
-.tab-batalla .tab-batalla-habs div {
+.tab-batalla .tab-batalla-habs > div {
     min-width: 245px;
     display: none;
     max-height: 150px;
